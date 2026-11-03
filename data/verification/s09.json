@@ -1,0 +1,38 @@
+{
+  "id": "S09",
+  "event_date": "2026-10-24",
+  "event_date_basis": "document/header or linked build; not filesystem copy time",
+  "version_scope": "SJEM1离线候选构建记录",
+  "significance": "绑定BIT哈希与构建，保留未约束接口和警告；记录后续板测前的边界",
+  "source_relative_path": "evidence/soundjie-d4/emmc-candidate-20261024.md",
+  "source_sha256": "2e85ee9859c1edaeb47f0339b0891076c9d311281fd9a5ed6930e7ada5d621cf",
+  "source_bytes": 10173,
+  "export_type": "selected_fields_and_lines",
+  "full_source_included": false,
+  "support": [
+    {
+      "line": 74,
+      "quote": "- Git源码检查点：`149bfa1`。2017.4 构建实际 `BUILD_EXIT=0`，BIT/HDF导出完成。"
+    },
+    {
+      "line": 75,
+      "quote": "- 联合报告 `result_a/pl-feasibility-report.txt`：DPU/VDMA/framebuffer存在，8个OSERDESE2、4个OBUFDS及8个HDMI管脚/实际驱动核对通过，CDC三寄存器检查通过。"
+    },
+    {
+      "line": 76,
+      "quote": "- 已约束路径最终 WNS=0.254 ns、WHS=0.029 ns、TNS/THS=0，脉宽裕量1.267 ns。DRC 0 Errors / 71 Warnings / 73 Advisories，**不是零告警，也不是全接口时序签核**。"
+    },
+    {
+      "line": 77,
+      "quote": "- routed-DCP实际检查：旧设计退出1，缺8个物理端口且IOBUF=0；新设计退出0，8引脚/方向/LVCMOS18正确、CMD和4DATA的PULLUP=1、IOBUF=5。新DCP中CLK与CLKFB属于同一组net segments，外部时钟经过LUT1 INIT=2'h1反相；CMD/DATA的输入输出按位连回PS，T由PS封装接口直接送IOBUF，未额外反相。"
+    },
+    {
+      "line": 79,
+      "quote": "- `check_timing.rpt` 仍报告1个无时钟的SDIO1反馈、5个未约束SDIO1输入端点、5个未指定输入延迟的eMMC端口和31个未指定输出延迟的端口（含保留LCD/HDMI）。未编造外部器件时序、未添加false_path来隐藏这些问题。"
+    },
+    {
+      "line": 87,
+      "quote": "| SJEM1.BIT | 6bc37bf341c549c1c4bfd306f7a3a4275ed07411eaa81fe6992897475af39118 |"
+    }
+  ]
+}

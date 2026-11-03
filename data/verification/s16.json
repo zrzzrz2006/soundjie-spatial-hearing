@@ -1,0 +1,80 @@
+{
+  "id": "S16",
+  "event_date": "2026-11-01",
+  "event_date_basis": "document/header or linked build; not filesystem copy time",
+  "version_scope": "实际交付应用归档",
+  "significance": "只在内存读取成员并哈希；把当前模型/阈值绑定到S19同一应用归档",
+  "source_relative_path": "local_dependencies/deployment/SJ6V1.TGZ",
+  "source_sha256": "0e89305ba1822fe5b8f7a41fb0b6919b09b1212eca0e458b9e51046bb762d7af",
+  "source_bytes": 5931066,
+  "export_type": "selected_fields_and_lines",
+  "full_source_included": false,
+  "support": [
+    {
+      "archive_member": "sj-two-clip-release/model/dpu_soundjie_alert5bg.elf",
+      "sha256": "ecd4c9f4d65faf5c5083520b6a19623d1df01cd94dbe0d7e9a8324656ba917c7",
+      "bytes": 104756
+    },
+    {
+      "archive_member": "sj-two-clip-release/model/thresholds-fixed.json",
+      "sha256": "1c93976d57625a2aa7f59fd5bce625b583319d8d04b94659c350943530b2310f",
+      "bytes": 4880
+    },
+    {
+      "archive_member": "sj-two-clip-release/config/alert-thresholds.txt",
+      "sha256": "21391495987cea5b4da7179d2e6b5f5dd53500adcfbfdc2f78fbcfd9c68074d0",
+      "bytes": 26,
+      "value": "0.525,0.9,0.575,0.6,0.675"
+    },
+    {
+      "archive_member": "sj-two-clip-release/config/class-contract.txt",
+      "sha256": "89551b1b2d6b09db343e0fe798e46166982c395374ed8a626f76669d4a92f0ec",
+      "bytes": 21,
+      "value": "soundjie-alert5bg-v3"
+    },
+    {
+      "archive_member": "sj-two-clip-release/board/run_soundjie_d4_session.sh",
+      "selected_lines": [
+        {
+          "line": 66,
+          "quote": "hop_samples=12000"
+        },
+        {
+          "line": 67,
+          "quote": "if [ -f \"$bundle/config/hop-samples.txt\" ]; then hop_samples=$(cat \"$bundle/config/hop-samples.txt\"); fi"
+        },
+        {
+          "line": 68,
+          "quote": "hop_samples=${SOUNDJIE_HOP_SAMPLES:-$hop_samples}"
+        },
+        {
+          "line": 69,
+          "quote": "case \"$hop_samples\" in 4000|6400|8000|12000) :;; *) echo 'unsupported hop samples' >&2; exit 65;; esac"
+        },
+        {
+          "line": 70,
+          "quote": "cadence_ms=$((hop_samples / 16))"
+        },
+        {
+          "line": 140,
+          "quote": "    soundjie-alert4bg-v2|soundjie-alert5bg-v3) set -- --period-size=800 --buffer-size=8000;;"
+        },
+        {
+          "line": 144,
+          "quote": "    -D \"${SOUNDJIE_PCM_DEVICE:-hw:0,0}\" -t raw -f S16_LE -c 2 -r 16000 \"$@\""
+        },
+        {
+          "line": 150,
+          "quote": "  --window-samples 16000 --hop-samples \"$hop_samples\" --cadence-ms \"$cadence_ms\" \\"
+        }
+      ]
+    },
+    {
+      "archive_member": "sj-two-clip-release/config/hop-samples.txt",
+      "sha256": "06516f7a6e849dd3bbe5e3cd905cbaf7dab8f059572d2586adde4eb88ceabdd3",
+      "bytes": 5,
+      "value": "8000",
+      "significance": "Runtime override is 8000 samples at 16000 Hz = 0.5 s; script passes a 16000-sample window. Frontend legacy stream_hop is not the runtime override."
+    }
+  ]
+}

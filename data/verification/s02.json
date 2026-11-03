@@ -1,0 +1,40 @@
+{
+  "id": "S02",
+  "event_date": "2026-10-22",
+  "event_date_basis": "document/header or linked build; not filesystem copy time",
+  "version_scope": "历史Bank35定向DRC修改前",
+  "significance": "直接证明1.5 V与1.8 V冲突和1项BIVC-1",
+  "source_relative_path": "artifacts/pl_rebuild_20261022_hdmi/bank35_red.rpt",
+  "source_sha256": "7c2eb938eff90bb2397b1d726e845e655a26778956d134dd74d2b14ef66531dd",
+  "source_bytes": 1563,
+  "export_type": "selected_fields_and_lines",
+  "full_source_included": false,
+  "support": [
+    {
+      "line": 4,
+      "quote": "| Date         : Thu Oct 22 11:02:06 2026"
+    },
+    {
+      "line": 26,
+      "quote": "            Checks: BIVC-1"
+    },
+    {
+      "line": 28,
+      "quote": "             Violations found: 1"
+    },
+    {
+      "line": 32,
+      "quote": "| BIVC-1 | Error    | Bank IO standard Vcc | 1          |"
+    },
+    {
+      "line": 39,
+      "quote": "Conflicting Vcc voltages in bank 35. For example, the following two ports in this bank have conflicting VCCOs:  "
+    },
+    {
+      "line": 40,
+      "quote": "lcd_gpio_tri_io[1] (LVCMOS15, requiring VCCO=1.500) and HDMI_CLK_P (LVDS, requiring VCCO=1.800)"
+    }
+  ],
+  "embedded_report_time": "| Date         : Thu Oct 22 11:02:06 2026",
+  "report_timezone": "not specified; do not silently label UTC or Asia/Shanghai"
+}

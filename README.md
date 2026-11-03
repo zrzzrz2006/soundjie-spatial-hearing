@@ -10,7 +10,9 @@
 
 ![声界总体结构与双分支数据流](assets/system-architecture.png)
 
-图示采用作品技术报告第 2.1 节的 M1–M6 总体架构：阵列输入进入 PS 采集与 DDR 缓冲，空间声学与环境声分类分支并行，结果汇合到 HDMI 界面。本次源码快照收录采集、DPU 分类、结果管理、显示和启动集成；图中的 M3 阵列声学链及 M5 Vosk 模块实现源码未包含在本次快照中。
+图示采用作品技术报告第 2.1 节的 M1–M6 总体架构：阵列输入进入 PS 采集与 DDR 缓冲，空间声学与环境声分类分支并行，结果汇合到 HDMI 界面。本次源码快照收录采集、DPU 分类、结果管理、显示和启动集成。
+
+Vosk模型文件约为45MB
 
 环境感知关注周围发生的提示性声音，定向语音增强关注目标方向的交流信息。双分支设计使两类任务共享输入与显示，并保持各自的处理目标。
 
@@ -85,3 +87,17 @@
 | `tests/` | 软件与接口测试源码 |
 
 阅读 [构建说明](docs/BUILD.md)、[指标说明](docs/METRICS.md) 和 [第三方依赖](THIRD_PARTY_NOTICES.md)。`SOURCE_SNAPSHOT.json` 记录本次发布来源，`SHA256SUMS` 提供文件校验。
+
+## 参赛补充材料
+
+| 入口 | 内容 |
+|---|---|
+| [技能包](skill/README.md) | 通用时序报告检查、交付文件哈希校验，可迁移至其他项目 |
+| [协作记录](report/ai_collaboration/README.md) | 时序约束与 HDMI 电压冲突的两组协作排错讨论节选 |
+| [验证材料](report/verification.md) | 已有实现、模型验证与板端运行记录的证据索引 |
+| [优化过程](report/optimization.md) | 问题、定位、修改和结果，注明各版本与比较范围 |
+| [工具与复现](report/reproduction.md) | 旧版工具选用原因、依赖、构建入口及分阶段检查 |
+
+本仓库沿用工程原有目录，以 `src/` 和 `scripts/` 对应代码，`tests/` 对应软件测试，`hardware/reports/` 与 `data/verification/` 对应验证材料，`report/` 对应提交说明，`skill/` 对应可复用技能。文件路径采用 ASCII；第三方工具要求的大小写与命名保持原样。需要板厂工程的本地完整包另有 `local_dependencies/` 和 `LOCAL_BUILD.md`。
+
+项目贡献者原创代码采用 [MIT License](LICENSE)；第三方 IP、模型与数据等的适用范围见 [许可说明](docs/licensing.md) 和 [第三方声明](THIRD_PARTY_NOTICES.md)。

@@ -1,0 +1,56 @@
+{
+  "id": "S15",
+  "event_date": "2026-11-01",
+  "event_date_basis": "document/header or linked build; not filesystem copy time",
+  "version_scope": "同训练checkpoint的早期FP32原始/严格阈值评估，非最终INT8指标",
+  "significance": "防止把47.77%、54.46%或旧阈值误写为交付推荐结果",
+  "source_relative_path": "models/release/metrics.json",
+  "source_sha256": "b902c4baf06360f7db7ab1c31ca7d41b78377f161bdd5a1fe8115f2fa02f8fa6",
+  "source_bytes": 4968,
+  "export_type": "selected_fields_and_lines",
+  "full_source_included": false,
+  "support": [
+    {
+      "json_pointer": "/board_deployed",
+      "value": false
+    },
+    {
+      "json_pointer": "/independent_acceptance",
+      "value": false
+    },
+    {
+      "json_pointer": "/quantization",
+      "value": false
+    },
+    {
+      "json_pointer": "/thresholds_fit_on_same_validation",
+      "value": true
+    },
+    {
+      "json_pointer": "/thresholds",
+      "value": [
+        1.0,
+        0.9500000000000005,
+        0.4,
+        0.9000000000000005,
+        1.0
+      ]
+    },
+    {
+      "json_pointer": "/raw/accuracy",
+      "value": 0.7802547770700637
+    },
+    {
+      "json_pointer": "/raw/macro_recall",
+      "value": 0.7456492045731006
+    },
+    {
+      "json_pointer": "/thresholded/accuracy",
+      "value": 0.5445859872611465
+    },
+    {
+      "json_pointer": "/thresholded/macro_recall",
+      "value": 0.5457283790559057
+    }
+  ]
+}

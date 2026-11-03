@@ -1,0 +1,13 @@
+{
+  "id": "S17",
+  "event_date": "2026-10-24",
+  "event_date_basis": "document/header or linked build; not filesystem copy time",
+  "version_scope": "实际交付平台BIT",
+  "significance": "哈希等于S09与S18所记录平台，支持平台版本归属；不复制二进制",
+  "source_relative_path": "local_dependencies/boot/SJEM1.BIT",
+  "source_sha256": "6bc37bf341c549c1c4bfd306f7a3a4275ed07411eaa81fe6992897475af39118",
+  "source_bytes": 17416458,
+  "export_type": "hash_binding_only",
+  "full_source_included": false,
+  "support": []
+}

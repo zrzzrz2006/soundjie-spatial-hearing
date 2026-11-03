@@ -1,0 +1,66 @@
+{
+  "id": "S01",
+  "event_date": "2026-10-20",
+  "event_date_basis": "document/header or linked build; not filesystem copy time",
+  "version_scope": "历史LCD输出实现；2026-10-21核验、2026-10-22撤销HDMI资格",
+  "significance": "保留+0.367 ns及CDC策略；不能用作当前HDMI验收",
+  "source_relative_path": "evidence/soundjie-d4/pl-feasibility-report.txt",
+  "source_sha256": "61f43adc905f76c3d2a4969a6cccf6680b8c4776d7fb536e5a3cd011aed090a9",
+  "source_bytes": 4147,
+  "export_type": "selected_fields_and_lines",
+  "full_source_included": false,
+  "support": [
+    {
+      "line": 2,
+      "quote": "2026-10-22 CORRECTION: HDMI qualification REVOKED. This implemented design"
+    },
+    {
+      "line": 4,
+      "quote": "Historical synthesis/timing data below is retained, not HDMI acceptance."
+    },
+    {
+      "line": 5,
+      "quote": "Verified: 2026-10-21 Asia/Shanghai"
+    },
+    {
+      "line": 14,
+      "quote": "Final output: final_20261020_224500"
+    },
+    {
+      "line": 27,
+      "quote": "WNS=0.367 ns (setup timing report; board operation remains unverified)"
+    },
+    {
+      "line": 28,
+      "quote": "LUT: 35484/277400 (12.79%)"
+    },
+    {
+      "line": 29,
+      "quote": "Registers: 77136/554800 (13.90%)"
+    },
+    {
+      "line": 30,
+      "quote": "BRAM tiles: 127.5/755 (16.89%)"
+    },
+    {
+      "line": 31,
+      "quote": "DSP: 211/2020 (10.45%)"
+    },
+    {
+      "line": 41,
+      "quote": "CDC ruling: CH24 axis2video has a three-register video-vsync synchronizer."
+    },
+    {
+      "line": 42,
+      "quote": "Mark all three ASYNC_REG and exempt only the first register D input from timing."
+    },
+    {
+      "line": 43,
+      "quote": "The report confirms exactly three registers and one first-stage D pin."
+    },
+    {
+      "line": 44,
+      "quote": "No broad asynchronous clock-group exception was introduced."
+    }
+  ]
+}

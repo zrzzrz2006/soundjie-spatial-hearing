@@ -1,0 +1,28 @@
+{
+  "id": "S03",
+  "event_date": "2026-10-22",
+  "event_date_basis": "document/header or linked build; not filesystem copy time",
+  "version_scope": "历史同一优化检查点加载修正约束后",
+  "significance": "定向BIVC-1从1降至0；不是全设计零告警",
+  "source_relative_path": "artifacts/pl_rebuild_20261022_hdmi/bank35_green.rpt",
+  "source_sha256": "59fe63da782c567a8c76a0854dfb2c5b1fe84193e4b49f59fc7071c2bd6e51c4",
+  "source_bytes": 1177,
+  "export_type": "selected_fields_and_lines",
+  "full_source_included": false,
+  "support": [
+    {
+      "line": 4,
+      "quote": "| Date         : Thu Oct 22 11:04:28 2026"
+    },
+    {
+      "line": 26,
+      "quote": "            Checks: BIVC-1"
+    },
+    {
+      "line": 28,
+      "quote": "             Violations found: 0"
+    }
+  ],
+  "embedded_report_time": "| Date         : Thu Oct 22 11:04:28 2026",
+  "report_timezone": "not specified; do not silently label UTC or Asia/Shanghai"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "S08",
+  "event_date": null,
+  "event_date_basis": "document/header or linked build; not filesystem copy time",
+  "version_scope": "交付约束；不是带时间戳的历史差分",
+  "significance": "只对第一级D输入设置false path，三级ASYNC_REG；不能声称移除了所有CDC风险",
+  "source_relative_path": "constraints/soundjie_d4_axis2video_cdc.xdc",
+  "source_sha256": "1764fc8b231a8a1efa4c2ff507a029c19a838843a6474c0c7480811559e4ec53",
+  "source_bytes": 526,
+  "export_type": "selected_fields_and_lines",
+  "full_source_included": false,
+  "support": [
+    {
+      "line": 1,
+      "quote": "# CH24 axis2video.v implements video_vsync_i -> axis_clk as a three-stage"
+    },
+    {
+      "line": 2,
+      "quote": "# synchronizer named axis_vsync_reg[0:2]. Only the asynchronous path into"
+    },
+    {
+      "line": 3,
+      "quote": "# stage 0 is false; later stages and every other cross-domain path stay timed."
+    },
+    {
+      "line": 4,
+      "quote": "set sj_axis_vsync_regs [get_cells -quiet -hier -regexp {.*axis2video_0.*/axis_vsync_reg\\[[0-2]\\]}]"
+    },
+    {
+      "line": 5,
+      "quote": "set_property ASYNC_REG TRUE $sj_axis_vsync_regs"
+    },
+    {
+      "line": 7,
+      "quote": "set sj_axis_vsync_stage0_d [get_pins -quiet -hier -regexp {.*axis2video_0.*/axis_vsync_reg\\[0\\]/D}]"
+    },
+    {
+      "line": 8,
+      "quote": "set_false_path -to $sj_axis_vsync_stage0_d"
+    }
+  ]
+}

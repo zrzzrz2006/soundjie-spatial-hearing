@@ -1,0 +1,13 @@
+{
+  "id": "S14",
+  "event_date": "2026-11-01",
+  "event_date_basis": "document/header or linked build; not filesystem copy time",
+  "version_scope": "当前交付DPU模型二进制",
+  "significance": "仅用于哈希绑定，不复制为公开证据",
+  "source_relative_path": "models/release/dpu_soundjie_alert5bg.elf",
+  "source_sha256": "ecd4c9f4d65faf5c5083520b6a19623d1df01cd94dbe0d7e9a8324656ba917c7",
+  "source_bytes": 104756,
+  "export_type": "hash_binding_only",
+  "full_source_included": false,
+  "support": []
+}

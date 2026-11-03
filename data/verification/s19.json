@@ -1,0 +1,86 @@
+{
+  "id": "S19",
+  "event_date": "2026-11-02",
+  "event_date_basis": "document/header or linked build; not filesystem copy time",
+  "version_scope": "同一应用两次无人辅助冷启动及短时健康记录",
+  "significance": "不等同新声学准确率或长期稳定性；只摘健康汇总，屏蔽UI/字幕及串口内容",
+  "source_relative_path": "evidence/soundjie-d4/autostart-acceptance-20261102.json",
+  "source_sha256": "5de3d1fcbdbee1212299cfc7a9e74f4a1781611a406c6bb0dae539dfa14f1814",
+  "source_bytes": 20095,
+  "export_type": "selected_fields_and_lines",
+  "full_source_included": false,
+  "support": [
+    {
+      "json_pointer": "/recorded_at",
+      "value": "2026-11-02T14:39:17.138434+08:00"
+    },
+    {
+      "json_pointer": "/result",
+      "value": "TWO_UNATTENDED_COLD_BOOTS_AND_LIVE_HEALTH_PASS"
+    },
+    {
+      "json_pointer": "/scope",
+      "value": "Automatic startup acceptance of unchanged SJ6V1 app; not new acoustic accuracy or long-duration acceptance"
+    },
+    {
+      "json_pointer": "/app_sha256",
+      "value": "0e89305ba1822fe5b8f7a41fb0b6919b09b1212eca0e458b9e51046bb762d7af"
+    },
+    {
+      "json_pointer": "/boots/0/runtime_windows",
+      "value": 292
+    },
+    {
+      "json_pointer": "/boots/0/runtime_span_seconds",
+      "value": 145.499
+    },
+    {
+      "json_pointer": "/boots/0/runtime_bad_windows",
+      "value": 0
+    },
+    {
+      "json_pointer": "/boots/0/steady_ui_frames",
+      "value": 395
+    },
+    {
+      "json_pointer": "/boots/0/steady_ui_bad_frames",
+      "value": 0
+    },
+    {
+      "json_pointer": "/boots/0/capture_overruns",
+      "value": 1
+    },
+    {
+      "json_pointer": "/boots/0/app_archive_hash_checked",
+      "value": true
+    },
+    {
+      "json_pointer": "/boots/1/runtime_windows",
+      "value": 260
+    },
+    {
+      "json_pointer": "/boots/1/runtime_span_seconds",
+      "value": 129.602
+    },
+    {
+      "json_pointer": "/boots/1/runtime_bad_windows",
+      "value": 0
+    },
+    {
+      "json_pointer": "/boots/1/steady_ui_frames",
+      "value": 282
+    },
+    {
+      "json_pointer": "/boots/1/steady_ui_bad_frames",
+      "value": 0
+    },
+    {
+      "json_pointer": "/boots/1/capture_overruns",
+      "value": 1
+    },
+    {
+      "json_pointer": "/boots/1/app_archive_hash_checked",
+      "value": true
+    }
+  ]
+}

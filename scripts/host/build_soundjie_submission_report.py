@@ -229,14 +229,23 @@ def page(c,doc):
     c.restoreState()
 
 
+def validate_vosk_resource_description(content):
+    """Validate model-file size without requiring a runtime-memory statement."""
+    model_label = r'模型(?:文件)?(?:大小|体积|规模)?[^\d。；;\n]{0,16}'
+    assert re.search(model_label + r'45\s*MB(?![A-Za-z])', content, re.I), \
+        'Vosk model files must be described as approximately 45 MB'
+    sizes = re.findall(model_label + r'(\d+(?:\.\d+)?)\s*MB(?![A-Za-z])', content, re.I)
+    assert all(float(size) == 45 for size in sizes), 'Conflicting model-file sizes'
+
+
 def main():
     OUT.mkdir(parents=True,exist_ok=True);WORK.mkdir(parents=True,exist_ok=True)
     content=SOURCE.read_text(encoding='utf-8')
     banned=['待核','待补','初稿','待测','本稿','团队确认','以实际为准','尚未提供',
             '提交前','成稿核对','以团队最新功能说明','最终报告应','需要提供','应附',
-            '建议','你们','45MB','45 MB','小型中文模型']
+            '建议','你们']
     for word in banned:assert word not in content,word
-    assert '362MB' in content
+    validate_vosk_resource_description(content)
     report=json.loads((ASSETS/'classification-assessment.json').read_text(encoding='utf-8'))
     m=report['profiles'][report['recommended_profile']]['metrics']
     assert sum(sum(r) for r in m['confusion_matrix'])==314
@@ -287,8 +296,8 @@ def main():
     record=dict(pdf=str(PDF),bytes=PDF.stat().st_size,sha256=hsh(PDF),authored_pages=len(pages)+1,
                 manuscript=str(SOURCE),manuscript_sha256=hsh(SOURCE),
                 metrics_source=str(ASSETS/'classification-assessment.json'),metrics_sha256=hsh(ASSETS/'classification-assessment.json'),
-                audience='competition_judges',model_files_mb=362,
-                implementation_basis='User confirmed completed PL acoustics plus PS Vosk; corrected model size to 362MB and reported mostly correct sentences on two playback videos. Quantitative ASR/localization measurements were not asserted.',
+                audience='competition_judges',model_files_mb=45,
+                implementation_basis='User confirmed completed PL acoustics plus PS Vosk; model files are approximately 45 MB. Model-file size was supplied by the team, not measured by this report builder. Quantitative ASR/localization measurements were not asserted.',
                 photos=[dict(path=str(p),sha256=hsh(p)) for p in image_inputs],board_accessed=False)
     (WORK/'report-manifest.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(record,ensure_ascii=True))

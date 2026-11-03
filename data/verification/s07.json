@@ -1,0 +1,62 @@
+{
+  "id": "S07",
+  "event_date": "2026-10-24",
+  "event_date_basis": "document/header or linked build; not filesystem copy time",
+  "version_scope": "交付包SJEM1实现摘要；日期由S06/S09关联",
+  "significance": "紧凑证明DPU/VDMA/帧缓存、8个序列器、4个差分输出及3级CDC",
+  "source_relative_path": "hardware/reports/pl-feasibility-report.txt",
+  "source_sha256": "e204d3f0992eb0172a38e235659ce830675ed5a4a2a7f201385a7b31e94096f4",
+  "source_bytes": 2555,
+  "export_type": "selected_fields_and_lines",
+  "full_source_included": false,
+  "support": [
+    {
+      "line": 1,
+      "quote": "DPU_IMPLEMENTED=1"
+    },
+    {
+      "line": 2,
+      "quote": "VDMA_IMPLEMENTED=1"
+    },
+    {
+      "line": 3,
+      "quote": "FRAMEBUFFER_IMPLEMENTED=1"
+    },
+    {
+      "line": 4,
+      "quote": "HDMI_OSERDESE2_COUNT=8"
+    },
+    {
+      "line": 5,
+      "quote": "HDMI_OBUFDS_COUNT=4"
+    },
+    {
+      "line": 30,
+      "quote": "CDC_AXIS_VSYNC_REGS=3"
+    },
+    {
+      "line": 31,
+      "quote": "CDC_AXIS_VSYNC_STAGE0_PINS=1"
+    },
+    {
+      "line": 32,
+      "quote": "CDC_ASYNC_REG=1"
+    },
+    {
+      "line": 33,
+      "quote": "CDC_ASYNC_REG=1"
+    },
+    {
+      "line": 34,
+      "quote": "CDC_ASYNC_REG=1"
+    },
+    {
+      "line": 35,
+      "quote": "WNS=0.254"
+    },
+    {
+      "line": 36,
+      "quote": "RESULT=PASS"
+    }
+  ]
+}

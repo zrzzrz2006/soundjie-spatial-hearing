@@ -1,0 +1,46 @@
+{
+  "id": "S04",
+  "event_date": "2026-10-22",
+  "event_date_basis": "document/header or linked build; not filesystem copy time",
+  "version_scope": "历史HDMI集成与Bank35修复",
+  "significance": "解释E12改为LVCMOS18且保留HDMI LVDS，不屏蔽检查",
+  "source_relative_path": "evidence/soundjie-d4/hdmi-integration-20261022.md",
+  "source_sha256": "0b1d288b68d0b029d2cd023f8bc9c7947e5e796fd6871bae6759d7905c24200f",
+  "source_bytes": 5294,
+  "export_type": "selected_fields_and_lines",
+  "full_source_included": false,
+  "support": [
+    {
+      "line": 23,
+      "quote": "本地核心板原理图 `M7Z100CORE20211003.pdf` 第 4 页、底板"
+    },
+    {
+      "line": 61,
+      "quote": "- 首次综合完成，无错误或严重警告；实现阶段报 BIVC-1：E12 的旧 LCD GPIO"
+    },
+    {
+      "line": 62,
+      "quote": "  为 LVCMOS15，而同组 HDMI 为 LVDS（1.8V）。不是设备掉电或存储损坏证据。"
+    },
+    {
+      "line": 63,
+      "quote": "- 核心板原理图第 7 页明确将 VB35 接到 VCC1V8；第 4 页和实际 Vivado"
+    },
+    {
+      "line": 64,
+      "quote": "  引脚检查确认 E12 在 Bank35。保留旧 GPIO 功能，只将这一端口覆盖为 LVCMOS18。"
+    },
+    {
+      "line": 68,
+      "quote": "  修改前 `BANK35_CONFLICTS=1`、exit 1；加载修正 XDC 后为 0、exit 0。"
+    },
+    {
+      "line": 69,
+      "quote": "  HDMI 仍为 LVDS，未降低或屏蔽 DRC 严重性。"
+    },
+    {
+      "line": 71,
+      "quote": "  `hdmi_bank35_build.console.txt`。定向 DRC 通过不代表完整实现通过。"
+    }
+  ]
+}

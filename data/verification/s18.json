@@ -1,0 +1,107 @@
+{
+  "id": "S18",
+  "event_date": "2026-11-02",
+  "event_date_basis": "document/header or linked build; not filesystem copy time",
+  "version_scope": "现有DPU+HDMI应用436窗统计摘要",
+  "significance": "保留准确计时范围、最近秩P95和一次overrun；本轮未读原始遥测也未重测",
+  "source_relative_path": "evidence/soundjie-d4/contest-metrics-word-20261102.json",
+  "source_sha256": "b2548fd2d600be7602ec4a3e1dfee1ef8d5a8c8a6ca2be15fb08d3eff24d2b88",
+  "source_bytes": 5004,
+  "export_type": "selected_fields_and_lines",
+  "full_source_included": false,
+  "support": [
+    {
+      "json_pointer": "/metrics/window_count",
+      "value": 436
+    },
+    {
+      "json_pointer": "/metrics/duration_s",
+      "value": 217.499
+    },
+    {
+      "json_pointer": "/metrics/first_sequence",
+      "value": 1
+    },
+    {
+      "json_pointer": "/metrics/last_sequence",
+      "value": 436
+    },
+    {
+      "json_pointer": "/metrics/updates_per_second",
+      "value": 2.000009195444577
+    },
+    {
+      "json_pointer": "/metrics/inference_ms",
+      "value": {
+        "count": 436,
+        "min": 0.620524,
+        "mean": 0.7485909426605505,
+        "median": 0.652932,
+        "p95_nearest_rank": 1.002846,
+        "max": 5.057124
+      }
+    },
+    {
+      "json_pointer": "/metrics/processing_ms",
+      "value": {
+        "count": 436,
+        "min": 117,
+        "mean": 444.401376146789,
+        "median": 440.0,
+        "p95_nearest_rank": 465,
+        "max": 744
+      }
+    },
+    {
+      "json_pointer": "/metrics/hop_ms",
+      "value": {
+        "count": 435,
+        "min": 499,
+        "mean": 499.99770114942527,
+        "median": 500,
+        "p95_nearest_rank": 500,
+        "max": 501
+      }
+    },
+    {
+      "json_pointer": "/metrics/bad_windows",
+      "value": 0
+    },
+    {
+      "json_pointer": "/metrics/capture_overruns",
+      "value": 1
+    },
+    {
+      "json_pointer": "/metrics/steady_retained_ui_frames",
+      "value": 102
+    },
+    {
+      "json_pointer": "/metrics/steady_retained_ui_bad_frames",
+      "value": 0
+    },
+    {
+      "json_pointer": "/metrics/range_definition",
+      "value": "All complete nonterminal timeline records at collection; received-window processing excludes audio accumulation and HDMI panel response; DPU timer surrounds dpuRunTask."
+    },
+    {
+      "json_pointer": "/static_sources/timing/sha256",
+      "value": "c3fc34c073fbdf4f6f74f2712443c550680904b2fe9ab6b3a234b540e235612d"
+    },
+    {
+      "json_pointer": "/static_sources/bitstream/sha256",
+      "value": "6bc37bf341c549c1c4bfd306f7a3a4275ed07411eaa81fe6992897475af39118"
+    },
+    {
+      "json_pointer": "/board_evidence_sha256",
+      "value": "b37709f77564d1afab7394eb27b8c179ebbbf45f904b07b6c3e6ff19dfb45b31"
+    },
+    {
+      "json_pointer": "/board_reprogrammed",
+      "value": false
+    },
+    {
+      "json_pointer": "/sd_modified",
+      "value": false
+    }
+  ]
+}

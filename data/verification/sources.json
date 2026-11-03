@@ -1,0 +1,284 @@
+{
+  "created_date": "2026-11-03",
+  "new_measurements": false,
+  "scope": "Selected existing model, implementation, timing, runtime and startup records. No original files changed.",
+  "source_count": 20,
+  "checked_text_lines": 110,
+  "checked_json_pointers": 75,
+  "source_and_export_hashes_are_distinct": true,
+  "sources": [
+    {
+      "id": "S01",
+      "export": "s01.json",
+      "export_sha256": "d0a95529a8c82763657309223bb723471bf1d171aa006b1b6455e139dff63450",
+      "source_sha256": "61f43adc905f76c3d2a4969a6cccf6680b8c4776d7fb536e5a3cd011aed090a9",
+      "source_relative_path": "evidence/soundjie-d4/pl-feasibility-report.txt",
+      "event_date": "2026-10-20",
+      "version_scope": "历史LCD输出实现；2026-10-21核验、2026-10-22撤销HDMI资格"
+    },
+    {
+      "id": "S02",
+      "export": "s02.json",
+      "export_sha256": "1376c768e8c8a9fc54eb298e63a4127511bbb8056758cdddd1a1c4cc6acc614c",
+      "source_sha256": "7c2eb938eff90bb2397b1d726e845e655a26778956d134dd74d2b14ef66531dd",
+      "source_relative_path": "artifacts/pl_rebuild_20261022_hdmi/bank35_red.rpt",
+      "event_date": "2026-10-22",
+      "version_scope": "历史Bank35定向DRC修改前"
+    },
+    {
+      "id": "S03",
+      "export": "s03.json",
+      "export_sha256": "1504b6d1ec895168e41c8c6548b3d58e4ed15c271a81606267d100c74f9831a4",
+      "source_sha256": "59fe63da782c567a8c76a0854dfb2c5b1fe84193e4b49f59fc7071c2bd6e51c4",
+      "source_relative_path": "artifacts/pl_rebuild_20261022_hdmi/bank35_green.rpt",
+      "event_date": "2026-10-22",
+      "version_scope": "历史同一优化检查点加载修正约束后"
+    },
+    {
+      "id": "S04",
+      "export": "s04.json",
+      "export_sha256": "180755352f4401a45f6aa654eb18f3faacc3a1924341d23dbd1235f2350b1f75",
+      "source_sha256": "0b1d288b68d0b029d2cd023f8bc9c7947e5e796fd6871bae6759d7905c24200f",
+      "source_relative_path": "evidence/soundjie-d4/hdmi-integration-20261022.md",
+      "event_date": "2026-10-22",
+      "version_scope": "历史HDMI集成与Bank35修复"
+    },
+    {
+      "id": "S05",
+      "export": "s05.json",
+      "export_sha256": "501069c89f7856408b1ac7c3d5ad021d7769e6a9b63ad9af27f5d7d80cc6bf8d",
+      "source_sha256": "1b549fa37114efb3051e4d8cebf90f07ad79ab6f522accdf5c2aa97cb7500913",
+      "source_relative_path": "artifacts/pl_rebuild_20261022_hdmi/sources/ch24/CH24_LCD_Tourch/02_fpga/fpga/system/system.runs/impl_1/system_wrapper_timing_summary_routed.rpt",
+      "event_date": "2026-10-22",
+      "version_scope": "真实HDMI早期布局布线版本，非当前SJEM1"
+    },
+    {
+      "id": "S06",
+      "export": "s06.json",
+      "export_sha256": "ac38a58597147a4eee623cf1cdee713094bb795345935809b5945010594f1753",
+      "source_sha256": "c3fc34c073fbdf4f6f74f2712443c550680904b2fe9ab6b3a234b540e235612d",
+      "source_relative_path": "artifacts/pl_rebuild_20261024_emmc_a/sources/ch24/CH24_LCD_Tourch/02_fpga/fpga/system/system.runs/impl_1/system_wrapper_timing_summary_routed.rpt",
+      "event_date": "2026-10-24",
+      "version_scope": "SJEM1 DPU+HDMI+eMMC实现"
+    },
+    {
+      "id": "S07",
+      "export": "s07.json",
+      "export_sha256": "192e1dd347305cad97d4ec5c06080f94a1224e91cc23ce0ce3171866c5973c89",
+      "source_sha256": "e204d3f0992eb0172a38e235659ce830675ed5a4a2a7f201385a7b31e94096f4",
+      "source_relative_path": "hardware/reports/pl-feasibility-report.txt",
+      "event_date": "2026-10-24",
+      "version_scope": "交付包SJEM1实现摘要；日期由S06/S09关联"
+    },
+    {
+      "id": "S08",
+      "export": "s08.json",
+      "export_sha256": "d19de9d600615d9733a649d69c1f1aa234b54a8506f1bb6f27c6eecea1beaead",
+      "source_sha256": "1764fc8b231a8a1efa4c2ff507a029c19a838843a6474c0c7480811559e4ec53",
+      "source_relative_path": "constraints/soundjie_d4_axis2video_cdc.xdc",
+      "event_date": null,
+      "version_scope": "交付约束；不是带时间戳的历史差分"
+    },
+    {
+      "id": "S09",
+      "export": "s09.json",
+      "export_sha256": "e35dbd7e838cf4d02a6ecca5af931145a8da4de661909c7b559f7a313429b46f",
+      "source_sha256": "2e85ee9859c1edaeb47f0339b0891076c9d311281fd9a5ed6930e7ada5d621cf",
+      "source_relative_path": "evidence/soundjie-d4/emmc-candidate-20261024.md",
+      "event_date": "2026-10-24",
+      "version_scope": "SJEM1离线候选构建记录"
+    },
+    {
+      "id": "S10",
+      "export": "s10.json",
+      "export_sha256": "dfc165a75ccb74721a38f3c89621c1d88dc1b3fe1d6dd98d839f1522acc1dec7",
+      "source_sha256": "6b0f282dade110c62da1e1a4f91c91fc95b443470e1cf834701577f7072e656d",
+      "source_relative_path": "hardware/reports/utilization.rpt",
+      "event_date": "2026-10-24",
+      "version_scope": "SJEM1 DPU+HDMI平台资源"
+    },
+    {
+      "id": "S11",
+      "export": "s11.json",
+      "export_sha256": "f91ec4ac71e4c395c5a2824f815576000dfb887720752d3a0b3632a662129676",
+      "source_sha256": "285499822efdafa92757e270f1b8e5442b5b4eb6ad9216e0e7b062ff4947f33d",
+      "source_relative_path": "evidence/soundjie-d4/alert5bg-training-20261101.json",
+      "event_date": "2026-11-01",
+      "version_scope": "当前alert5bg-v3训练、导出、INT8开发评估"
+    },
+    {
+      "id": "S12",
+      "export": "s12.json",
+      "export_sha256": "6820777259559248df6e2923d8ca2ee799bebfad4ccbccd20679385e9490e469",
+      "source_sha256": "023f7acb1386977a4ac6c6f30669edaeeb8fa0ae3ea9865af09650a5868e40e6",
+      "source_relative_path": "docs/operations/alert5bg-training-20261101.md",
+      "event_date": "2026-11-01",
+      "version_scope": "当前模型训练方法与FP32/INT8比较说明"
+    },
+    {
+      "id": "S13",
+      "export": "s13.json",
+      "export_sha256": "8cc8df14d1f3247f7a6671d62497a03e46d1e72172e3432428ad52d0b9333e27",
+      "source_sha256": "1c93976d57625a2aa7f59fd5bce625b583319d8d04b94659c350943530b2310f",
+      "source_relative_path": "models/release/thresholds-fixed.json",
+      "event_date": "2026-11-01",
+      "version_scope": "当前交付INT8推荐阈值与开发验证结果"
+    },
+    {
+      "id": "S14",
+      "export": "s14.json",
+      "export_sha256": "e1acf5d461ea6ddf8fcdcbe7ad9d7ac80c19b97ad52fe937022ce47297d034de",
+      "source_sha256": "ecd4c9f4d65faf5c5083520b6a19623d1df01cd94dbe0d7e9a8324656ba917c7",
+      "source_relative_path": "models/release/dpu_soundjie_alert5bg.elf",
+      "event_date": "2026-11-01",
+      "version_scope": "当前交付DPU模型二进制"
+    },
+    {
+      "id": "S15",
+      "export": "s15.json",
+      "export_sha256": "70fc373911d78857229df60769ce790bb4af8e8b8308a1a678bd18fadabcb122",
+      "source_sha256": "b902c4baf06360f7db7ab1c31ca7d41b78377f161bdd5a1fe8115f2fa02f8fa6",
+      "source_relative_path": "models/release/metrics.json",
+      "event_date": "2026-11-01",
+      "version_scope": "同训练checkpoint的早期FP32原始/严格阈值评估，非最终INT8指标"
+    },
+    {
+      "id": "S16",
+      "export": "s16.json",
+      "export_sha256": "8985213f90f948f9a2b22773b470c0d0dfa1960e2bffd40e12c3f3f17daf470f",
+      "source_sha256": "0e89305ba1822fe5b8f7a41fb0b6919b09b1212eca0e458b9e51046bb762d7af",
+      "source_relative_path": "local_dependencies/deployment/SJ6V1.TGZ",
+      "event_date": "2026-11-01",
+      "version_scope": "实际交付应用归档"
+    },
+    {
+      "id": "S17",
+      "export": "s17.json",
+      "export_sha256": "b3dccebd88535491694cacebaa5cec2c5138fdf5f83d142bee832bd24bcfe011",
+      "source_sha256": "6bc37bf341c549c1c4bfd306f7a3a4275ed07411eaa81fe6992897475af39118",
+      "source_relative_path": "local_dependencies/boot/SJEM1.BIT",
+      "event_date": "2026-10-24",
+      "version_scope": "实际交付平台BIT"
+    },
+    {
+      "id": "S18",
+      "export": "s18.json",
+      "export_sha256": "7fcced52848be26ee690f62e97f717deb746d690e3f3d03f528654fc11492414",
+      "source_sha256": "b2548fd2d600be7602ec4a3e1dfee1ef8d5a8c8a6ca2be15fb08d3eff24d2b88",
+      "source_relative_path": "evidence/soundjie-d4/contest-metrics-word-20261102.json",
+      "event_date": "2026-11-02",
+      "version_scope": "现有DPU+HDMI应用436窗统计摘要"
+    },
+    {
+      "id": "S19",
+      "export": "s19.json",
+      "export_sha256": "5553ad666ec7a1c3bba15a3cb220f8da26a819b6a27aa46a17df2994a7290eee",
+      "source_sha256": "5de3d1fcbdbee1212299cfc7a9e74f4a1781611a406c6bb0dae539dfa14f1814",
+      "source_relative_path": "evidence/soundjie-d4/autostart-acceptance-20261102.json",
+      "event_date": "2026-11-02",
+      "version_scope": "同一应用两次无人辅助冷启动及短时健康记录"
+    },
+    {
+      "id": "S20",
+      "export": "s20.json",
+      "export_sha256": "429bb0959cf4bac0c81dece9b8cea7dfba72f6699c9aa9644946d78341f580c5",
+      "source_sha256": "014978806759bc8c9a2d42b6bf0e9bc9dfe8127c00345e3c590f0f0b3fc6e90e",
+      "source_relative_path": "hardware/reports/drc.rpt",
+      "event_date": "2026-10-24",
+      "version_scope": "SJEM1已布线设计DRC"
+    }
+  ],
+  "cross_checks": [
+    {
+      "check": "ELF_matches_training_and_threshold_metadata",
+      "pass": true,
+      "actual": "ecd4c9f4d65faf5c5083520b6a19623d1df01cd94dbe0d7e9a8324656ba917c7"
+    },
+    {
+      "check": "training_ELF_matches",
+      "pass": true,
+      "actual": "ecd4c9f4d65faf5c5083520b6a19623d1df01cd94dbe0d7e9a8324656ba917c7"
+    },
+    {
+      "check": "threshold_artifact_matches_training",
+      "pass": true,
+      "actual": "1c93976d57625a2aa7f59fd5bce625b583319d8d04b94659c350943530b2310f"
+    },
+    {
+      "check": "SJ6V1_matches_coldboot_archive",
+      "pass": true,
+      "actual": "0e89305ba1822fe5b8f7a41fb0b6919b09b1212eca0e458b9e51046bb762d7af"
+    },
+    {
+      "check": "SJEM1_matches_Nov2_platform",
+      "pass": true,
+      "actual": "6bc37bf341c549c1c4bfd306f7a3a4275ed07411eaa81fe6992897475af39118"
+    },
+    {
+      "check": "routed_timing_matches_Nov2_platform_report",
+      "pass": true,
+      "actual": "c3fc34c073fbdf4f6f74f2712443c550680904b2fe9ab6b3a234b540e235612d"
+    },
+    {
+      "check": "SJEM1_matches_Oct24_build_record",
+      "pass": true,
+      "actual": true
+    },
+    {
+      "check": "archive_ELF_matches_shipped_model",
+      "pass": true,
+      "actual": "ecd4c9f4d65faf5c5083520b6a19623d1df01cd94dbe0d7e9a8324656ba917c7"
+    },
+    {
+      "check": "archive_thresholds_match_shipped_thresholds",
+      "pass": true,
+      "actual": "1c93976d57625a2aa7f59fd5bce625b583319d8d04b94659c350943530b2310f"
+    },
+    {
+      "check": "archive_runtime_thresholds",
+      "pass": true,
+      "actual": [
+        0.525,
+        0.9,
+        0.575,
+        0.6,
+        0.675
+      ]
+    },
+    {
+      "check": "archive_class_contract",
+      "pass": true,
+      "actual": "soundjie-alert5bg-v3"
+    },
+    {
+      "check": "validation_count",
+      "pass": true,
+      "actual": 314
+    },
+    {
+      "check": "correct_count",
+      "pass": true,
+      "actual": 251
+    },
+    {
+      "check": "accuracy_recomputed_from_stored_confusion_matrix",
+      "pass": true,
+      "actual": 0.7993630573248408
+    },
+    {
+      "check": "background_alert_errors",
+      "pass": true,
+      "actual": 8
+    },
+    {
+      "check": "background_speech_errors",
+      "pass": true,
+      "actual": 10
+    },
+    {
+      "check": "update_rate_uses_435_intervals",
+      "pass": true,
+      "actual": 2.000009195444577
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "S12",
+  "event_date": "2026-11-01",
+  "event_date_basis": "document/header or linked build; not filesystem copy time",
+  "version_scope": "当前模型训练方法与FP32/INT8比较说明",
+  "significance": "保留文件数与原录音数区别、弱标签、校准来源和相同验证集调参边界",
+  "source_relative_path": "docs/operations/alert5bg-training-20261101.md",
+  "source_sha256": "023f7acb1386977a4ac6c6f30669edaeeb8fa0ae3ea9865af09650a5868e40e6",
+  "source_bytes": 20054,
+  "export_type": "selected_fields_and_lines",
+  "full_source_included": false,
+  "support": [
+    {
+      "line": 23,
+      "quote": "| Total | 1160 | 1083 | 314 | 279 | — |"
+    },
+    {
+      "line": 42,
+      "quote": "Feature extraction regenerates windows using the frozen frontend; it does not relabel old augmented features that may contain speech noise. Cache: 11,148 train windows and 314 one-per-source unaugmented validation windows. Feature-cache SHA-256: `e804dfa11a9a39b0a006f1946f672531d775c1ea9e5ef92c229763b5ec8561a9`. Speech uses the positive-class event-window policy. Source file and decoded 16 kHz PCM identities are checked across partitions."
+    },
+    {
+      "line": 46,
+      "quote": "Select by development-validation macro recall, then lower background false-positive rate, then earliest epoch. Five winner-rejection thresholds optimize per-class F1 on a 0.025 grid, subject to an empirical per-class background FPR limit of 2%. The combined rate is not bounded at 2%. Softmax argmax below its own threshold goes to index 5; no runner-up is promoted. Selection and threshold fitting share validation, which is source-disjoint from training but is not an independent acceptance set."
+    },
+    {
+      "line": 48,
+      "quote": "Export must pass exact checkpoint reload, full-validation BN-folding parity, serialized folded-weight parity, and six-output checks. INT8 calibration contains 32 distinct unaugmented training originals for each class, 192 total; parity fixtures contain two independent validation source groups per class, 12 total. Source hashes and complete payload hashes are recorded in completion manifests written last."
+    },
+    {
+      "line": 76,
+      "quote": "Thresholds maximize each class's development-validation F1 on the original 0.025 grid, then prefer fewer background errors and the lower threshold. There is no 2% constraint in this explicitly authorized recognition profile. Rounding to three decimals is checked to preserve all validation decisions. All threshold comparisons use double-precision softmax, as in the C++ classifier."
+    },
+    {
+      "line": 87,
+      "quote": "FP32 raw accuracy/macro recall are 78.03% / 74.56%; INT8 raw are 77.07% / 72.46%; recommended INT8 are **79.94% / 73.58%**. For the explicitly labeled speech subgroup, raw FP32 and raw INT8 recall are both 56/60 (93.33%); recommended INT8 is **54/60 (90.00%)**. The inherited vocal weak-label subgroup is 19/26 (73.08%) with recommended INT8 thresholds."
+    },
+    {
+      "line": 89,
+      "quote": "Background-to-alert errors are **8/121 (6.61%)**; another **10/121 (8.26%)** are background-to-non-alert speech errors. Combined false foreground is 18/121 (14.88%). The inherited training metric named `negative_false_alert_rate` counts any foreground, including speech; use the explicit `background_false_alert_rate` and `background_false_speech_rate` fields in the final assessment for product interpretation. Twelve of the 18 combined errors come from the 26 crying/screaming clips; the model does not establish ordinary-versus-urgent vocal semantics. Source-group macro recall is 67.42%, reflecting the grouped validation structure."
+    },
+    {
+      "line": 113,
+      "quote": "The strict INT8 vector `[1.0,0.9000000000000005,0.5750000000000002,0.6000000000000002,1.0]` is retained for comparison and is **not recommended**. The first host staging attempt caught a numerical boundary: producer float32 softmax rounded high siren/speech probabilities to 1.0, while double softmax did not. Staging now reproduces the producer's exact float32 metrics for provenance, while deployment assessment uses double. No logits, weights or source labels were changed to resolve this; the final profile avoids 1.0 thresholds. The strict objective's large recall loss, not a conversion failure, motivates the recognition alternative."
+    }
+  ]
+}

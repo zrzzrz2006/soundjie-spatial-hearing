@@ -1,0 +1,60 @@
+{
+  "id": "S05",
+  "event_date": "2026-10-22",
+  "event_date_basis": "document/header or linked build; not filesystem copy time",
+  "version_scope": "真实HDMI早期布局布线版本，非当前SJEM1",
+  "significance": "提供10月24日前WNS/WHS/TNS/THS正式对照",
+  "source_relative_path": "artifacts/pl_rebuild_20261022_hdmi/sources/ch24/CH24_LCD_Tourch/02_fpga/fpga/system/system.runs/impl_1/system_wrapper_timing_summary_routed.rpt",
+  "source_sha256": "1b549fa37114efb3051e4d8cebf90f07ad79ab6f522accdf5c2aa97cb7500913",
+  "source_bytes": 1087156,
+  "export_type": "selected_fields_and_lines",
+  "full_source_included": false,
+  "support": [
+    {
+      "line": 4,
+      "quote": "| Date         : Thu Oct 22 11:26:36 2026"
+    },
+    {
+      "line": 127,
+      "quote": "    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  "
+    },
+    {
+      "line": 129,
+      "quote": "      0.412        0.000                      0               147768        0.037        0.000                      0               147744        1.267        0.000                       0                 80631  "
+    },
+    {
+      "line": 132,
+      "quote": "All user specified timing constraints are met."
+    },
+    {
+      "line": 158,
+      "quote": "Clock                                           WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  "
+    },
+    {
+      "line": 167,
+      "quote": "  clk_out2_system_soundjie_dpu_clk_wiz_0_1        0.412        0.000                      0                40501        0.039        0.000                      0                40501        1.267        0.000                       0                 24753  "
+    },
+    {
+      "line": 176,
+      "quote": "From Clock                                To Clock                                      WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  "
+    },
+    {
+      "line": 189,
+      "quote": "Path Group                   From Clock                   To Clock                         WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  "
+    },
+    {
+      "line": 3895,
+      "quote": "Setup :            0  Failing Endpoints,  Worst Slack        0.412ns,  Total Violation        0.000ns"
+    },
+    {
+      "line": 3903,
+      "quote": "Slack (MET) :             0.412ns  (required time - arrival time)"
+    },
+    {
+      "line": 3958,
+      "quote": "                         slack                                  0.412    "
+    }
+  ],
+  "embedded_report_time": "| Date         : Thu Oct 22 11:26:36 2026",
+  "report_timezone": "not specified; do not silently label UTC or Asia/Shanghai"
+}

@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-03",
+  "scope": "Supplemental-materials checks on Windows host only",
+  "historical_conversation": false,
+  "board_accessed": false,
+  "sd_written": false,
+  "training_or_synthesis_run": false,
+  "tests": [
+    {
+      "command": "python -B -m unittest discover -s skill/tests -p test_*.py -v",
+      "ran": 13,
+      "passed": 12,
+      "skipped": 1,
+      "failed": 0,
+      "exit_code": 0,
+      "skip": "test_link_escape_is_rejected: Windows privilege 1314 prevented fixture symlink creation"
+    },
+    {
+      "command": "python -B -m unittest tests.test_soundjie_autostart tests.test_soundjie_alert5bg_probes -v",
+      "ran": 11,
+      "passed": 11,
+      "skipped": 0,
+      "failed": 0,
+      "exit_code": 0
+    }
+  ],
+  "existing_evidence_export": {
+    "original_source_hashes_checked": 20,
+    "text_lines_checked_against_sources": 110,
+    "json_fields_or_projections_checked_against_sources": 75,
+    "new_measurements": false
+  },
+  "skill_frontmatter_validation": {
+    "validator": "skill-creator quick_validate.py",
+    "skills_checked": 2,
+    "result": "PASS"
+  }
+}

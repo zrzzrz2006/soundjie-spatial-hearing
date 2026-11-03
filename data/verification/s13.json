@@ -1,0 +1,181 @@
+{
+  "id": "S13",
+  "event_date": "2026-11-01",
+  "event_date_basis": "document/header or linked build; not filesystem copy time",
+  "version_scope": "当前交付INT8推荐阈值与开发验证结果",
+  "significance": "最终数字主来源，区分警报/说话/全部前景误判；历史board_tested=false不是后续板测结论",
+  "source_relative_path": "models/release/thresholds-fixed.json",
+  "source_sha256": "1c93976d57625a2aa7f59fd5bce625b583319d8d04b94659c350943530b2310f",
+  "source_bytes": 4880,
+  "export_type": "selected_fields_and_lines",
+  "full_source_included": false,
+  "support": [
+    {
+      "json_pointer": "/contract",
+      "value": "soundjie-alert5bg-v3"
+    },
+    {
+      "json_pointer": "/elf_sha256",
+      "value": "ecd4c9f4d65faf5c5083520b6a19623d1df01cd94dbe0d7e9a8324656ba917c7"
+    },
+    {
+      "json_pointer": "/checkpoint_sha256",
+      "value": "686824fbc017b0fb3b1d9b397e50e1d5d492048bf5850b6a600493470dcec6ca"
+    },
+    {
+      "json_pointer": "/alert_indices",
+      "value": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "json_pointer": "/foreground_thresholds",
+      "value": [
+        0.525,
+        0.9,
+        0.575,
+        0.6,
+        0.675
+      ]
+    },
+    {
+      "json_pointer": "/speech_is_non_alert",
+      "value": true
+    },
+    {
+      "json_pointer": "/decision",
+      "value": "double softmax argmax; reject below the winning foreground threshold to background; no runner-up promotion; speech is non-alert"
+    },
+    {
+      "json_pointer": "/independent_acceptance",
+      "value": false
+    },
+    {
+      "json_pointer": "/board_tested",
+      "value": false
+    },
+    {
+      "json_pointer": "/profile",
+      "value": "recognition_f1_recommended"
+    },
+    {
+      "json_pointer": "/metrics",
+      "value": {
+        "accuracy": 0.7993630573248408,
+        "macro_recall": 0.7358356275198875,
+        "confusion_matrix": [
+          [
+            45,
+            0,
+            1,
+            0,
+            2,
+            14
+          ],
+          [
+            0,
+            6,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            4,
+            0,
+            7,
+            0,
+            0,
+            3
+          ],
+          [
+            1,
+            0,
+            0,
+            17,
+            2,
+            3
+          ],
+          [
+            2,
+            1,
+            0,
+            0,
+            73,
+            10
+          ],
+          [
+            7,
+            0,
+            1,
+            0,
+            10,
+            103
+          ]
+        ],
+        "per_class": {
+          "background_unknown": {
+            "correct": 103,
+            "precision": 0.7686567164179104,
+            "recall": 0.8512396694214877,
+            "support": 121
+          },
+          "car_horn": {
+            "correct": 6,
+            "precision": 0.8571428571428571,
+            "recall": 0.75,
+            "support": 8
+          },
+          "dog_bark": {
+            "correct": 17,
+            "precision": 0.9444444444444444,
+            "recall": 0.7391304347826086,
+            "support": 23
+          },
+          "doorbell": {
+            "correct": 7,
+            "precision": 0.7777777777777778,
+            "recall": 0.5,
+            "support": 14
+          },
+          "siren": {
+            "correct": 45,
+            "precision": 0.7627118644067796,
+            "recall": 0.7258064516129032,
+            "support": 62
+          },
+          "speech": {
+            "correct": 73,
+            "precision": 0.8390804597701149,
+            "recall": 0.8488372093023255,
+            "support": 86
+          }
+        },
+        "background_false_alert_count": 8,
+        "background_false_alert_rate": 0.06611570247933884,
+        "background_false_speech_count": 10,
+        "background_false_speech_rate": 0.08264462809917356,
+        "background_false_foreground_count": 18,
+        "background_false_foreground_rate": 0.1487603305785124,
+        "source_group_macro_recall": 0.6742412124195071,
+        "speech_subgroups": {
+          "explicit_speech": {
+            "correct": 54,
+            "recall": 0.9,
+            "support": 60
+          },
+          "inherited_vocal_weak_label": {
+            "correct": 19,
+            "recall": 0.7307692307692307,
+            "support": 26
+          }
+        },
+        "legacy_negative_false_alert_rate_means_any_foreground": true
+      },
+      "projection": true
+    }
+  ]
+}

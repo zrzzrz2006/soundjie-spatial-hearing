@@ -1,0 +1,318 @@
+{
+  "id": "S11",
+  "event_date": "2026-11-01",
+  "event_date_basis": "document/header or linked build; not filesystem copy time",
+  "version_scope": "当前alert5bg-v3训练、导出、INT8开发评估",
+  "significance": "含校准/转换及同一INT8输出的阈值对照，独立验收为否",
+  "source_relative_path": "evidence/soundjie-d4/alert5bg-training-20261101.json",
+  "source_sha256": "285499822efdafa92757e270f1b8e5442b5b4eb6ad9216e0e7b062ff4947f33d",
+  "source_bytes": 35428,
+  "export_type": "selected_fields_and_lines",
+  "full_source_included": false,
+  "support": [
+    {
+      "json_pointer": "/completed_utc",
+      "value": "2026-11-01T07:20:19.153051+00:00"
+    },
+    {
+      "json_pointer": "/contract",
+      "value": "soundjie-alert5bg-v3"
+    },
+    {
+      "json_pointer": "/selected_epoch",
+      "value": 43
+    },
+    {
+      "json_pointer": "/epochs",
+      "value": 45
+    },
+    {
+      "json_pointer": "/source_counts",
+      "value": {
+        "train": {
+          "background_unknown": {
+            "files": 487,
+            "original_recordings": 487,
+            "source_groups": 355
+          },
+          "car_horn": {
+            "files": 72,
+            "original_recordings": 72,
+            "source_groups": 31
+          },
+          "dog_bark": {
+            "files": 105,
+            "original_recordings": 105,
+            "source_groups": 58
+          },
+          "doorbell": {
+            "files": 39,
+            "original_recordings": 39,
+            "source_groups": 29
+          },
+          "siren": {
+            "files": 167,
+            "original_recordings": 167,
+            "source_groups": 124
+          },
+          "speech": {
+            "files": 290,
+            "original_recordings": 213,
+            "source_groups": 187
+          }
+        },
+        "validation": {
+          "background_unknown": {
+            "files": 121,
+            "original_recordings": 121,
+            "source_groups": 84
+          },
+          "car_horn": {
+            "files": 8,
+            "original_recordings": 8,
+            "source_groups": 6
+          },
+          "dog_bark": {
+            "files": 23,
+            "original_recordings": 23,
+            "source_groups": 14
+          },
+          "doorbell": {
+            "files": 14,
+            "original_recordings": 14,
+            "source_groups": 10
+          },
+          "siren": {
+            "files": 62,
+            "original_recordings": 62,
+            "source_groups": 36
+          },
+          "speech": {
+            "files": 86,
+            "original_recordings": 51,
+            "source_groups": 43
+          }
+        }
+      }
+    },
+    {
+      "json_pointer": "/source_intersections",
+      "value": {
+        "recording_id": 0,
+        "sampling_identity": 0,
+        "sha256": 0,
+        "source_group": 0,
+        "uploader_group": 0
+      }
+    },
+    {
+      "json_pointer": "/window_counts",
+      "value": {
+        "train": 11148,
+        "validation": 314
+      }
+    },
+    {
+      "json_pointer": "/calibration_sources",
+      "value": 192
+    },
+    {
+      "json_pointer": "/calibration_per_class",
+      "value": [
+        32,
+        32,
+        32,
+        32,
+        32,
+        32
+      ]
+    },
+    {
+      "json_pointer": "/calibration_train_only",
+      "value": true
+    },
+    {
+      "json_pointer": "/exact_reload",
+      "value": true
+    },
+    {
+      "json_pointer": "/folded_max_absolute_error",
+      "value": 9.5367431640625e-06
+    },
+    {
+      "json_pointer": "/caffe_parity",
+      "value": {
+        "parity": {
+          "max_absolute_error": 4.76837158203125e-06,
+          "samples": 12,
+          "tolerance": 0.0001,
+          "top1_matches": 12
+        },
+        "validation": {
+          "max_absolute_error": 9.5367431640625e-06,
+          "samples": 314,
+          "tolerance": 0.0001,
+          "top1_matches": 314
+        }
+      }
+    },
+    {
+      "json_pointer": "/compile_evidence",
+      "value": {
+        "abi": 1,
+        "cpu_arch": "arm32",
+        "dnnc_version": "v2.05",
+        "dpu": "1152FA",
+        "dpu_target": "v1.4.0",
+        "input_node": "conv1",
+        "kernel_type": "DPUKernel",
+        "kernels": [
+          "soundjie_alert5bg"
+        ],
+        "output_count": 6,
+        "output_node": "fc8",
+        "unsupported_layers": []
+      }
+    },
+    {
+      "json_pointer": "/elf_sha256",
+      "value": "ecd4c9f4d65faf5c5083520b6a19623d1df01cd94dbe0d7e9a8324656ba917c7"
+    },
+    {
+      "json_pointer": "/thresholds_sha256",
+      "value": "1c93976d57625a2aa7f59fd5bce625b583319d8d04b94659c350943530b2310f"
+    },
+    {
+      "json_pointer": "/validation_note",
+      "value": "source-disjoint train/validation; model and thresholds selected on same development validation; not unseen independent acceptance"
+    },
+    {
+      "json_pointer": "/recommended_thresholds",
+      "value": [
+        0.525,
+        0.9,
+        0.575,
+        0.6,
+        0.675
+      ]
+    },
+    {
+      "json_pointer": "/alternative_profiles",
+      "value": {
+        "recognition_f1_recommended": {
+          "thresholds": [
+            0.525,
+            0.9,
+            0.575,
+            0.6,
+            0.675
+          ],
+          "metrics": {
+            "accuracy": 0.7993630573248408,
+            "macro_recall": 0.7358356275198875,
+            "background_false_alert_count": 8,
+            "background_false_speech_count": 10,
+            "background_false_foreground_count": 18
+          },
+          "siren_correct": 45,
+          "speech_correct": 73
+        },
+        "strict_per_class_bg_2pct_coarse_grid": {
+          "thresholds": [
+            1.0,
+            0.9000000000000005,
+            0.5750000000000002,
+            0.6000000000000002,
+            1.0
+          ],
+          "metrics": {
+            "accuracy": 0.47770700636942676,
+            "macro_recall": 0.49681099532878187,
+            "background_false_alert_count": 1,
+            "background_false_speech_count": 0,
+            "background_false_foreground_count": 1
+          },
+          "siren_correct": 0,
+          "speech_correct": 0
+        },
+        "uniform_0p5": {
+          "thresholds": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "metrics": {
+            "accuracy": 0.7770700636942676,
+            "macro_recall": 0.7273149022972595,
+            "background_false_alert_count": 15,
+            "background_false_speech_count": 12,
+            "background_false_foreground_count": 27
+          },
+          "siren_correct": 45,
+          "speech_correct": 75
+        },
+        "uniform_0p6": {
+          "thresholds": [
+            0.6,
+            0.6,
+            0.6,
+            0.6,
+            0.6
+          ],
+          "metrics": {
+            "accuracy": 0.7834394904458599,
+            "macro_recall": 0.7274482000845163,
+            "background_false_alert_count": 11,
+            "background_false_speech_count": 12,
+            "background_false_foreground_count": 23
+          },
+          "siren_correct": 43,
+          "speech_correct": 75
+        },
+        "uniform_0p7": {
+          "thresholds": [
+            0.7,
+            0.7,
+            0.7,
+            0.7,
+            0.7
+          ],
+          "metrics": {
+            "accuracy": 0.7866242038216561,
+            "macro_recall": 0.7277044624972269,
+            "background_false_alert_count": 10,
+            "background_false_speech_count": 10,
+            "background_false_foreground_count": 20
+          },
+          "siren_correct": 43,
+          "speech_correct": 73
+        },
+        "uniform_0p8": {
+          "thresholds": [
+            0.8,
+            0.8,
+            0.8,
+            0.8,
+            0.8
+          ],
+          "metrics": {
+            "accuracy": 0.7738853503184714,
+            "macro_recall": 0.7013056440923536,
+            "background_false_alert_count": 8,
+            "background_false_speech_count": 10,
+            "background_false_foreground_count": 18
+          },
+          "siren_correct": 40,
+          "speech_correct": 72
+        }
+      },
+      "projection": true,
+      "derived_aliases": {
+        "siren_correct": "metrics.per_class.siren.correct",
+        "speech_correct": "metrics.per_class.speech.correct"
+      }
+    }
+  ]
+}
