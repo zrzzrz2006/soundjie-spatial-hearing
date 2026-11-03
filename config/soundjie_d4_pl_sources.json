@@ -1,0 +1,58 @@
+{
+  "schema": "soundjie-d4-pl-sources-v1",
+  "vivado": {
+    "version": "2017.4",
+    "part": "xc7z100ffg900-2",
+    "allow_ip_upgrade": false
+  },
+  "sources": {
+    "ch24_archive": {
+      "path": "E:\\Soundjie_Recovery\\20261021_87c89c6\\CH24_recovered.zip",
+      "sha256": "9b8f6d41bb68ce2f43e15966c853b496f58f06b45a9adff85dabe2edee2b59f2",
+      "format": "zip",
+      "original_archive_sha256": "473b0600e9f51a75fd1e383827f7db082f093b7ac278a4efce6dd34d755938df",
+      "recovery_evidence": "evidence/soundjie-d4/e-drive-preservation-20261021.md",
+      "mode": "read_only"
+    },
+    "dpu_hdf": {
+      "path": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\mz7100_dpu_2017_probe_v1\\mz7100_dpu_system_wrapper.hdf",
+      "sha256": "a98bfc2a9563c2b0ba6e1ac617e6ba29737faa1e7d9b4ea1d6924e958d403a2b",
+      "mode": "read_only"
+    },
+    "dpu_ip_repo": {
+      "path": "F:\\MLK\\DPU_ZYNQ7000\\references\\Zynq-7000-DPU-TRD_guest\\reference-files\\ip_repo",
+      "mode": "read_only"
+    }
+  },
+  "staging": {
+    "work_dir_prefix": "E:\\Soundjie_Work\\d4\\artifacts\\pl_rebuild_",
+    "vendor_source_root": "F:\\MLK\\MZ7100FA"
+  },
+  "integration": {
+    "hp_ports": {
+      "display_vdma": "S_AXI_HP0",
+      "dpu_data0": "S_AXI_HP1",
+      "dpu_data1": "S_AXI_HP2",
+      "dpu_instr": "S_AXI_HP3"
+    },
+    "hp_data_width_bits": {
+      "display_vdma": 64,
+      "dpu_data0": 64,
+      "dpu_data1": 64,
+      "dpu_instr": 32
+    },
+    "control_addresses": {
+      "display_vdma": "0x43000000",
+      "dpu": "0x4F000000"
+    },
+    "interrupts": {
+      "display_vdma": 62,
+      "dpu": 63
+    },
+    "clock_domains": {
+      "display_pixel": "display_pixel_clk",
+      "dpu_axi": "soundjie_dpu_150m",
+      "dpu_core_2x": "soundjie_dpu_300m"
+    }
+  }
+}

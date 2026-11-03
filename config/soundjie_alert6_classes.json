@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "contract": "soundjie-alert6-v1",
+  "labels": ["alarm_sound", "emergency_siren", "car_horn", "glass_breaking", "door_knock_bell", "background_unknown"],
+  "display_names": ["报警声", "车辆警笛", "车辆鸣笛", "玻璃破碎", "敲门或门铃", "非提醒背景"],
+  "background_index": 5,
+  "removed_outputs": ["normal_speech", "distress_voice"],
+  "legacy_index_mapping": [0, 1, 2, 3, 4, 5, 5, 5],
+  "limitations": ["alarm_sound is not a certified fire/smoke detector", "generic siren does not independently identify ambulance", "background is a trained negative class, not a guarantee of open-set rejection", "fixed clip captions are independent of this classifier"]
+}

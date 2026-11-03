@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "seed": 20261013,
+  "split_ratios": {
+    "train": 0.70,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "demo": {
+    "per_class_min": 2,
+    "per_class_max": 3,
+    "license_priority": ["CC0", "CC-BY", "other_approved"]
+  },
+  "audio": {
+    "sample_rate": 16000,
+    "sample_count": 16000,
+    "channels": 1,
+    "sample_bits": 16,
+    "event_window": "energy_center",
+    "speech_background_window": "seeded"
+  },
+  "preparation": {
+    "max_per_class": {
+      "train": 20,
+      "validation": 4,
+      "test": 4,
+      "demo": 3
+    },
+    "windows_per_recording": 1
+  },
+  "augmentation": {
+    "partition": "train_only",
+    "gain_db": [-3.0, 3.0],
+    "time_shift_frames": 8,
+    "reverb_decay": [0.05, 0.20],
+    "reverb_taps": 3,
+    "background_mix": [0.03, 0.15]
+  },
+  "training": {
+    "batch_size": 32,
+    "epochs": 30,
+    "overfit_epochs": 200,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "augmentation_partition": "train_only"
+  }
+}

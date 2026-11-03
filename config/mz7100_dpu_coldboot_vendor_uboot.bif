@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+  [bootloader] F:\MLK\DPU_ZYNQ7000\artifacts\mz7100_dpu_2017_probe_v1\runtime\mz7100_dpu_fsbl.elf
+  F:\MLK\DPU_ZYNQ7000\artifacts\mz7100_dpu_2017_probe_v1\mz7100_dpu_system_wrapper.bit
+  [load=0x04000000, startup=0x04000000] F:\MLK\DPU_ZYNQ7000\artifacts\mz7100_dpu_2017_probe_v1\runtime\u-boot-mz7100-original-payload.bin
+}

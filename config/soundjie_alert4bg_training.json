@@ -1,0 +1,23 @@
+{
+  "schema": 2,
+  "contract": "soundjie-alert4bg-v2",
+  "dataset_root": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_alert4bg_20261031",
+  "artifact_root": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_alert4bg/20261031a",
+  "existing_manifest": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_alert6_20261031/manifest.jsonl",
+  "bark_limit": 320,
+  "max_bark_per_uploader": 8,
+  "license_policy": "CC0 or CC-BY only for dataset sources, including reused sources; existing user-authorized recordings retained",
+  "seed": 20261031,
+  "data_seed": 20261031,
+  "augmentations": 3,
+  "min_relative_event_rms": 0.15,
+  "training": {"epochs": 45, "batch_size": 32, "per_class_epoch": 320, "learning_rate": 0.001, "weight_decay": 0.0001, "threads": 4},
+  "initialization": "random_all_layers_no_old_class_weights",
+  "selection": "validation_macro_recall_then_lower_background_false_alert_rate_then_earliest_epoch",
+  "thresholds": {"grid_start": 0.4, "grid_stop_exclusive": 1.0, "grid_step": 0.025, "per_class_background_fpr_limit": 0.02},
+  "validation_policy": "one unaugmented energy-center window per source file; also report original-recording and uploader macro recall",
+  "training_policy": "uniform original-recording sampling within each class; augmentation uses train backgrounds only",
+  "split_policy": "retain existing purpose; known uploader conflicts excluded; new uploader SHA256 with existing frozen FSD seed",
+  "holdout_access": "metadata identities/hashes only; never D5 audio or features",
+  "live_replay": "76 development PCM excluded from this candidate; no relabeling validation as train"
+}

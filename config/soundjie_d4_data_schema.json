@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Soundjie D4 source recording",
+  "type": "object",
+  "required": ["recording_id", "source_group", "target_id", "target_index", "domain", "purpose", "sha256", "path", "license", "original_url"],
+  "properties": {
+    "recording_id": {"type": "string", "minLength": 1},
+    "source_group": {"type": "string", "minLength": 1},
+    "target_id": {"type": "string", "minLength": 1},
+    "target_index": {"type": "integer", "minimum": 0, "maximum": 7},
+    "domain": {"enum": ["direct", "simulated_replay", "xvf3800_replay"]},
+    "purpose": {"enum": ["train", "validation", "demo_calibration", "demo_shoot", "d5_holdout"]},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "feature_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "parent_sha256": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"},
+    "parent_recording_id": {"type": ["string", "null"]},
+    "derivation": {"type": ["object", "null"]},
+    "conditions": {"type": "object"},
+    "path": {"type": "string", "minLength": 1},
+    "license": {"type": "string", "minLength": 1},
+    "original_url": {"type": "string", "minLength": 1},
+    "prior_exposure": {"type": "string"},
+    "independent_unseen_acceptance": {"type": "boolean"}
+  },
+  "$comment": "Cross-record source_group/audio-hash isolation and parent lineage are enforced by partition_records, not expressible by this single-record schema."
+}

@@ -1,0 +1,1 @@
+{"sequence":9,"timestamp_ms":1234,"class_id":1,"label_zh":"应急车辆警笛","confidence":0.87,"top3":[],"doa_raw_deg":45,"doa_deg":45,"doa_sector":"front_right","doa_valid":true,"doa_reason":"ok","rms":0.2,"dbfs":-18.0,"peak":0.5,"clipping_rate":0.0,"audio_state":"normal","usb_ok":true,"dpu_ok":true,"framebuffer_ok":true,"inference_ms":32.5,"end_to_end_ms":81.0}

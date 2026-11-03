@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "compiler": {
+    "accepted_dnnc_versions": [
+      "v2.05"
+    ],
+    "dpu_target": "v1.4.0",
+    "dpu": "1152FA",
+    "cpu_arch": "arm32",
+    "abi": 1,
+    "kernel": "soundjie_alert5bg",
+    "kernel_type": "DPUKernel",
+    "input_node": "conv1",
+    "output_node": "fc8",
+    "output_count": 6
+  }
+}

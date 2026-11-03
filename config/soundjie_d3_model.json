@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "input_shape": [1, 1, 64, 96],
+  "num_classes": 8,
+  "channels": [16, 32, 64, 96],
+  "kernel_size": 3,
+  "padding": 1,
+  "pool_size": 2,
+  "flattened_features": 2304,
+  "class_map_sha256": "d2e1045867e463878f7c2fa54246be0ffd99b8912e178596fe0bb932c5c01bc8",
+  "frontend_sha256": "bd11b2f97b4b82e34d39a78121df92b9d1c3620de1ab296934b04c1ff995a0b1",
+  "layer_names": [
+    "conv1", "bn1", "relu1", "pool1",
+    "conv2", "bn2", "relu2", "pool2",
+    "conv3", "bn3", "relu3", "pool3",
+    "conv4", "bn4", "relu4", "pool4",
+    "flatten", "fc8"
+  ],
+  "allowed_module_types": [
+    "SoundjieCNN", "Conv2d", "BatchNorm2d", "ReLU",
+    "MaxPool2d", "Flatten", "Linear"
+  ]
+}

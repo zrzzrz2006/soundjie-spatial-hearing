@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "dataset_root": "F:\\MLK\\DPU_ZYNQ7000\\datasets\\soundjie_v1",
+  "sources": [
+    {
+      "id": "esc50",
+      "status": "active",
+      "version": "git-33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6",
+      "official_page": "https://github.com/karolpiczak/ESC-50",
+      "urls": [
+        "https://github.com/karolpiczak/ESC-50/archive/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6.zip"
+      ],
+      "archive_name": "ESC-50-33c8ce9.zip",
+      "sha256": "661183a6f53ef04f12c9bd618fed0ddc1713280d6c94a5a5431e844ba6f6a21f",
+      "size_bytes": 645832161,
+      "license": "CC-BY-NC-3.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc/3.0/",
+      "license_decision": "approved",
+      "license_decision_rationale": "Dataset license and clip-level attribution table are preserved and hash-bound; competition use must remain non-commercial and attributed.",
+      "license_evidence": [
+        {
+          "path": "ESC-50-33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/LICENSE",
+          "sha256": "f6aec3a3283a2efdcbb1feff334adad7ab17c097bdec0cbb4eebdb9e16886074"
+        },
+        {
+          "path": "ESC-50-33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/meta/esc50.csv",
+          "sha256": "ca660da60191a97de289983a05821c9382d852a38a2ba8428980816b68cf6246"
+        }
+      ],
+      "competition_use": "approved",
+      "allowed_classes": [
+        "fire_smoke_alarm",
+        "emergency_siren",
+        "car_horn",
+        "glass_breaking",
+        "door_knock_bell",
+        "distress_voice",
+        "background_unknown"
+      ],
+      "fallback_source_id": null
+    },
+    {
+      "id": "librispeech_dev_clean",
+      "status": "active",
+      "version": "SLR12-dev-clean",
+      "official_page": "https://www.openslr.org/12",
+      "urls": [
+        "https://openslr.magicdatatech.com/resources/12/dev-clean.tar.gz",
+        "https://openslr.trmal.net/resources/12/dev-clean.tar.gz"
+      ],
+      "archive_name": "librispeech-dev-clean.tar.gz",
+      "sha256": "76f87d090650617fca0cac8f88b9416e0ebf80350acb97b343a85fa903728ab3",
+      "size_bytes": 337926286,
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_decision": "approved",
+      "license_decision_rationale": "LibriSpeech license and reader metadata are preserved and hash-bound for attributed competition use.",
+      "license_evidence": [
+        {
+          "path": "LibriSpeech/LICENSE.TXT",
+          "sha256": "908b0b565ae9bf61b7b41447cb0b83564f320375723bcc884ec30e5537a0d5dc"
+        },
+        {
+          "path": "LibriSpeech/SPEAKERS.TXT",
+          "sha256": "3350f093382f8baa1d589c9f5a5cee8ec3705e656f521d6eafbaa31a5fcd8f76"
+        }
+      ],
+      "competition_use": "approved",
+      "allowed_classes": [
+        "normal_speech"
+      ],
+      "fallback_source_id": null
+    }
+  ]
+}

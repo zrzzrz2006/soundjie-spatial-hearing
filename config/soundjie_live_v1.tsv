@@ -1,0 +1,8 @@
+capture_seconds	6
+window_samples	16000
+hop_samples	4000
+min_rms	0.005
+clip_abs_threshold	0.99
+max_clipping_rate	0.01
+max_windows	3
+min_start_gap_samples	8000

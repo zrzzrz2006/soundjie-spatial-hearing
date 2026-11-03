@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "model": {
+    "architecture": "DPU_1152FA",
+    "cpu_arch": "arm32",
+    "kernel": "sound_shape_probe",
+    "input_node": "conv1",
+    "output_node": "logits",
+    "input_shape": [1, 1, 64, 96],
+    "class_count": 8,
+    "compiler": "DNNDK 3.1 dnnc-dpu1.4.0"
+  },
+  "bundle": {
+    "archive_members": [
+      {
+        "name": "runtime/dpu-4.14.0-xilinx.ko",
+        "source": "F:/MLK/DPU_ZYNQ7000/artifacts/mz7100_dpu_2017_probe_v1/runtime/dpu-4.14.0-xilinx.ko",
+        "size": 48888,
+        "sha256": "c012128753abd639f145d1ad0cc206b82e06dd953ebb4eea53c86539ae829e15",
+        "mode": "0644"
+      },
+      {
+        "name": "runtime/sound_shape_probe",
+        "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d0/runtime/sound_shape_probe-8aba330",
+        "size": 1414708,
+        "sha256": "7ae1f5e52565a4854eb07cff40f26261db5b84d37c9f045540afe8756fb459c2",
+        "mode": "0755"
+      },
+      {
+        "name": "model/dpu_sound_shape_probe.elf",
+        "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d0/dnndk31-compile-20261009/dpu_sound_shape_probe.elf",
+        "size": 109768,
+        "sha256": "f4f5039b4db848c83ddfdabbd0b5e810dc510420c93c573bc3c4358e4592b215",
+        "mode": "0644"
+      },
+      {
+        "name": "dnndk/pkgs/bin/dexplorer",
+        "source": "F:/MLK/DPU_ZYNQ7000/artifacts/mz7100_dpu_2017_probe_v1/dnndk_v3.0_armv7/pkgs/bin/dexplorer",
+        "size": 15556,
+        "sha256": "f14cfa9cee3a6df5273872d640b02653207a38645e8345863aeb6b5c0ed6c017",
+        "mode": "0755"
+      },
+      {
+        "name": "dnndk/pkgs/lib/libn2cube.so",
+        "source": "F:/MLK/DPU_ZYNQ7000/artifacts/mz7100_dpu_2017_probe_v1/dnndk_v3.0_armv7/pkgs/lib/libn2cube.so",
+        "size": 161328,
+        "sha256": "70c9277e37d6c7374355c3f06f6677eb6e57e445b339aaa2b6086853ce098457",
+        "mode": "0644"
+      },
+      {
+        "name": "dnndk/pkgs/lib/libhineon.so",
+        "source": "F:/MLK/DPU_ZYNQ7000/artifacts/mz7100_dpu_2017_probe_v1/dnndk_v3.0_armv7/pkgs/lib/libhineon.so",
+        "size": 14500,
+        "sha256": "129014e709342c05352aa4faa4adfbf87eab7d05868ab3e81b00f7e6bfd26aac",
+        "mode": "0644"
+      },
+      {
+        "name": "probe/run_sound_shape_probe.sh",
+        "source": "F:/MLK/DPU_ZYNQ7000/usb_mic_bringup_v1/.worktrees/soundjie-d0/scripts/board/run_sound_shape_probe.sh",
+        "size": 5204,
+        "sha256": "62b635763f62833e26d8022780da137aa2161f7f2f9f50a158930db1b43677cb",
+        "mode": "0755"
+      }
+    ]
+  }
+}

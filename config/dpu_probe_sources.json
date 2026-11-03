@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "outputs": {
+    "DPUV1.BIT": {
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/mz7100_dpu_2017_probe_v1/mz7100_dpu_system_wrapper.bit",
+      "size": 17416458,
+      "sha256": "6377393ebe3538022a5e92023c9f60a428bfffae3c31780c3ff98ba9ad5f9ff3"
+    },
+    "DPUV1.DTB": {
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/mz7100_dpu_2017_probe_v1/runtime/devicetree-dpu.dtb",
+      "size": 10328,
+      "sha256": "aa6cf706c49070d3595f31d01d78b93616458ae02967cd58ee2383e3a7c5a453"
+    }
+  },
+  "archive_members": [
+    {
+      "name": "runtime/dpu-4.14.0-xilinx.ko",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/mz7100_dpu_2017_probe_v1/runtime/dpu-4.14.0-xilinx.ko",
+      "size": 48888,
+      "sha256": "c012128753abd639f145d1ad0cc206b82e06dd953ebb4eea53c86539ae829e15",
+      "mode": "0644"
+    },
+    {
+      "name": "runtime/dpu_smoke",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/mz7100_dpu_2017_probe_v1/runtime/dpu_smoke",
+      "size": 9112,
+      "sha256": "7ac9a0d14a518b1726d0983a4b5663cdc93500f8bdcf4a150145d057c8c0d9b4",
+      "mode": "0755"
+    },
+    {
+      "name": "dnndk/pkgs/bin/dexplorer",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/mz7100_dpu_2017_probe_v1/dnndk_v3.0_armv7/pkgs/bin/dexplorer",
+      "size": 15556,
+      "sha256": "f14cfa9cee3a6df5273872d640b02653207a38645e8345863aeb6b5c0ed6c017",
+      "mode": "0755"
+    },
+    {
+      "name": "dnndk/pkgs/lib/libn2cube.so",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/mz7100_dpu_2017_probe_v1/dnndk_v3.0_armv7/pkgs/lib/libn2cube.so",
+      "size": 161328,
+      "sha256": "70c9277e37d6c7374355c3f06f6677eb6e57e445b339aaa2b6086853ce098457",
+      "mode": "0644"
+    },
+    {
+      "name": "dnndk/pkgs/lib/libhineon.so",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/mz7100_dpu_2017_probe_v1/dnndk_v3.0_armv7/pkgs/lib/libhineon.so",
+      "size": 14500,
+      "sha256": "129014e709342c05352aa4faa4adfbf87eab7d05868ab3e81b00f7e6bfd26aac",
+      "mode": "0644"
+    },
+    {
+      "name": "probe/run_ephemeral_dpu_probe.sh",
+      "source": "F:/MLK/DPU_ZYNQ7000/usb_mic_bringup_v1/scripts/board/run_ephemeral_dpu_probe.sh",
+      "size": 5203,
+      "sha256": "9d178ab46ac31cf2e1fac0bc6bcd555e74264c3368aa0235eb5a258b145a1040",
+      "mode": "0755"
+    }
+  ]
+}

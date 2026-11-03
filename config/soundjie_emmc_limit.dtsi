@@ -1,0 +1,6 @@
+/* Diagnostic candidate: stay below the vendor EMIO 20 MHz ceiling.
+ * Applied only to SDIO1/eMMC; do not change SD0 or board boot defaults.
+ */
+&{/amba/sdhci@e0101000} {
+    max-frequency = <10000000>;
+};

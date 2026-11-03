@@ -1,0 +1,53 @@
+{
+  "contract": "soundjie-alert5bg-v3",
+  "labels": [
+    "siren",
+    "car_horn",
+    "doorbell",
+    "dog_bark",
+    "speech",
+    "background_unknown"
+  ],
+  "physical_output_count": 6,
+  "logical_output_count": 6,
+  "speech_index": 4,
+  "background_index": 5,
+  "alert_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "speech_is_non_alert": true,
+  "foreground_thresholds": [
+    0.525,
+    0.9,
+    0.575,
+    0.6,
+    0.675
+  ],
+  "runtime_argument": "--alert-thresholds 0.525,0.900,0.575,0.600,0.675",
+  "decision": "double softmax argmax; reject below the winning foreground threshold to background; no runner-up promotion; speech is non-alert",
+  "preserve_all_six_raw_outputs": true,
+  "profile": "recognition_f1_recommended",
+  "elf_path": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie_alert5bg\\20261101a\\compile-20261101a\\container-output\\build\\compiled\\dpu_soundjie_alert5bg.elf",
+  "elf_sha256": "ecd4c9f4d65faf5c5083520b6a19623d1df01cd94dbe0d7e9a8324656ba917c7",
+  "kernel": "soundjie_alert5bg",
+  "input_node": "conv1",
+  "output_node": "fc8",
+  "assessment_path": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie_alert5bg\\20261101a\\compile-20261101a\\assessment-recognition.json",
+  "assessment_sha256": "9827744aaee169c6801dda00fb2e7010a53bb1d1c7b68f5099b89c17c0d89593",
+  "scores_path": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie_alert5bg\\20261101a\\compile-20261101a\\validation-scores-fixed.json",
+  "scores_sha256": "ce205598699e121d284c2d0f1b27e37834ee8773f0f26020c245635468a9fbf6",
+  "schema": 3,
+  "foreground_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "threshold_artifact": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_alert5bg/20261101a/compile-20261101a/thresholds-fixed.json",
+  "threshold_artifact_sha256": "1c93976d57625a2aa7f59fd5bce625b583319d8d04b94659c350943530b2310f",
+  "class_map_alert_indices_is_legacy_training_threshold_slots": true
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 3,
+  "contract": "soundjie-alert5bg-v3",
+  "labels": [
+    "siren",
+    "car_horn",
+    "doorbell",
+    "dog_bark",
+    "speech",
+    "background_unknown"
+  ],
+  "display_names": [
+    "警笛",
+    "车辆鸣笛",
+    "门铃",
+    "狗叫",
+    "普通说话声",
+    "背景"
+  ],
+  "physical_output_count": 6,
+  "logical_output_count": 6,
+  "speech_index": 4,
+  "background_index": 5,
+  "alert_indices": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "input_shape": [
+    "N",
+    1,
+    64,
+    96
+  ],
+  "output_tensor_name": "fc8",
+  "siren_semantics": "Broad Alarm + Siren",
+  "doorbell_semantics": "Explicit Doorbell; Knock remains background",
+  "dog_semantics": "Explicit Bark only",
+  "speech_semantics": "All upstream ordinary_speech subtype sources become speech; retain original weak labels and report explicit-speech subset separately",
+  "background_semantics": "Traceable nonordinary crying/screaming, glass, knock, ambient and road negatives; ordinary_speech excluded",
+  "compatible_old_contracts": []
+}

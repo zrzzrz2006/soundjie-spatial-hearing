@@ -1,0 +1,160 @@
+{
+  "schema": 2,
+  "input_scale": 128.0,
+  "cases": [
+    "xvf3800-start-0000000000",
+    "xvf3800-start-0000072000",
+    "xvf3800-start-0000144000"
+  ],
+  "model": {
+    "architecture": "DPU_1152FA",
+    "cpu_arch": "arm32",
+    "kernel": "sound_shape_probe",
+    "input_node": "conv1",
+    "output_node": "logits",
+    "input_shape": [
+      1,
+      1,
+      64,
+      96
+    ],
+    "class_count": 8
+  },
+  "archive_members": [
+    {
+      "name": "runtime/dpu-4.14.0-xilinx.ko",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/mz7100_dpu_2017_probe_v1/runtime/dpu-4.14.0-xilinx.ko",
+      "size": 48888,
+      "sha256": "c012128753abd639f145d1ad0cc206b82e06dd953ebb4eea53c86539ae829e15",
+      "mode": "0644"
+    },
+    {
+      "name": "runtime/sound_shape_runner",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d1/runner-build-20261011-130502975/sound_shape_runner",
+      "size": 1519792,
+      "sha256": "49daf87fba29b70d58c77a447fe01f16839911f298af74c72e24a524532f99d5",
+      "mode": "0755"
+    },
+    {
+      "name": "model/dpu_sound_shape_probe.elf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d0/dnndk205-b1152f-20261010/output/dpu_sound_shape_probe.elf",
+      "size": 109428,
+      "sha256": "d270b9e0da0a45b98ab108d29986ef77fc54af25692e8ec4a31114b57ad0f86e",
+      "mode": "0644"
+    },
+    {
+      "name": "dnndk/pkgs/bin/dexplorer",
+      "source": "F:/MLK/DPU_ZYNQ7000/references/Zynq-7000-DPU-TRD_guest/reference-files/sdcard/zynq7020_dnndk_v3.0/pkgs/bin/dexplorer",
+      "size": 15556,
+      "sha256": "f14cfa9cee3a6df5273872d640b02653207a38645e8345863aeb6b5c0ed6c017",
+      "mode": "0755"
+    },
+    {
+      "name": "dnndk/pkgs/lib/libn2cube.so",
+      "source": "F:/MLK/DPU_ZYNQ7000/references/Zynq-7000-DPU-TRD_guest/reference-files/sdcard/zynq7020_dnndk_v3.0/pkgs/lib/libn2cube.so",
+      "size": 161328,
+      "sha256": "70c9277e37d6c7374355c3f06f6677eb6e57e445b339aaa2b6086853ce098457",
+      "mode": "0644"
+    },
+    {
+      "name": "dnndk/pkgs/lib/libhineon.so",
+      "source": "F:/MLK/DPU_ZYNQ7000/references/Zynq-7000-DPU-TRD_guest/reference-files/sdcard/zynq7020_dnndk_v3.0/pkgs/lib/libhineon.so",
+      "size": 14500,
+      "sha256": "129014e709342c05352aa4faa4adfbf87eab7d05868ab3e81b00f7e6bfd26aac",
+      "mode": "0644"
+    },
+    {
+      "name": "frontend/logmel_cli",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d2/arm-build-20261013-b/logmel_cli",
+      "size": 1248108,
+      "sha256": "d882dacea89d5f4acca577839208e91a1df8e5f809703149a96980957886ec89",
+      "mode": "0755"
+    },
+    {
+      "name": "config/logmel_frontend_v1.json",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\usb_mic_bringup_v1\\.worktrees\\soundjie-d0\\config\\logmel_frontend_v1.json",
+      "size": 4099,
+      "sha256": "3382764e97cc05c0bc12a7ef8e669ba299bf283078f41abb6a06b25cda58375d",
+      "mode": "0644"
+    },
+    {
+      "name": "manifest/dpu-input-contract.txt",
+      "source": "F:/MLK/DPU_ZYNQ7000/usb_mic_bringup_v1/.worktrees/soundjie-d0/evidence/soundjie-d1/dpu-input-contract.txt",
+      "size": 1695,
+      "sha256": "71b441a1671ed35cd7a6e6f50aeaa0bb5f562ce1f0f19661bb3962c91c891526",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/xvf3800-start-0000000000.wav",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d1/task1-inputs-a-20261010-225834198/real/start-0000000000.wav",
+      "size": 64044,
+      "sha256": "6388a3bc8d2b7c391fe010f6db4433d4c51a3e407a6b7d50a63a3af6860b5a5f",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/xvf3800-start-0000000000.f32le",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\xvf3800-start-0000000000.f32le",
+      "size": 24576,
+      "sha256": "847a56268dcb877a780e876632d78e5bc577be4133962e267ffdd40c02f52837",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/xvf3800-start-0000000000.i8",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\xvf3800-start-0000000000.i8",
+      "size": 6144,
+      "sha256": "50afea3c483dc6996d34806468500d42f7a606daa06527ced25c99d582aca078",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/xvf3800-start-0000072000.wav",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d1/task1-inputs-a-20261010-225834198/real/start-0000072000.wav",
+      "size": 64044,
+      "sha256": "85d0ad1d84f1e386cca52ba0e403e70782db73ab38692a26bfac43ebe9b1a6d5",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/xvf3800-start-0000072000.f32le",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\xvf3800-start-0000072000.f32le",
+      "size": 24576,
+      "sha256": "898920ebefc0d997d74fc28704ed57923f4874404a7e21395576b581568e7315",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/xvf3800-start-0000072000.i8",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\xvf3800-start-0000072000.i8",
+      "size": 6144,
+      "sha256": "70e5fe2a3a72a0db4a6859438009f0837b8aad3206a02221458ca5c0317337bb",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/xvf3800-start-0000144000.wav",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d1/task1-inputs-a-20261010-225834198/real/start-0000144000.wav",
+      "size": 64044,
+      "sha256": "2cf1196f03e6171673b9299ca09784c1c17a17cb02558b7b4a34a54737413435",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/xvf3800-start-0000144000.f32le",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\xvf3800-start-0000144000.f32le",
+      "size": 24576,
+      "sha256": "5edc8de2183765e7c1f65a26939f4f1fcd5dcc587c799ada123b9692bd95ecea",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/xvf3800-start-0000144000.i8",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\xvf3800-start-0000144000.i8",
+      "size": 6144,
+      "sha256": "7f6467fa943269d736b9c8d6864a51676e84944b010aa3971559a1afb8210d9b",
+      "mode": "0644"
+    },
+    {
+      "name": "probe/run_sound_wav_dpu.sh",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\usb_mic_bringup_v1\\.worktrees\\soundjie-d0\\scripts\\board\\run_sound_wav_dpu.sh",
+      "size": 10751,
+      "sha256": "ac232cf00118cb062249e67aff136d1acca34467d743593c63fe9677988fac22",
+      "mode": "0755"
+    }
+  ],
+  "normalization_profile": "bounded-log-power-64-v1",
+  "config_sha256": "3382764e97cc05c0bc12a7ef8e669ba299bf283078f41abb6a06b25cda58375d"
+}

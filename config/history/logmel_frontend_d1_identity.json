@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "audio": {
+    "sample_rate_hz": 16000,
+    "sample_format": "s16le",
+    "supported_channels": [1, 2],
+    "window_samples": 16000,
+    "stream_hop_samples": 4000
+  },
+  "stft": {
+    "frame_length": 400,
+    "hop_length": 160,
+    "fft_length": 512,
+    "window": "periodic_hann",
+    "center": false,
+    "expected_frames": 98,
+    "keep_frame_start": 1,
+    "keep_frame_count": 96
+  },
+  "power_spectrum": {
+    "formula": "magnitude_squared_div_fft_length",
+    "divisor": 512.0,
+    "single_sided_doubling": false,
+    "window_energy_normalization": false
+  },
+  "mel": {
+    "bands": 64,
+    "min_hz": 20.0,
+    "max_hz": 7600.0,
+    "scale": "htk",
+    "normalization": "none"
+  },
+  "log": {
+    "base": "natural",
+    "floor": 1e-10
+  },
+  "tensor": {
+    "layout": "NCHW",
+    "shape": [1, 1, 64, 96],
+    "order": "mel_major_time_increasing",
+    "dtype": "float32-le"
+  },
+  "normalization": {
+    "id": "identity-64-v1",
+    "mean": [
+      0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+      0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0
+    ],
+    "std": [
+      1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
+      1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
+      1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
+      1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
+      1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
+      1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
+      1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0,
+      1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0
+    ]
+  },
+  "quantization": {
+    "dtype": "int8",
+    "rounding": "half_away_from_zero",
+    "clamp": [-128, 127],
+    "scale_source": "runtime_dpu_input_tensor"
+  }
+}

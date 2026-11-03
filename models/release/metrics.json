@@ -1,0 +1,259 @@
+{
+  "board_deployed": false,
+  "independent_acceptance": false,
+  "quantization": false,
+  "raw": {
+    "accuracy": 0.7802547770700637,
+    "confusion_matrix": [
+      [
+        45,
+        0,
+        1,
+        1,
+        5,
+        10
+      ],
+      [
+        0,
+        6,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        4,
+        1,
+        8,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        18,
+        3,
+        1
+      ],
+      [
+        2,
+        2,
+        0,
+        1,
+        76,
+        5
+      ],
+      [
+        8,
+        4,
+        2,
+        2,
+        13,
+        92
+      ]
+    ],
+    "dog_recall": 0.782608695652174,
+    "macro_recall": 0.7456492045731006,
+    "negative_false_alert_rate": 0.2396694214876033,
+    "negative_subtypes": {
+      "ambient": {
+        "false_alert_rate": 0.045454545454545456,
+        "false_alerts": 1,
+        "support": 22
+      },
+      "crying_screaming": {
+        "false_alert_rate": 0.6538461538461539,
+        "false_alerts": 17,
+        "support": 26
+      },
+      "glass": {
+        "false_alert_rate": 0.13333333333333333,
+        "false_alerts": 4,
+        "support": 30
+      },
+      "knock": {
+        "false_alert_rate": 0.08695652173913043,
+        "false_alerts": 2,
+        "support": 23
+      },
+      "road_background": {
+        "false_alert_rate": 0.25,
+        "false_alerts": 5,
+        "support": 20
+      }
+    },
+    "per_class": {
+      "background_unknown": {
+        "correct": 92,
+        "precision": 0.8363636363636363,
+        "recall": 0.7603305785123967,
+        "support": 121
+      },
+      "car_horn": {
+        "correct": 6,
+        "precision": 0.46153846153846156,
+        "recall": 0.75,
+        "support": 8
+      },
+      "dog_bark": {
+        "correct": 18,
+        "precision": 0.782608695652174,
+        "recall": 0.782608695652174,
+        "support": 23
+      },
+      "doorbell": {
+        "correct": 8,
+        "precision": 0.7272727272727273,
+        "recall": 0.5714285714285714,
+        "support": 14
+      },
+      "siren": {
+        "correct": 45,
+        "precision": 0.75,
+        "recall": 0.7258064516129032,
+        "support": 62
+      },
+      "speech": {
+        "correct": 76,
+        "precision": 0.7835051546391752,
+        "recall": 0.8837209302325582,
+        "support": 86
+      }
+    },
+    "sampling_identity_macro_recall": 0.7348002913644063,
+    "source_group_macro_recall": 0.6942685902957221
+  },
+  "thresholded": {
+    "accuracy": 0.5445859872611465,
+    "confusion_matrix": [
+      [
+        4,
+        0,
+        1,
+        0,
+        0,
+        57
+      ],
+      [
+        0,
+        6,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        8,
+        0,
+        0,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        16,
+        0,
+        7
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        18,
+        68
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        119
+      ]
+    ],
+    "dog_recall": 0.6956521739130435,
+    "macro_recall": 0.5457283790559057,
+    "negative_false_alert_rate": 0.01652892561983471,
+    "negative_subtypes": {
+      "ambient": {
+        "false_alert_rate": 0.0,
+        "false_alerts": 0,
+        "support": 22
+      },
+      "crying_screaming": {
+        "false_alert_rate": 0.038461538461538464,
+        "false_alerts": 1,
+        "support": 26
+      },
+      "glass": {
+        "false_alert_rate": 0.03333333333333333,
+        "false_alerts": 1,
+        "support": 30
+      },
+      "knock": {
+        "false_alert_rate": 0.0,
+        "false_alerts": 0,
+        "support": 23
+      },
+      "road_background": {
+        "false_alert_rate": 0.0,
+        "false_alerts": 0,
+        "support": 20
+      }
+    },
+    "per_class": {
+      "background_unknown": {
+        "correct": 119,
+        "precision": 0.4594594594594595,
+        "recall": 0.9834710743801653,
+        "support": 121
+      },
+      "car_horn": {
+        "correct": 6,
+        "precision": 1.0,
+        "recall": 0.75,
+        "support": 8
+      },
+      "dog_bark": {
+        "correct": 16,
+        "precision": 1.0,
+        "recall": 0.6956521739130435,
+        "support": 23
+      },
+      "doorbell": {
+        "correct": 8,
+        "precision": 0.7272727272727273,
+        "recall": 0.5714285714285714,
+        "support": 14
+      },
+      "siren": {
+        "correct": 4,
+        "precision": 1.0,
+        "recall": 0.06451612903225806,
+        "support": 62
+      },
+      "speech": {
+        "correct": 18,
+        "precision": 1.0,
+        "recall": 0.20930232558139536,
+        "support": 86
+      }
+    },
+    "sampling_identity_macro_recall": 0.5326311505004008,
+    "source_group_macro_recall": 0.5140066113903323
+  },
+  "thresholds": [
+    1.0,
+    0.9500000000000005,
+    0.4,
+    0.9000000000000005,
+    1.0
+  ],
+  "thresholds_fit_on_same_validation": true
+}

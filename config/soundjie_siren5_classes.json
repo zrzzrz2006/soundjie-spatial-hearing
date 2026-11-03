@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "contract": "soundjie-siren5-v1",
+  "labels": ["siren", "car_horn", "glass_breaking", "door_knock_bell", "background_unknown"],
+  "display_names": ["警笛", "车辆鸣笛", "玻璃破碎", "敲门/门铃", "背景"],
+  "background_index": 4,
+  "source_six_mapping": [0, 0, 1, 2, 3, 4],
+  "legacy_eight_mapping": [0, 0, 1, 2, 3, 4, 4, 4],
+  "merged_sources": ["alarm_sound", "emergency_siren"],
+  "removed_voice_alerts": ["normal_speech", "distress_voice"],
+  "meaning": "Broad alarm/siren alert requested by user; does not identify an emergency vehicle or ambulance. Enrolled-video captions remain independent."
+}

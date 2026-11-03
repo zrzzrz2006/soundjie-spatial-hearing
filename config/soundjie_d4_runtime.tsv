@@ -1,0 +1,9 @@
+key	value	unit	description
+doa_ema_alpha	0.35	ratio	Circular EMA update weight
+doa_stale_ms	750	ms	Maximum age of a valid direction sample
+dbfs_floor	-96	dBFS	Finite display floor for digital silence
+rms_attack_alpha	0.50	ratio	Envelope update weight while rising
+rms_release_alpha	0.25	ratio	Envelope update weight while falling
+clip_threshold	0.999	ratio	Absolute normalized S16 clipping threshold
+silence_dbfs	-55	dBFS	Silence status threshold
+sector_count	8	count	Number of named direction sectors

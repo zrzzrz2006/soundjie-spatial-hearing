@@ -1,0 +1,8 @@
+fire_smoke_alarm
+emergency_siren
+car_horn
+glass_breaking
+door_knock_bell
+distress_voice
+normal_speech
+background_unknown

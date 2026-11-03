@@ -1,0 +1,1680 @@
+{
+  "schema": 1,
+  "classes": [
+    "fire_smoke_alarm",
+    "emergency_siren",
+    "car_horn",
+    "glass_breaking",
+    "door_knock_bell",
+    "distress_voice",
+    "normal_speech",
+    "background_unknown"
+  ],
+  "provenance": {
+    "base_bundle": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-stage-input-20261017c/SJD3C.TGZ",
+    "base_bundle_sha256": "49d042aa92105a73ac25793ba6dae9a71949cbf14ce29223b8536589df917e5a"
+  },
+  "archive_members": [
+    {
+      "name": "runtime/dpu-4.14.0-xilinx.ko",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-package-input-20261017a/runtime/dpu-4.14.0-xilinx.ko",
+      "size": 48888,
+      "sha256": "c012128753abd639f145d1ad0cc206b82e06dd953ebb4eea53c86539ae829e15",
+      "mode": "0644"
+    },
+    {
+      "name": "runtime/sound_shape_runner",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-runner-20261017d/sound_shape_runner",
+      "size": 7695676,
+      "sha256": "33351a31be2c71e2ee02d47c18c3a7314bd1bc898700e465e30a6a26066a2ddf",
+      "mode": "0755"
+    },
+    {
+      "name": "model/dpu_soundjie_d3.elf",
+      "source": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_v1/models/task7-20261015n/output/compiled/dpu_soundjie_d3.elf",
+      "size": 109268,
+      "sha256": "514d90e19f749698050f2193f3c60da2450bc25b9b27f132b0818df32911dd0a",
+      "mode": "0644"
+    },
+    {
+      "name": "dnndk/pkgs/bin/dexplorer",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-package-input-20261017a/dnndk/pkgs/bin/dexplorer",
+      "size": 15556,
+      "sha256": "f14cfa9cee3a6df5273872d640b02653207a38645e8345863aeb6b5c0ed6c017",
+      "mode": "0755"
+    },
+    {
+      "name": "dnndk/pkgs/lib/libn2cube.so",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-package-input-20261017a/dnndk/pkgs/lib/libn2cube.so",
+      "size": 161328,
+      "sha256": "70c9277e37d6c7374355c3f06f6677eb6e57e445b339aaa2b6086853ce098457",
+      "mode": "0755"
+    },
+    {
+      "name": "dnndk/pkgs/lib/libhineon.so",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-package-input-20261017a/dnndk/pkgs/lib/libhineon.so",
+      "size": 14500,
+      "sha256": "129014e709342c05352aa4faa4adfbf87eab7d05868ab3e81b00f7e6bfd26aac",
+      "mode": "0755"
+    },
+    {
+      "name": "config/logmel_frontend_v1.json",
+      "source": "F:/MLK/DPU_ZYNQ7000/usb_mic_bringup_v1/.worktrees/soundjie-d3-eight-class-smoke/config/logmel_frontend_v1.json",
+      "size": 4190,
+      "sha256": "bd11b2f97b4b82e34d39a78121df92b9d1c3620de1ab296934b04c1ff995a0b1",
+      "mode": "0644"
+    },
+    {
+      "name": "config/soundjie_d3_model.json",
+      "source": "F:/MLK/DPU_ZYNQ7000/usb_mic_bringup_v1/.worktrees/soundjie-d3-eight-class-smoke/config/soundjie_d3_model.json",
+      "size": 685,
+      "sha256": "576a7adbd96c65e5e074796782da9fb7c3419dc3d3f6f48909f1c6a0f26ab166",
+      "mode": "0644"
+    },
+    {
+      "name": "model/labels.txt",
+      "source": "F:/MLK/DPU_ZYNQ7000/usb_mic_bringup_v1/.worktrees/soundjie-d3-eight-class-smoke/models/soundjie_d3/labels.txt",
+      "size": 121,
+      "sha256": "8c51c5414b786807bcaf306251c13b879ca6abcfa6672da579b1a2406ecfed2a",
+      "mode": "0644"
+    },
+    {
+      "name": "manifest/soundjie-d3-model-manifest.json",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-package-input-20261017b/soundjie-d3-model-manifest.json",
+      "size": 3509,
+      "sha256": "1a3364fa31c7794f256dfc5df8fb27f578f3cb0dd55e23d47110a0ec51c30474",
+      "mode": "0644"
+    },
+    {
+      "name": "manifest/prepared-manifest.jsonl",
+      "source": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_v1/processed/smoke-a/prepared-manifest.jsonl",
+      "size": 188482,
+      "sha256": "fa0629562fba7974475aa354c055e41858c505821569cb1d9cbded74204fbd5f",
+      "mode": "0644"
+    },
+    {
+      "name": "manifest/demo.jsonl",
+      "source": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_v1/manifests/demo.jsonl",
+      "size": 14052,
+      "sha256": "01f7a00cc4a495d79defb0358e3047c98dd2bae6f05c527876c607e7809bb21d",
+      "mode": "0644"
+    },
+    {
+      "name": "manifest/calibration-manifest.json",
+      "source": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_v1/models/d3-int8-input-v2/calibration-manifest.json",
+      "size": 56514,
+      "sha256": "27d447ebb7a9006981fb51743305d3c7e74f82198896f475db8eb87b705090ec",
+      "mode": "0644"
+    },
+    {
+      "name": "licenses/ESC-50-LICENSE",
+      "source": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_v1/raw/esc50/ESC-50-33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/LICENSE",
+      "size": 284523,
+      "sha256": "f6aec3a3283a2efdcbb1feff334adad7ab17c097bdec0cbb4eebdb9e16886074",
+      "mode": "0644"
+    },
+    {
+      "name": "licenses/LibriSpeech-LICENSE.TXT",
+      "source": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_v1/raw/librispeech_dev_clean/LibriSpeech/LICENSE.TXT",
+      "size": 193,
+      "sha256": "908b0b565ae9bf61b7b41447cb0b83564f320375723bcc884ec30e5537a0d5dc",
+      "mode": "0644"
+    },
+    {
+      "name": "runtime/wav_probe",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/wav_probe",
+      "size": 489952,
+      "sha256": "08bb4d21b19758b00354afd7a5417e1db1bdf9f3a3264ed536d44e091c33f18e",
+      "mode": "0755"
+    },
+    {
+      "name": "runtime/logmel_cli",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3_live/arm-build-20261018-a/logmel_cli",
+      "size": 1248108,
+      "sha256": "d882dacea89d5f4acca577839208e91a1df8e5f809703149a96980957886ec89",
+      "mode": "0755"
+    },
+    {
+      "name": "runtime/live_window_selector",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3_live/arm-build-20261018-a/live_window_selector",
+      "size": 7027664,
+      "sha256": "dde12fd806e9e7e5d46a74a74492a5c4e90c183d13137d32de62ce545449d2ed",
+      "mode": "0755"
+    },
+    {
+      "name": "runtime/live_result_fuser",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3_live/arm-build-20261018-a/live_result_fuser",
+      "size": 7522532,
+      "sha256": "46b16e9887c9eda7e8aff2faf190b8357a6470785b0717a5a7ef4cd79600b403",
+      "mode": "0755"
+    },
+    {
+      "name": "model/display_labels_zh.txt",
+      "source": "F:/MLK/DPU_ZYNQ7000/usb_mic_bringup_v1/.worktrees/soundjie-d3-eight-class-smoke/config/soundjie_d3_display_labels_zh.txt",
+      "size": 137,
+      "sha256": "412f25f66ce55cac15182dc921772e4da8c8d1f806afa497f834de643afb94bf",
+      "mode": "0644"
+    },
+    {
+      "name": "config/soundjie_live_v1.tsv",
+      "source": "F:/MLK/DPU_ZYNQ7000/usb_mic_bringup_v1/.worktrees/soundjie-d3-eight-class-smoke/config/soundjie_live_v1.tsv",
+      "size": 158,
+      "sha256": "c538947fbd4f177425a5d4b5c42c1437388c4e07d527a8ac467ff65ec5d10015",
+      "mode": "0644"
+    },
+    {
+      "name": "probe/run_soundjie_d3_live_once.sh",
+      "source": "F:/MLK/DPU_ZYNQ7000/usb_mic_bringup_v1/.worktrees/soundjie-d3-eight-class-smoke/scripts/board/run_soundjie_d3_live_once.sh",
+      "size": 13601,
+      "sha256": "101af474fa49d590e79d113afc5ddd7af602840994bc546e90b3838004846605",
+      "mode": "0755"
+    },
+    {
+      "name": "probe/run_soundjie_d3_live_wav.sh",
+      "source": "F:/MLK/DPU_ZYNQ7000/usb_mic_bringup_v1/.worktrees/soundjie-d3-eight-class-smoke/scripts/board/run_soundjie_d3_live_wav.sh",
+      "size": 5879,
+      "sha256": "1b320e73bf19508795c1ef133bfc3173310893cad8015a45c0c0e83281bb99a3",
+      "mode": "0755"
+    },
+    {
+      "name": "audio/load-usb-audio.sh",
+      "source": "F:/MLK/DPU_ZYNQ7000/usb_mic_bringup_v1/.worktrees/soundjie-d3-eight-class-smoke/scripts/board/load_soundjie_usb_audio.sh",
+      "size": 340,
+      "sha256": "bdfab4be0d8d0c9ec3d350170c67191d8d30784ffd71156dafd3ee4ab23c5917",
+      "mode": "0755"
+    },
+    {
+      "name": "audio/board-tools/xvf3800_probe.sh",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/board-tools/xvf3800_probe.sh",
+      "size": 4081,
+      "sha256": "0678b7051c982a9829c12fd4cdffd44547e9f619c45dbb6f51fe6d53e83bbbd5",
+      "mode": "0755"
+    },
+    {
+      "name": "audio/board-tools/xvf3800_record.sh",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/board-tools/xvf3800_record.sh",
+      "size": 1684,
+      "sha256": "097b883362af4a46a182000bc3769913b17e511bb964c9ddb523d6dd7440f96b",
+      "mode": "0755"
+    },
+    {
+      "name": "audio/bin/arecord",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/bin/arecord",
+      "size": 53680,
+      "sha256": "e9ad1216e114bc6b281e09c7103a4f28cfa561bb98d2d736514ddb7a6dce08f7",
+      "mode": "0755"
+    },
+    {
+      "name": "audio/lib/libasound.so.2",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/lib/libasound.so.2",
+      "size": 860572,
+      "sha256": "08ab22761ea60d89f3faf6c75a9a7e5e3582a9c0e7b75847d18c9ae4d31e8242",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/alsa.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/alsa.conf",
+      "size": 9665,
+      "sha256": "1134368f3b4ee4dff9f56ba43bfb92048cd4a7240a7b73e40b263ec050b60800",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/alsa.conf.d/README",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/alsa.conf.d/README",
+      "size": 103,
+      "sha256": "35eb9f1a56142cf429e7d906d51e399de3a9785791698fa9d7129be05ed8af1c",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/AACI.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/AACI.conf",
+      "size": 669,
+      "sha256": "c6e894381791831b01df3403c5493027bcc22b11b9c018c32df93a8f17794ffe",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/aliases.alisp",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/aliases.alisp",
+      "size": 687,
+      "sha256": "1977a320f0525b61e33062c258737514af201c0159b5f7de475fa90da3622088",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/aliases.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/aliases.conf",
+      "size": 1405,
+      "sha256": "e69bae5a432ab6fb6d2deeeb40d6dd29d490fe4c8d52b3bb244b833279de61c3",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/ATIIXP-MODEM.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/ATIIXP-MODEM.conf",
+      "size": 302,
+      "sha256": "8ec8c18a874dc42f6cf925dff57b9cd8b86f0cda3e8ae9de0c6b382811ee4286",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/ATIIXP-SPDMA.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/ATIIXP-SPDMA.conf",
+      "size": 2237,
+      "sha256": "753be05a4280bd8bbe50a04f5a54371886f9867798ee0968eb21156b770337f7",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/ATIIXP.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/ATIIXP.conf",
+      "size": 2483,
+      "sha256": "626f6b628f29714ca8925b67a7a337ab12ec2cdd39c2fc5098ff8dd3865ad678",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/AU8810.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/AU8810.conf",
+      "size": 437,
+      "sha256": "ca5b2b36906ef6f4322df049e44148d2c5657768dcbc21c55e696eebe5eeb0fe",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/AU8820.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/AU8820.conf",
+      "size": 159,
+      "sha256": "f396368a200d99288919481bc398996b52e278ebb65f64974bc741dccdf1723a",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/AU8830.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/AU8830.conf",
+      "size": 520,
+      "sha256": "5824b33f63d8884f927688111f38b9b8943747a2ee203646f8bc23ec5a40eae4",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/Audigy.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/Audigy.conf",
+      "size": 5899,
+      "sha256": "e78233f0d6b831a3df306b1d0152ac1e48da18efc4013c26b85051d38bf8bcc2",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/Audigy2.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/Audigy2.conf",
+      "size": 7807,
+      "sha256": "205716b7e174b9b8bfab499d17be19610a1207ea0b49765aced98729c848c6c6",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/Aureon51.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/Aureon51.conf",
+      "size": 2369,
+      "sha256": "049002e88438628c145792a7059855d08c14c7f33b290a5547eb9203deffb7d2",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/Aureon71.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/Aureon71.conf",
+      "size": 2499,
+      "sha256": "b27ede016371d8b5202ad22092618da188e9509b889882e1f619e746321fe3c6",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/CA0106.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/CA0106.conf",
+      "size": 3848,
+      "sha256": "0dff9acb89c5772ddd5bdf60bc11ce75d73e9097dd5214f2579ac2097834fc2a",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/CMI8338-SWIEC.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/CMI8338-SWIEC.conf",
+      "size": 1784,
+      "sha256": "7120140996a1a2037f0edb4a9d39c1f1074fd7d6072b6132014c0cb314c52301",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/CMI8338.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/CMI8338.conf",
+      "size": 1911,
+      "sha256": "db64d0d74de40d5c975dbceecf64feff164a4cc709ccbfa67958b457a2615218",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/CMI8738-MC6.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/CMI8738-MC6.conf",
+      "size": 2131,
+      "sha256": "aff8b0c75abbfe770cb2aab21612b5f404b5468a858d6bf333a535e40ee5611c",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/CMI8738-MC8.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/CMI8738-MC8.conf",
+      "size": 2982,
+      "sha256": "010df70a0dbf4fcfc3b19b43a9af30d58fa7e1121da8069573857336a62a889c",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/CMI8788.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/CMI8788.conf",
+      "size": 1641,
+      "sha256": "554b97e9bd91ca8debe8517e19f01dfb1bdf0e95e8bbffa431556457a1554557",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/CS46xx.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/CS46xx.conf",
+      "size": 2945,
+      "sha256": "79bd52df908894e3eca05c52db832a0996732556b038aba3b17a7738e7eda274",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/Echo_Echo3G.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/Echo_Echo3G.conf",
+      "size": 4399,
+      "sha256": "b6df2b1986dbc8cc543130f6fe07c58e8c0f96f360891081096df1d3b4bd865f",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/EMU10K1.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/EMU10K1.conf",
+      "size": 5672,
+      "sha256": "5a5a1a8ef42aa35db0a0cc9a29bc570647ae11bcc3697aa56e26fac722624cd3",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/EMU10K1X.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/EMU10K1X.conf",
+      "size": 2754,
+      "sha256": "37fe34f7ddc7a7758863cfd8f32718b1434acee5b5a93548ff5605629468648d",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/ENS1370.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/ENS1370.conf",
+      "size": 1367,
+      "sha256": "7e4f5a1d3007a5938c67b7faf2269cbc6c7bf7487797e5c8111574525c75f8bb",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/ENS1371.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/ENS1371.conf",
+      "size": 1806,
+      "sha256": "72f5b63f7016d076fc59087ab28b60eba988e9bc41814759fc430b364f42997d",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/ES1968.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/ES1968.conf",
+      "size": 152,
+      "sha256": "fa3218152521ad798b5770aad93363fd57557c84dd32d630bf273041c21fa5dc",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/FireWave.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/FireWave.conf",
+      "size": 702,
+      "sha256": "f4123f0f106c0baf213020ef8cb5aed19e79a2d896fb9e6603d43c001a704254",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/FM801.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/FM801.conf",
+      "size": 1227,
+      "sha256": "022ca9b10d7cc8a32f60b0aff3960fdd9fb06a68a2cecb2a54da5426d64f1903",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/FWSpeakers.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/FWSpeakers.conf",
+      "size": 333,
+      "sha256": "eab3789ba81a6800f11fb01a386e32ae397b0d225f4d7144f486e3ee393ad0bb",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/GUS.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/GUS.conf",
+      "size": 217,
+      "sha256": "97942d9546bca7fa50841e74168d7e1e8f62468ff8cb9fc3794dd7e3770d8ace",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/HDA-Intel.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/HDA-Intel.conf",
+      "size": 6773,
+      "sha256": "24294c2f06c258693b67d606af997e665c4cd2138a5f922be310e22fd0192d3e",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/ICE1712.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/ICE1712.conf",
+      "size": 2409,
+      "sha256": "31761fd7920b74f976eb545f356c835d82cdd4d266812aca8c49c1575c642c85",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/ICE1724.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/ICE1724.conf",
+      "size": 2891,
+      "sha256": "88fcf5d6019e425f849f9d2aa67a5620203235982fe80993f0d6c6c9bb65a18e",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/ICH-MODEM.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/ICH-MODEM.conf",
+      "size": 192,
+      "sha256": "3b455ac43aeaf36887eec1300c2580fe645499c8f6ef277f193635b0bd5b26c3",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/ICH.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/ICH.conf",
+      "size": 3054,
+      "sha256": "f846aba377c4930fa524fda0ef149b51f519065c9980403e1698371ae7a418fa",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/ICH4.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/ICH4.conf",
+      "size": 2886,
+      "sha256": "f5f2ddbc85bd703a0fea9c677e9043bb98cd95b8578064092b67ae4c2b557b3c",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/Loopback.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/Loopback.conf",
+      "size": 1272,
+      "sha256": "48d733a429b58b0721895b5c28a9df4aba7f6804c5cfb9df484b801660aa672c",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/Maestro3.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/Maestro3.conf",
+      "size": 558,
+      "sha256": "9291749b971d36f4f436127d105641031b44dde0da9ea0411937fb4e34897f24",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/NFORCE.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/NFORCE.conf",
+      "size": 4803,
+      "sha256": "812eda76155dfa495eb1d743356a2471fe02add40bea1d669188ee3f083b5dc4",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/PC-Speaker.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/PC-Speaker.conf",
+      "size": 657,
+      "sha256": "d6c8185b9a3bcfa829632ea2238ea1804f9eb7568d2047bdaf8e519e883146ee",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/PMac.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/PMac.conf",
+      "size": 486,
+      "sha256": "c79d68b2205708c68f073c4b3e86006c0b1fcbe2d93026f69f3b0671fcf97a29",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/PMacToonie.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/PMacToonie.conf",
+      "size": 705,
+      "sha256": "778ac126c680298a4ca4f9e004098466bf51298433b91ca8ba850647e6b3e680",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/PS3.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/PS3.conf",
+      "size": 1152,
+      "sha256": "cddd47a62dcb70aa209d2788f743c469a3d799a0e1093fea5d200837a5ea6f9a",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/RME9636.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/RME9636.conf",
+      "size": 780,
+      "sha256": "4c372e8777d554e4cf9b10ece78d967ef06daadaa0362d46468f927d9062ef5f",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/RME9652.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/RME9652.conf",
+      "size": 780,
+      "sha256": "8a065a1bc0f7e9843e54fc098ccebb049dc85981d93f7e1a24db26f958f33339",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/SB-XFi.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/SB-XFi.conf",
+      "size": 1502,
+      "sha256": "14751edd67a1b842be0c44a8104ba132acc85e619a4ffdf3cfb094656b345daa",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/SI7018.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/SI7018.conf",
+      "size": 2278,
+      "sha256": "0d351ba328e6d216857cd0f73632b1e5b929fd9aafc622d7089d44ba78f3b549",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/SI7018/sndoc-mixer.alisp",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/SI7018/sndoc-mixer.alisp",
+      "size": 251,
+      "sha256": "667a4cc6bd2489079916b8126adac36e85044e1fd4a72559bfbc88b1cb1df354",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/SI7018/sndop-mixer.alisp",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/SI7018/sndop-mixer.alisp",
+      "size": 251,
+      "sha256": "10736ba82049485c87c0aca251dddbff202ca162461fb02c2d98fed078cb9d9c",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/TRID4DWAVENX.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/TRID4DWAVENX.conf",
+      "size": 1792,
+      "sha256": "1e62875ffadcc69a78cee0146314121aa51317af113ff9782071875d23b22249",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/USB-Audio.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/USB-Audio.conf",
+      "size": 9031,
+      "sha256": "9574d8fa1c435c8f0529e209eff4d5368618dc11d389335a65ffe42d56646702",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/VIA686A.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/VIA686A.conf",
+      "size": 1199,
+      "sha256": "13d828536619f7b9aa16d00b6d8231e5e26266aa417dec1c5f293c9d6263e5ce",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/VIA8233.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/VIA8233.conf",
+      "size": 2756,
+      "sha256": "2ee6d46c2bda0be75a42bf29f9bf242ebfd3502dbee57a5bd08c0cae4b48d097",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/VIA8233A.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/VIA8233A.conf",
+      "size": 2812,
+      "sha256": "c405ae909d53f9dcb71546c46bde37e63d76c6fed2bbd1f0e272ea26c69e832e",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/VIA8237.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/VIA8237.conf",
+      "size": 2586,
+      "sha256": "8fe2eb01c92038c0b50f98f0386c435db852fe131323a585f529d89f81fb2ba7",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/VX222.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/VX222.conf",
+      "size": 830,
+      "sha256": "39f4fedef3fdab641b954608f8f5f2c1d3ed4c1bb919929286b87a668f586529",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/VXPocket.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/VXPocket.conf",
+      "size": 839,
+      "sha256": "c5d14491b5de612c7bbc69b4b5989fd1002d93f6fd6a3a672249951f9367a515",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/VXPocket440.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/VXPocket440.conf",
+      "size": 1480,
+      "sha256": "600ac09279191aded92809840171fdf6184663c6bc8e0c188df255862536e8e7",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/cards/YMF744.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/cards/YMF744.conf",
+      "size": 1357,
+      "sha256": "d024c523af4e2dbcf967e88b2101ce340bc8dd1c1fa5f5ef3746fffe4ec11d7f",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/pcm/center_lfe.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/pcm/center_lfe.conf",
+      "size": 805,
+      "sha256": "e0f1d7c2b3bdf6acf3736b008824bcd274c33998072b3a1a0c74426753e12cc1",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/pcm/default.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/pcm/default.conf",
+      "size": 762,
+      "sha256": "ec4e9a2f87b3f68002b98d52ba978f001d8d4ef4abd2af27a9b3ad16f4fc4f6d",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/pcm/dmix.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/pcm/dmix.conf",
+      "size": 1524,
+      "sha256": "ea6065809d054367ad77a89947fce2e2e787bfeab904d2739bdaa5d0cec7f6fb",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/pcm/dpl.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/pcm/dpl.conf",
+      "size": 645,
+      "sha256": "ccec7c194270433c2dcdf3622b2ef25e3197020da800662c6111ff8b8638f30b",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/pcm/dsnoop.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/pcm/dsnoop.conf",
+      "size": 1538,
+      "sha256": "c79f27ce5c7040468a93ff9e64b19185b784060b7288bc7b24f57476f6684f86",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/pcm/front.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/pcm/front.conf",
+      "size": 752,
+      "sha256": "f89b6abc45ddf345cba76120a2c4d95078a7fa37a960ce163445a71b23d594bd",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/pcm/hdmi.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/pcm/hdmi.conf",
+      "size": 1188,
+      "sha256": "dcda96095dc321c6b336bb9e1e9ff519c06a041707e155e29e432eff25f427f8",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/pcm/iec958.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/pcm/iec958.conf",
+      "size": 1213,
+      "sha256": "7bc676caeacf1e4e64b7d5c47ada8e7a1ee2ae61b973aa7b36821244e3b03da3",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/pcm/modem.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/pcm/modem.conf",
+      "size": 1314,
+      "sha256": "c9ceedecf7a20b212c7ab641a3bf3f03a2b8a8720cb40c0547458e0f5f4024c5",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/pcm/rear.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/pcm/rear.conf",
+      "size": 744,
+      "sha256": "d4303cffe70f686507966660719f605049e2a8fbb38ed3773614da3fce026802",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/pcm/side.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/pcm/side.conf",
+      "size": 744,
+      "sha256": "caf5ac243333775f9a56df77d1e4c0b47f8ec09e75a1b2f81207809b322a3d61",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/pcm/surround21.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/pcm/surround21.conf",
+      "size": 906,
+      "sha256": "50dd997bcca71fc6145b572aea4b46251005b183d24468beb1bf02ba6d059963",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/pcm/surround40.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/pcm/surround40.conf",
+      "size": 884,
+      "sha256": "da9d53ac09c6154821ce2e9885b19414217503127b5eb7da8d1df8b0763f1dd3",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/pcm/surround41.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/pcm/surround41.conf",
+      "size": 987,
+      "sha256": "3870e3de5a515e8b8096e13fad9d0a4aefa9c073d7efe03dba549a46eddcc941",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/pcm/surround50.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/pcm/surround50.conf",
+      "size": 986,
+      "sha256": "ee41801d33771d6c0c867be92edf1cdad98bf609991a44af7358ac20f2599961",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/pcm/surround51.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/pcm/surround51.conf",
+      "size": 937,
+      "sha256": "58de701287f9d63689858d06b4f481eed01050080d41c061f936558769c99748",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/pcm/surround71.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/pcm/surround71.conf",
+      "size": 985,
+      "sha256": "1d39660599584201e1e3faa86658bac4d450c8db9c35b10df0484b02deb256a3",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/sndo-mixer.alisp",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/sndo-mixer.alisp",
+      "size": 3206,
+      "sha256": "60661003b1b69f00ed708cb6f625c35c6cb71d60dee149411671788ce799098f",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/topology/broadwell/broadwell.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/topology/broadwell/broadwell.conf",
+      "size": 5895,
+      "sha256": "07dbe2835007a887ed8d35f81cd1a514d323a5731a57faef066942238340cd4b",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/topology/bxtrt298/bxt_i2s.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/topology/bxtrt298/bxt_i2s.conf",
+      "size": 74488,
+      "sha256": "04ae95f125a78304c72ecdbabb340cd41076f01bda22eb1d6ce36771157c669c",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/topology/sklrt286/skl_i2s.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/topology/sklrt286/skl_i2s.conf",
+      "size": 66635,
+      "sha256": "805ecaf210c6214e4e76e2656d77ce2762688fd0559c32e7b4c8dd9ffa705695",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/broadwell-rt286/broadwell-rt286.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/broadwell-rt286/broadwell-rt286.conf",
+      "size": 121,
+      "sha256": "d4c3d497413f5b6ff29753a5c7536392ce1cda527ea763cbeaa9a594c0588fe3",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/broadwell-rt286/HiFi",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/broadwell-rt286/HiFi",
+      "size": 2369,
+      "sha256": "025d8cbd3c403689a9d131fe87ad765152623b14a3a295f7c11ba07e6418b81e",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/chtrt5645/chtrt5645.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/chtrt5645/chtrt5645.conf",
+      "size": 96,
+      "sha256": "8d0ede122c8b881978af8a3cbae194129675fed59eda584931489e95b3d27f0b",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/chtrt5645/HiFi.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/chtrt5645/HiFi.conf",
+      "size": 4965,
+      "sha256": "c0806f9031719f398bef45ab5a9191e43f687ef367336953dc41e466e187eab3",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/DAISY-I2S/DAISY-I2S.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/DAISY-I2S/DAISY-I2S.conf",
+      "size": 94,
+      "sha256": "f1bb1da38e49d06d0c017a7969cdc99a4bc876f225fe2dfa5300e6d9a74fbeae",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/DAISY-I2S/HiFi.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/DAISY-I2S/HiFi.conf",
+      "size": 1631,
+      "sha256": "c683ee6ba1f9bd39102cae4630e38d659c2f270e10d5eabeec1a2cb67345e74f",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/DB410c/DB410c.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/DB410c/DB410c.conf",
+      "size": 138,
+      "sha256": "876d287dd25e26caaf51673a9635c79151d96ac31462cb4ccd344f72e86642e3",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/DB410c/HDMI",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/DB410c/HDMI",
+      "size": 419,
+      "sha256": "4acb5f47ac507b2cc6b2f2dad63bb0545e2dc62123b670aac5787fb5868ca73b",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/DB410c/HiFi",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/DB410c/HiFi",
+      "size": 2823,
+      "sha256": "5f903feb690351bd3289305fe9924728aae53a5cb2faf50b7f4364da3962b99c",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/GoogleNyan/GoogleNyan.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/GoogleNyan/GoogleNyan.conf",
+      "size": 92,
+      "sha256": "466075f2c8db0e0a4a8a187106b891fbda2119684c7c8c23dc60defdf2844f12",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/GoogleNyan/HiFi.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/GoogleNyan/HiFi.conf",
+      "size": 2201,
+      "sha256": "2c08325e8bafa1a19d51765ee0939dd3192469fe5af76db72132d03315d8dd6a",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/PandaBoard/FMAnalog",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/PandaBoard/FMAnalog",
+      "size": 1226,
+      "sha256": "09ca1ceaf1cf5e8a5529d1b269c0a3c1e7135ffee6884a56ea0e964afd1b2707",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/PandaBoard/hifi",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/PandaBoard/hifi",
+      "size": 2222,
+      "sha256": "4091e3fce380d7d600038f732ff9cc59fd8c21d212aeded07c0bb0735d3ee10d",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/PandaBoard/hifiLP",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/PandaBoard/hifiLP",
+      "size": 1244,
+      "sha256": "2c52fc5072c8635157f17d4ff9d9e6ad4029a838ce0755ec21c723e2d10f85d7",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/PandaBoard/PandaBoard.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/PandaBoard/PandaBoard.conf",
+      "size": 881,
+      "sha256": "8e2ee30dced95c0a1d712bbb419fc3c7f5471321857b969661bdfa8e21dcaeda",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/PandaBoard/record",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/PandaBoard/record",
+      "size": 1336,
+      "sha256": "5428b5f739e87e055899b38c57fda142d07be3e14e2f7177af5e711a0a10ae63",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/PandaBoard/voice",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/PandaBoard/voice",
+      "size": 1234,
+      "sha256": "364bf742b768e33da9313b82662797460ba5eae77bb77b65a40336b9cd0fea44",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/PandaBoard/voiceCall",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/PandaBoard/voiceCall",
+      "size": 2203,
+      "sha256": "d2bc69075c17f36981af98f17dbf6ab2cdc677ecdebcbcc9996650f69808a044",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/PandaBoardES/FMAnalog",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/PandaBoardES/FMAnalog",
+      "size": 1238,
+      "sha256": "c37ba3ecf8c2a228e4f5771f3ec467fc4fa01389c992716923ff6d90f5982d07",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/PandaBoardES/hifi",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/PandaBoardES/hifi",
+      "size": 2234,
+      "sha256": "958bc27f5d7aa99d72b16003d464ae25d77c8d2fa20a5930248e76070d63d488",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/PandaBoardES/hifiLP",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/PandaBoardES/hifiLP",
+      "size": 1256,
+      "sha256": "06eeab6b7c7aeed181e78197799909753745d7fd68ff39bf139889fdc903178d",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/PandaBoardES/PandaBoardES.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/PandaBoardES/PandaBoardES.conf",
+      "size": 898,
+      "sha256": "a8d4119dd476a09608886c97b5025afecde6da5eb4a4b57a9b4246f5045eb550",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/PandaBoardES/record",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/PandaBoardES/record",
+      "size": 1348,
+      "sha256": "151f0b667f86cef70bb5fb6c7fcebca2e88a87ed35401f394b15206afc39ccb1",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/PandaBoardES/voice",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/PandaBoardES/voice",
+      "size": 1246,
+      "sha256": "69cba0b5a4ce3bbc24ad5db1d9e3a7075dc82684d2c535a298b7fa550d902559",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/PandaBoardES/voiceCall",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/PandaBoardES/voiceCall",
+      "size": 2215,
+      "sha256": "2ec016b2ddcad8222fbc2c6d33463f2de87e7088b990b12a5a543f055e4507c1",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/PAZ00/HiFi.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/PAZ00/HiFi.conf",
+      "size": 1141,
+      "sha256": "f1b8cd22c95b4d3205bf6b0ad5c3530694dcdfb405aec256ee9fab29f1935d0e",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/PAZ00/PAZ00.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/PAZ00/PAZ00.conf",
+      "size": 1069,
+      "sha256": "66f8f67a2cc1cc21878310d38c3ffe0f1df6d966e0595db6611e66e9c3ea1672",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/PAZ00/Record.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/PAZ00/Record.conf",
+      "size": 1807,
+      "sha256": "9a82fd2b8adc133d42c9882adf5825ea6207ff948898963a8ae9afc0ebb691bd",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/SDP4430/FMAnalog",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/SDP4430/FMAnalog",
+      "size": 1208,
+      "sha256": "52db5ef412f837b55381a88af7a223f888ff9f6ee01c47c3ddc6f16b3657b9d5",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/SDP4430/hifi",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/SDP4430/hifi",
+      "size": 2164,
+      "sha256": "acc850094ae6fddd542ad739460bbbf1861e189f4804f474ee149591dd8f8055",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/SDP4430/hifiLP",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/SDP4430/hifiLP",
+      "size": 1206,
+      "sha256": "21c7c1210c214192559113cce9f350811c96d5c2137281a3c40bb9fe2f847005",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/SDP4430/record",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/SDP4430/record",
+      "size": 1194,
+      "sha256": "d094149416a438e70453f4c6f3da9ab8ecdde17a7d25e28b7a6e1a5b5c6b76f5",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/SDP4430/SDP4430.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/SDP4430/SDP4430.conf",
+      "size": 875,
+      "sha256": "850b41b092146966f6bd82515c8abe668a9bc8c90d3de549c663ef5e0f4fe6ba",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/SDP4430/voice",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/SDP4430/voice",
+      "size": 1196,
+      "sha256": "868fec4aea5afc82061cbd853dcfce719f1412a921add1b90b1a505dd59499e4",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/SDP4430/voiceCall",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/SDP4430/voiceCall",
+      "size": 2165,
+      "sha256": "373d6c9aeb357a2be2e52d1f27116095e0ea2fab43c794832ed32fa3690e038d",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/skylake-rt286/Hdmi1",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/skylake-rt286/Hdmi1",
+      "size": 461,
+      "sha256": "0419e19f7b552a85db21c903ea4f2061bda1a2c33b42568037988c396f0bd23e",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/skylake-rt286/Hdmi2",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/skylake-rt286/Hdmi2",
+      "size": 461,
+      "sha256": "58a81dfa7c6b6a7b5ffc949551145803cfc39e535184e249421d066d6d6f93c1",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/skylake-rt286/HiFi",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/skylake-rt286/HiFi",
+      "size": 2487,
+      "sha256": "200d85f31aae960c9a62a36bd79aa88ee77a157db2b830f3bc535a98ef3a2157",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/skylake-rt286/skylake-rt286.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/skylake-rt286/skylake-rt286.conf",
+      "size": 1720,
+      "sha256": "237ca79f0a581a98c4bf9ff254be57c1a618bc45ba292851244ee1a700009b57",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/tegraalc5632/tegraalc5632.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/tegraalc5632/tegraalc5632.conf",
+      "size": 1063,
+      "sha256": "bf0f5d5d305d759cf6f76acec3ebf623b65bc62324d02f1b00ae8b8012a2bf1c",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/VEYRON-I2S/HiFi.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/VEYRON-I2S/HiFi.conf",
+      "size": 2268,
+      "sha256": "a5acf280144f798a4008682a8422b30ace2746fad23cb36af0269e5f38af4cd9",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/share/alsa/ucm/VEYRON-I2S/VEYRON-I2S.conf",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/alsa-runtime/usr/share/alsa/ucm/VEYRON-I2S/VEYRON-I2S.conf",
+      "size": 95,
+      "sha256": "8ab2266c659b0217409a3d46fe9fe0f802198fb3bde8bc6582ef9426c373e5b6",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/modules/snd-hwdep.ko",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/modules/4.14.0-xilinx/snd-hwdep.ko",
+      "size": 13368,
+      "sha256": "ccfde4d3d1f7f8277dbb01b8b6cf35dee3f7ca14e8b707c2a4853d34f9c664ac",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/modules/snd-rawmidi.ko",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/modules/4.14.0-xilinx/snd-rawmidi.ko",
+      "size": 30868,
+      "sha256": "8624a242fa715c2d3dea107efe7befc5bdbde596813a1a0ad508f8eb3fd2a136",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/modules/snd-usbmidi-lib.ko",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/modules/4.14.0-xilinx/snd-usbmidi-lib.ko",
+      "size": 30408,
+      "sha256": "77bd99c55d76c94152dbc204ef892e54a97bc4a255ed7fe6a79a5bc10e2d006a",
+      "mode": "0644"
+    },
+    {
+      "name": "audio/modules/snd-usb-audio.ko",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/xvf3800_usb_ps_capture_v1/deploy/xvf3800-usb-ps-capture-v1/modules/4.14.0-xilinx/snd-usb-audio.ko",
+      "size": 198692,
+      "sha256": "1291491ebc212cc9a51c87616aa7e9f1afd7185907c1a1780a91a7a5f070dbb6",
+      "mode": "0644"
+    },
+    {
+      "name": "README.md",
+      "source": "F:/MLK/DPU_ZYNQ7000/usb_mic_bringup_v1/.worktrees/soundjie-d3-eight-class-smoke/docs/superpowers/specs/2026-10-17-soundjie-d3-live-once-design.md",
+      "size": 8791,
+      "sha256": "6fdc093d5bd075754e3760e8d871862b4ae64ca9223a5c2d31c7e9e596ee1329",
+      "mode": "0644"
+    },
+    {
+      "name": "demo/00-fire_smoke_alarm-demo-00.wav",
+      "source": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_v1/processed/smoke-a/wav16k/demo/fire_smoke_alarm/8d8bab25220c48972d40.wav",
+      "size": 32044,
+      "sha256": "818589a2045677064e819fe3b13977db566468a07e6f224135bffd0fbe31c26b",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/00-fire_smoke_alarm-demo-00.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-package-input-20261017a/d3-inputs/00-fire_smoke_alarm-demo-00.i8",
+      "size": 6144,
+      "sha256": "51016137f64ddbcf51f0feda3653ea6eef9846d15edfa2a5aa2478842ecd3eff",
+      "mode": "0644"
+    },
+    {
+      "name": "direct/00-fire_smoke_alarm-demo-00.logits.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-board-revalidation-20261017c/extracted/soundjie-d3c-output-20261017c/00-fire_smoke_alarm-demo-00/logits.i8",
+      "size": 8,
+      "sha256": "4d2f3d299901d26a0ba5cb914f94b0ba4e1a735dd3d36ac431123bbfcc3d1103",
+      "mode": "0644"
+    },
+    {
+      "name": "demo/00-fire_smoke_alarm-demo-01.wav",
+      "source": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_v1/processed/smoke-a/wav16k/demo/fire_smoke_alarm/188ea3d191ce15c4e01f.wav",
+      "size": 32044,
+      "sha256": "f2425eaa04240f22583fde6522029a49cfe0de3141dafdfd1a4a153ed53b5926",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/00-fire_smoke_alarm-demo-01.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-package-input-20261017a/d3-inputs/00-fire_smoke_alarm-demo-01.i8",
+      "size": 6144,
+      "sha256": "d95fd05fe8a7da4f44e8566f54931104f40a65bfba4dc419fe19ac9cfc208218",
+      "mode": "0644"
+    },
+    {
+      "name": "direct/00-fire_smoke_alarm-demo-01.logits.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-board-revalidation-20261017c/extracted/soundjie-d3c-output-20261017c/00-fire_smoke_alarm-demo-01/logits.i8",
+      "size": 8,
+      "sha256": "f292f4b074fb753ee52138dddffd62ef09e30fb4a075edcd4afa87563da887e7",
+      "mode": "0644"
+    },
+    {
+      "name": "demo/01-emergency_siren-demo-00.wav",
+      "source": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_v1/processed/smoke-a/wav16k/demo/emergency_siren/af1170c9672db4474da4.wav",
+      "size": 32044,
+      "sha256": "4b4e4821a704cb4d1c104823e7b556169ecf8105db72bd9119aafab9fc5b40c0",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/01-emergency_siren-demo-00.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-package-input-20261017a/d3-inputs/01-emergency_siren-demo-00.i8",
+      "size": 6144,
+      "sha256": "eddf6c7a832043dc7712a968a6df745a3e34f1b26d11dc023d72d0fbb8c1a1ee",
+      "mode": "0644"
+    },
+    {
+      "name": "direct/01-emergency_siren-demo-00.logits.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-board-revalidation-20261017c/extracted/soundjie-d3c-output-20261017c/01-emergency_siren-demo-00/logits.i8",
+      "size": 8,
+      "sha256": "5a1f45ff674c1f818c81345c05a8486eb115455955785e2160954c358cbd5b5b",
+      "mode": "0644"
+    },
+    {
+      "name": "demo/01-emergency_siren-demo-01.wav",
+      "source": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_v1/processed/smoke-a/wav16k/demo/emergency_siren/147088745e50166db666.wav",
+      "size": 32044,
+      "sha256": "f139f2ece49186714cf9cf849f440a808d46c724a44149ed6ff8c2dd34ba12bd",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/01-emergency_siren-demo-01.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-package-input-20261017a/d3-inputs/01-emergency_siren-demo-01.i8",
+      "size": 6144,
+      "sha256": "b5c3f7292eb7902b50d0a3548f1e6836305e47c2c6089a89d172959e1e0c62fa",
+      "mode": "0644"
+    },
+    {
+      "name": "direct/01-emergency_siren-demo-01.logits.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-board-revalidation-20261017c/extracted/soundjie-d3c-output-20261017c/01-emergency_siren-demo-01/logits.i8",
+      "size": 8,
+      "sha256": "a9684a8d461351e45bfd057fe0d32fa879edb5513de770a2391403ac82c8f0c0",
+      "mode": "0644"
+    },
+    {
+      "name": "demo/02-car_horn-demo-00.wav",
+      "source": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_v1/processed/smoke-a/wav16k/demo/car_horn/ad06d3bb9149c65da08c.wav",
+      "size": 32044,
+      "sha256": "97120556a1ca9ef31e4969c58c812f95272b205f20acc5c07461d549e3d26bcb",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/02-car_horn-demo-00.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-package-input-20261017a/d3-inputs/02-car_horn-demo-00.i8",
+      "size": 6144,
+      "sha256": "e5dee0964874754e685a3f8ab6fb3672ba284c7f4bc6e0b1ec7f1bfc8a85c9d7",
+      "mode": "0644"
+    },
+    {
+      "name": "direct/02-car_horn-demo-00.logits.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-board-revalidation-20261017c/extracted/soundjie-d3c-output-20261017c/02-car_horn-demo-00/logits.i8",
+      "size": 8,
+      "sha256": "7119efcbbd0f6de6e217098e74fbd6123faaddd71719ab2a956d304e81bc7a70",
+      "mode": "0644"
+    },
+    {
+      "name": "demo/02-car_horn-demo-01.wav",
+      "source": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_v1/processed/smoke-a/wav16k/demo/car_horn/90d0a75788bd3c04e9d6.wav",
+      "size": 32044,
+      "sha256": "b5fa113c5403ef5acde0ffd798b404b969c831ca49dfa952b88f78b646ecf3af",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/02-car_horn-demo-01.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-package-input-20261017a/d3-inputs/02-car_horn-demo-01.i8",
+      "size": 6144,
+      "sha256": "f5103d5f8a4dee4c07be91cbc7bd55c7fa57ffb4a9b68b47e01ad4c395208bbb",
+      "mode": "0644"
+    },
+    {
+      "name": "direct/02-car_horn-demo-01.logits.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-board-revalidation-20261017c/extracted/soundjie-d3c-output-20261017c/02-car_horn-demo-01/logits.i8",
+      "size": 8,
+      "sha256": "41b36f5c95c086aeca7f73ec481424f6e8000f32e4f21619d82c3698fed160e1",
+      "mode": "0644"
+    },
+    {
+      "name": "demo/03-glass_breaking-demo-00.wav",
+      "source": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_v1/processed/smoke-a/wav16k/demo/glass_breaking/d52a29a4a139caf8f2d4.wav",
+      "size": 32044,
+      "sha256": "1b0ce9ab76470aa0a5fabc35c0c3414ca4d885c6a28c684bcca2d87baf7928f0",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/03-glass_breaking-demo-00.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-package-input-20261017a/d3-inputs/03-glass_breaking-demo-00.i8",
+      "size": 6144,
+      "sha256": "ab36bdf8211296b21ad35cbecca6a1aff8e4548d5a0b18677a6fbe3e7c1b4d39",
+      "mode": "0644"
+    },
+    {
+      "name": "direct/03-glass_breaking-demo-00.logits.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-board-revalidation-20261017c/extracted/soundjie-d3c-output-20261017c/03-glass_breaking-demo-00/logits.i8",
+      "size": 8,
+      "sha256": "70c309a8bb7ec80a55ca17043bfc9ae8fe3d07571873d27e0a3ea154733cfd6b",
+      "mode": "0644"
+    },
+    {
+      "name": "demo/03-glass_breaking-demo-01.wav",
+      "source": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_v1/processed/smoke-a/wav16k/demo/glass_breaking/94484432a179dc2e98fd.wav",
+      "size": 32044,
+      "sha256": "d46220b2da084f1b99d3613e3a10e5666106a1dad368953565d1e7cfbc258e5d",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/03-glass_breaking-demo-01.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-package-input-20261017a/d3-inputs/03-glass_breaking-demo-01.i8",
+      "size": 6144,
+      "sha256": "2af37eb10a423593824f91c93f24e2602808cecf2a8b710aca429298a0466ade",
+      "mode": "0644"
+    },
+    {
+      "name": "direct/03-glass_breaking-demo-01.logits.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-board-revalidation-20261017c/extracted/soundjie-d3c-output-20261017c/03-glass_breaking-demo-01/logits.i8",
+      "size": 8,
+      "sha256": "1617b662105af30a8ad2fc5e2f4ba89d8161aa837ceaf66c2ec26ebe9ccdf365",
+      "mode": "0644"
+    },
+    {
+      "name": "demo/04-door_knock_bell-demo-00.wav",
+      "source": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_v1/processed/smoke-a/wav16k/demo/door_knock_bell/ff59e28a9d9f5e96a62f.wav",
+      "size": 32044,
+      "sha256": "bdf06b8535f90bfc51b447b5b8df94b0055d58ca5e42ed74c644de00b9bbb507",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/04-door_knock_bell-demo-00.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-package-input-20261017a/d3-inputs/04-door_knock_bell-demo-00.i8",
+      "size": 6144,
+      "sha256": "754b87ac315a01ab4fb9fb4a927f5120ed5352192d1d867c0617760df4d656fb",
+      "mode": "0644"
+    },
+    {
+      "name": "direct/04-door_knock_bell-demo-00.logits.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-board-revalidation-20261017c/extracted/soundjie-d3c-output-20261017c/04-door_knock_bell-demo-00/logits.i8",
+      "size": 8,
+      "sha256": "ab5ff957a2d55b1d8d541deeb2a50710ba3bbdd541824d17a8889c2b02d21838",
+      "mode": "0644"
+    },
+    {
+      "name": "demo/04-door_knock_bell-demo-01.wav",
+      "source": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_v1/processed/smoke-a/wav16k/demo/door_knock_bell/e984ed1083681cd59b8e.wav",
+      "size": 32044,
+      "sha256": "2779a4480e8ef88f0e9e1d8411bb5b2ad2e53468992d3c774331e04037a3ffc3",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/04-door_knock_bell-demo-01.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-package-input-20261017a/d3-inputs/04-door_knock_bell-demo-01.i8",
+      "size": 6144,
+      "sha256": "b7133101eaa829f438af42200131e43f53a1529124abd606ff8780d24d491ee3",
+      "mode": "0644"
+    },
+    {
+      "name": "direct/04-door_knock_bell-demo-01.logits.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-board-revalidation-20261017c/extracted/soundjie-d3c-output-20261017c/04-door_knock_bell-demo-01/logits.i8",
+      "size": 8,
+      "sha256": "86d7d50703bf6b902ce3f94b30c84eb88bf9b72af3d2e65ac94dc7a464d1c37c",
+      "mode": "0644"
+    },
+    {
+      "name": "demo/05-distress_voice-demo-00.wav",
+      "source": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_v1/processed/smoke-a/wav16k/demo/distress_voice/0ca6af198d979f29dfc0.wav",
+      "size": 32044,
+      "sha256": "841ff66163108dae6f2605e3c6fa4412f822cae8efffc2b669a029148630a490",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/05-distress_voice-demo-00.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-package-input-20261017a/d3-inputs/05-distress_voice-demo-00.i8",
+      "size": 6144,
+      "sha256": "02612d1ba0d63ea433254c4c87bcd18b39c21e83ecb5dd4512ab4339d59772e1",
+      "mode": "0644"
+    },
+    {
+      "name": "direct/05-distress_voice-demo-00.logits.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-board-revalidation-20261017c/extracted/soundjie-d3c-output-20261017c/05-distress_voice-demo-00/logits.i8",
+      "size": 8,
+      "sha256": "7ab7c11f753177a60941b056a394a776fe415b75a6db51b1cc19faaae347a073",
+      "mode": "0644"
+    },
+    {
+      "name": "demo/05-distress_voice-demo-01.wav",
+      "source": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_v1/processed/smoke-a/wav16k/demo/distress_voice/de3c0080fbec4a222d7b.wav",
+      "size": 32044,
+      "sha256": "14881ed6e91e885d32494ac0f21c544e57bf042d4b6420a027ffbcf36d1a0cd4",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/05-distress_voice-demo-01.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-package-input-20261017a/d3-inputs/05-distress_voice-demo-01.i8",
+      "size": 6144,
+      "sha256": "539d6f3c0c19e6b1d4800153a3022d2d3857944f80bafe62819c32510c352642",
+      "mode": "0644"
+    },
+    {
+      "name": "direct/05-distress_voice-demo-01.logits.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-board-revalidation-20261017c/extracted/soundjie-d3c-output-20261017c/05-distress_voice-demo-01/logits.i8",
+      "size": 8,
+      "sha256": "457b8b953f207fe92210e417ba4b28c20d117bcf98597fbb5a5739220734f31f",
+      "mode": "0644"
+    },
+    {
+      "name": "demo/06-normal_speech-demo-00.wav",
+      "source": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_v1/processed/smoke-a/wav16k/demo/normal_speech/cc84f58a9706b8b75933.wav",
+      "size": 32044,
+      "sha256": "620c1afba3891ad30b0c923189f579e4ca32f8cf74a683b26cba161f7cd858c1",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/06-normal_speech-demo-00.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-package-input-20261017a/d3-inputs/06-normal_speech-demo-00.i8",
+      "size": 6144,
+      "sha256": "3f8369936b6e38816ce198493b217bd1032a2ee063df0a4db9826284d9c25172",
+      "mode": "0644"
+    },
+    {
+      "name": "direct/06-normal_speech-demo-00.logits.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-board-revalidation-20261017c/extracted/soundjie-d3c-output-20261017c/06-normal_speech-demo-00/logits.i8",
+      "size": 8,
+      "sha256": "c70ac68b8f14cee47d573ddec574ed04f144cf079a6041bcf3284877c225551c",
+      "mode": "0644"
+    },
+    {
+      "name": "demo/06-normal_speech-demo-01.wav",
+      "source": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_v1/processed/smoke-a/wav16k/demo/normal_speech/513ce7306bb2d8f454a4.wav",
+      "size": 32044,
+      "sha256": "56ace1f6e0b5d7fbf7d50f791d16d96275d3004b66cf4d7e785bee51de22a54a",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/06-normal_speech-demo-01.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-package-input-20261017a/d3-inputs/06-normal_speech-demo-01.i8",
+      "size": 6144,
+      "sha256": "8d9af72994d79c240b4758be55ca0468743b23eea9a15e9831463b396850d614",
+      "mode": "0644"
+    },
+    {
+      "name": "direct/06-normal_speech-demo-01.logits.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-board-revalidation-20261017c/extracted/soundjie-d3c-output-20261017c/06-normal_speech-demo-01/logits.i8",
+      "size": 8,
+      "sha256": "13e94ade228fbb9fa39f3bc3c61fc26be79e86cfd302d55333bbebd767534a1e",
+      "mode": "0644"
+    },
+    {
+      "name": "demo/07-background_unknown-demo-00.wav",
+      "source": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_v1/processed/smoke-a/wav16k/demo/background_unknown/2c848ac5753e6dfc66b6.wav",
+      "size": 32044,
+      "sha256": "cd4dbef299550cd4e8e7c84ec9902d0c9dcfcaa12dbaf66524ca4b719ba5c9ac",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/07-background_unknown-demo-00.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-package-input-20261017a/d3-inputs/07-background_unknown-demo-00.i8",
+      "size": 6144,
+      "sha256": "75f6eea074de620746103246c8ca8ca943149749db60c3d5206d65551958ec95",
+      "mode": "0644"
+    },
+    {
+      "name": "direct/07-background_unknown-demo-00.logits.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-board-revalidation-20261017c/extracted/soundjie-d3c-output-20261017c/07-background_unknown-demo-00/logits.i8",
+      "size": 8,
+      "sha256": "4405dd36fd16b7b74d01c126ce661a36aa16431cd4dcabe2a92395d0b7e00679",
+      "mode": "0644"
+    },
+    {
+      "name": "demo/07-background_unknown-demo-01.wav",
+      "source": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_v1/processed/smoke-a/wav16k/demo/background_unknown/f1a2fc230471f7b18770.wav",
+      "size": 32044,
+      "sha256": "dc308245cdbf0baf3c2c479f06f4f2876f0e2554b3ea7e089767f0d3435ac2d4",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/07-background_unknown-demo-01.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-package-input-20261017a/d3-inputs/07-background_unknown-demo-01.i8",
+      "size": 6144,
+      "sha256": "d8436fde80d5a58af0ecbe22ee7e998567f5ac394ba688a10a2249beb57f247a",
+      "mode": "0644"
+    },
+    {
+      "name": "direct/07-background_unknown-demo-01.logits.i8",
+      "source": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_d3/task8-board-revalidation-20261017c/extracted/soundjie-d3c-output-20261017c/07-background_unknown-demo-01/logits.i8",
+      "size": 8,
+      "sha256": "15b66aee50ce33523bf0bf80ab2132da4dcafbf4d866e4d95ca01c04df50336b",
+      "mode": "0644"
+    }
+  ],
+  "demos": [
+    {
+      "id": "00-fire_smoke_alarm-demo-00",
+      "wav_member": "demo/00-fire_smoke_alarm-demo-00.wav",
+      "tensor_member": "inputs/00-fire_smoke_alarm-demo-00.i8",
+      "direct_logits_member": "direct/00-fire_smoke_alarm-demo-00.logits.i8",
+      "target_index": 0,
+      "target_id": "fire_smoke_alarm",
+      "source_id": "ESC-50:1-13613-A",
+      "license": "CC0-1.0",
+      "creator": "hookhead",
+      "source_url": "https://freesound.org/people/hookhead/sounds/13613/",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modification_notice": "ESC-50 source converted to mono 16 kHz and cropped to a one-second WAV; Log-Mel tensor derived for inference"
+    },
+    {
+      "id": "00-fire_smoke_alarm-demo-01",
+      "wav_member": "demo/00-fire_smoke_alarm-demo-01.wav",
+      "tensor_member": "inputs/00-fire_smoke_alarm-demo-01.i8",
+      "direct_logits_member": "direct/00-fire_smoke_alarm-demo-01.logits.i8",
+      "target_index": 0,
+      "target_id": "fire_smoke_alarm",
+      "source_id": "ESC-50:1-14262-A",
+      "license": "CC0-1.0",
+      "creator": "xyzr_kx",
+      "source_url": "https://freesound.org/people/xyzr_kx/sounds/14262/",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modification_notice": "ESC-50 source converted to mono 16 kHz and cropped to a one-second WAV; Log-Mel tensor derived for inference"
+    },
+    {
+      "id": "01-emergency_siren-demo-00",
+      "wav_member": "demo/01-emergency_siren-demo-00.wav",
+      "tensor_member": "inputs/01-emergency_siren-demo-00.i8",
+      "direct_logits_member": "direct/01-emergency_siren-demo-00.logits.i8",
+      "target_index": 1,
+      "target_id": "emergency_siren",
+      "source_id": "ESC-50:1-31482-A",
+      "license": "CC-BY-3.0",
+      "creator": "dobroide",
+      "source_url": "https://freesound.org/people/dobroide/sounds/31482/",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "modification_notice": "ESC-50 source converted to mono 16 kHz and cropped to a one-second WAV; Log-Mel tensor derived for inference"
+    },
+    {
+      "id": "01-emergency_siren-demo-01",
+      "wav_member": "demo/01-emergency_siren-demo-01.wav",
+      "tensor_member": "inputs/01-emergency_siren-demo-01.i8",
+      "direct_logits_member": "direct/01-emergency_siren-demo-01.logits.i8",
+      "target_index": 1,
+      "target_id": "emergency_siren",
+      "source_id": "ESC-50:1-54084-A",
+      "license": "CC0-1.0",
+      "creator": "guitarguy1985",
+      "source_url": "https://freesound.org/people/guitarguy1985/sounds/54084/",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modification_notice": "ESC-50 source converted to mono 16 kHz and cropped to a one-second WAV; Log-Mel tensor derived for inference"
+    },
+    {
+      "id": "02-car_horn-demo-00",
+      "wav_member": "demo/02-car_horn-demo-00.wav",
+      "tensor_member": "inputs/02-car_horn-demo-00.i8",
+      "direct_logits_member": "direct/02-car_horn-demo-00.logits.i8",
+      "target_index": 2,
+      "target_id": "car_horn",
+      "source_id": "ESC-50:1-17124-A",
+      "license": "CC0-1.0",
+      "creator": "cognito perceptu",
+      "source_url": "https://freesound.org/people/cognito%20perceptu/sounds/17124/",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modification_notice": "ESC-50 source converted to mono 16 kHz and cropped to a one-second WAV; Log-Mel tensor derived for inference"
+    },
+    {
+      "id": "02-car_horn-demo-01",
+      "wav_member": "demo/02-car_horn-demo-01.wav",
+      "tensor_member": "inputs/02-car_horn-demo-01.i8",
+      "direct_logits_member": "direct/02-car_horn-demo-01.logits.i8",
+      "target_index": 2,
+      "target_id": "car_horn",
+      "source_id": "ESC-50:1-19026-A",
+      "license": "CC-BY-3.0",
+      "creator": "han1",
+      "source_url": "https://freesound.org/people/han1/sounds/19026/",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "modification_notice": "ESC-50 source converted to mono 16 kHz and cropped to a one-second WAV; Log-Mel tensor derived for inference"
+    },
+    {
+      "id": "03-glass_breaking-demo-00",
+      "wav_member": "demo/03-glass_breaking-demo-00.wav",
+      "tensor_member": "inputs/03-glass_breaking-demo-00.i8",
+      "direct_logits_member": "direct/03-glass_breaking-demo-00.logits.i8",
+      "target_index": 3,
+      "target_id": "glass_breaking",
+      "source_id": "ESC-50:1-20133-A",
+      "license": "CC-BY-3.0",
+      "creator": "gezortenplotz",
+      "source_url": "https://freesound.org/people/gezortenplotz/sounds/20133/",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "modification_notice": "ESC-50 source converted to mono 16 kHz and cropped to a one-second WAV; Log-Mel tensor derived for inference"
+    },
+    {
+      "id": "03-glass_breaking-demo-01",
+      "wav_member": "demo/03-glass_breaking-demo-01.wav",
+      "tensor_member": "inputs/03-glass_breaking-demo-01.i8",
+      "direct_logits_member": "direct/03-glass_breaking-demo-01.logits.i8",
+      "target_index": 3,
+      "target_id": "glass_breaking",
+      "source_id": "ESC-50:1-84536-A",
+      "license": "CC-BY-3.0",
+      "creator": "cmusounddesign",
+      "source_url": "https://freesound.org/people/cmusounddesign/sounds/84536/",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "modification_notice": "ESC-50 source converted to mono 16 kHz and cropped to a one-second WAV; Log-Mel tensor derived for inference"
+    },
+    {
+      "id": "04-door_knock_bell-demo-00",
+      "wav_member": "demo/04-door_knock_bell-demo-00.wav",
+      "tensor_member": "inputs/04-door_knock_bell-demo-00.i8",
+      "direct_logits_member": "direct/04-door_knock_bell-demo-00.logits.i8",
+      "target_index": 4,
+      "target_id": "door_knock_bell",
+      "source_id": "ESC-50:1-101336-A",
+      "license": "CC-BY-NC-3.0",
+      "creator": "Robinhood76",
+      "source_url": "https://freesound.org/people/Robinhood76/sounds/101336/",
+      "license_url": "https://creativecommons.org/licenses/by-nc/3.0/",
+      "modification_notice": "ESC-50 source converted to mono 16 kHz and cropped to a one-second WAV; Log-Mel tensor derived for inference"
+    },
+    {
+      "id": "04-door_knock_bell-demo-01",
+      "wav_member": "demo/04-door_knock_bell-demo-01.wav",
+      "tensor_member": "inputs/04-door_knock_bell-demo-01.i8",
+      "direct_logits_member": "direct/04-door_knock_bell-demo-01.logits.i8",
+      "target_index": 4,
+      "target_id": "door_knock_bell",
+      "source_id": "ESC-50:1-103995-A",
+      "license": "CC0-1.0",
+      "creator": "RutgerMuller",
+      "source_url": "https://freesound.org/people/RutgerMuller/sounds/103995/",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modification_notice": "ESC-50 source converted to mono 16 kHz and cropped to a one-second WAV; Log-Mel tensor derived for inference"
+    },
+    {
+      "id": "05-distress_voice-demo-00",
+      "wav_member": "demo/05-distress_voice-demo-00.wav",
+      "tensor_member": "inputs/05-distress_voice-demo-00.i8",
+      "direct_logits_member": "direct/05-distress_voice-demo-00.logits.i8",
+      "target_index": 5,
+      "target_id": "distress_voice",
+      "source_id": "ESC-50:1-187207-A",
+      "license": "CC0-1.0",
+      "creator": "k3pp",
+      "source_url": "https://freesound.org/people/k3pp/sounds/187207/",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modification_notice": "ESC-50 source converted to mono 16 kHz and cropped to a one-second WAV; Log-Mel tensor derived for inference"
+    },
+    {
+      "id": "05-distress_voice-demo-01",
+      "wav_member": "demo/05-distress_voice-demo-01.wav",
+      "tensor_member": "inputs/05-distress_voice-demo-01.i8",
+      "direct_logits_member": "direct/05-distress_voice-demo-01.logits.i8",
+      "target_index": 5,
+      "target_id": "distress_voice",
+      "source_id": "ESC-50:1-211527-A",
+      "license": "CC0-1.0",
+      "creator": "the_yura",
+      "source_url": "https://freesound.org/people/the_yura/sounds/211527/",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "modification_notice": "ESC-50 source converted to mono 16 kHz and cropped to a one-second WAV; Log-Mel tensor derived for inference"
+    },
+    {
+      "id": "06-normal_speech-demo-00",
+      "wav_member": "demo/06-normal_speech-demo-00.wav",
+      "tensor_member": "inputs/06-normal_speech-demo-00.i8",
+      "direct_logits_member": "direct/06-normal_speech-demo-00.logits.i8",
+      "target_index": 6,
+      "target_id": "normal_speech",
+      "source_id": "LibriSpeech:dev-clean:1272-128104-0000",
+      "license": "CC-BY-4.0",
+      "creator": "John Rose",
+      "source_url": "https://www.openslr.org/resources/12/dev-clean.tar.gz#1272-128104-0000",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modification_notice": "LibriSpeech source converted to mono 16 kHz and cropped to a one-second WAV; Log-Mel tensor derived for inference"
+    },
+    {
+      "id": "06-normal_speech-demo-01",
+      "wav_member": "demo/06-normal_speech-demo-01.wav",
+      "tensor_member": "inputs/06-normal_speech-demo-01.i8",
+      "direct_logits_member": "direct/06-normal_speech-demo-01.logits.i8",
+      "target_index": 6,
+      "target_id": "normal_speech",
+      "source_id": "LibriSpeech:dev-clean:1462-170138-0000",
+      "license": "CC-BY-4.0",
+      "creator": "E. Tavano",
+      "source_url": "https://www.openslr.org/resources/12/dev-clean.tar.gz#1462-170138-0000",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "modification_notice": "LibriSpeech source converted to mono 16 kHz and cropped to a one-second WAV; Log-Mel tensor derived for inference"
+    },
+    {
+      "id": "07-background_unknown-demo-00",
+      "wav_member": "demo/07-background_unknown-demo-00.wav",
+      "tensor_member": "inputs/07-background_unknown-demo-00.i8",
+      "direct_logits_member": "direct/07-background_unknown-demo-00.logits.i8",
+      "target_index": 7,
+      "target_id": "background_unknown",
+      "source_id": "ESC-50:1-100038-A",
+      "license": "CC-BY-3.0",
+      "creator": "soundbytez",
+      "source_url": "https://freesound.org/people/soundbytez/sounds/100038/",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "modification_notice": "ESC-50 source converted to mono 16 kHz and cropped to a one-second WAV; Log-Mel tensor derived for inference"
+    },
+    {
+      "id": "07-background_unknown-demo-01",
+      "wav_member": "demo/07-background_unknown-demo-01.wav",
+      "tensor_member": "inputs/07-background_unknown-demo-01.i8",
+      "direct_logits_member": "direct/07-background_unknown-demo-01.logits.i8",
+      "target_index": 7,
+      "target_id": "background_unknown",
+      "source_id": "ESC-50:1-100210-A",
+      "license": "CC-BY-NC-3.0",
+      "creator": "joshfeed",
+      "source_url": "https://freesound.org/people/joshfeed/sounds/100210/",
+      "license_url": "https://creativecommons.org/licenses/by-nc/3.0/",
+      "modification_notice": "ESC-50 source converted to mono 16 kHz and cropped to a one-second WAV; Log-Mel tensor derived for inference"
+    }
+  ]
+}

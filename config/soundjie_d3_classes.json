@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "classes": [
+    {
+      "index": 0,
+      "id": "fire_smoke_alarm",
+      "display_name_zh": "火灾或烟雾报警器",
+      "semantic_status": "proxy",
+      "limitations": "ESC-50 clock_alarm is a generic alarm proxy, not verified coverage of a real smoke detector or fire panel alarm.",
+      "source_labels": {"esc50": ["clock_alarm"]}
+    },
+    {
+      "index": 1,
+      "id": "emergency_siren",
+      "display_name_zh": "应急车辆警笛",
+      "semantic_status": "direct",
+      "limitations": "Initial coverage is the ESC-50 siren category and does not distinguish ambulance, police, and fire vehicles.",
+      "source_labels": {"esc50": ["siren"]}
+    },
+    {
+      "index": 2,
+      "id": "car_horn",
+      "display_name_zh": "汽车鸣笛",
+      "semantic_status": "direct",
+      "limitations": "Initial coverage is the ESC-50 car_horn category.",
+      "source_labels": {"esc50": ["car_horn"]}
+    },
+    {
+      "index": 3,
+      "id": "glass_breaking",
+      "display_name_zh": "玻璃破碎",
+      "semantic_status": "direct",
+      "limitations": "Initial coverage is the ESC-50 glass_breaking category.",
+      "source_labels": {"esc50": ["glass_breaking"]}
+    },
+    {
+      "index": 4,
+      "id": "door_knock_bell",
+      "display_name_zh": "敲门或门铃",
+      "semantic_status": "proxy",
+      "limitations": "The smoke model covers door_wood_knock; doorbell recordings are reserved for the next expansion.",
+      "source_labels": {"esc50": ["door_wood_knock"]}
+    },
+    {
+      "index": 5,
+      "id": "distress_voice",
+      "display_name_zh": "紧急人声",
+      "semantic_status": "proxy",
+      "limitations": "ESC-50 crying_baby is a human-distress proxy, not scream recognition and not Chinese distress speech understanding.",
+      "source_labels": {"esc50": ["crying_baby"]}
+    },
+    {
+      "index": 6,
+      "id": "normal_speech",
+      "display_name_zh": "普通说话声",
+      "semantic_status": "direct",
+      "limitations": "Initial coverage is clean read English speech from LibriSpeech and does not yet represent conversational Chinese.",
+      "source_labels": {"librispeech_dev_clean": ["speech"]}
+    },
+    {
+      "index": 7,
+      "id": "background_unknown",
+      "display_name_zh": "背景或未知声音",
+      "semantic_status": "direct",
+      "limitations": "Only explicitly allowlisted non-target ESC-50 categories enter training; low confidence remains the runtime fallback.",
+      "source_labels": {
+        "esc50": [
+          "chirping_birds",
+          "crickets",
+          "rain",
+          "sea_waves",
+          "vacuum_cleaner",
+          "washing_machine"
+        ]
+      }
+    }
+  ],
+  "background_forbidden_terms": [
+    "alarm",
+    "siren",
+    "horn",
+    "glass",
+    "door",
+    "knock",
+    "bell",
+    "crying",
+    "scream",
+    "speech",
+    "voice",
+    "human_vocalization",
+    "emergency"
+  ],
+  "background_exclusions": [
+    {"source_id": "esc50", "label": "clock_alarm", "target_id": "fire_smoke_alarm"},
+    {"source_id": "esc50", "label": "siren", "target_id": "emergency_siren"},
+    {"source_id": "esc50", "label": "car_horn", "target_id": "car_horn"},
+    {"source_id": "esc50", "label": "glass_breaking", "target_id": "glass_breaking"},
+    {"source_id": "esc50", "label": "door_wood_knock", "target_id": "door_knock_bell"},
+    {"source_id": "esc50", "label": "crying_baby", "target_id": "distress_voice"},
+    {"source_id": "librispeech_dev_clean", "label": "speech", "target_id": "normal_speech"}
+  ]
+}

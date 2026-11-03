@@ -1,0 +1,29 @@
+{
+  "alignment_sha256": "cfec6c73f836c40d4335b83b02d4afaf56e8dcd9d9af2b7bb2e0d549afa9864a",
+  "batch_size": 32,
+  "bn_statistics": "frozen",
+  "board_deployment": "not_authorized_by_host_metrics_alone",
+  "distill_weight": 0.3,
+  "epochs": 12,
+  "gain_augment_db": [
+    -9,
+    -3,
+    3
+  ],
+  "initial_checkpoint_sha256": "38655f978f29e9e9ecdd3d0255d41cf4cf5796b5535ed03b59353b692c34d0f8",
+  "learning_rate": 0.0001,
+  "minimum_relative_event_rms": 0.15,
+  "original_cache_sha256": "91d0e2e30dfb264ca7018b863618ec710501c2ab475cce6e93113f5a29973585",
+  "original_manifest_sha256": "5cdad61c648fb027d0ea9882a19abc3523cc5af31dafc2b4ee0f14df01a8648b",
+  "per_class_per_domain": 128,
+  "raw_capture_sha256": "d4fa9fd268487410af3d4edec2e1d334d785971d7020d926d3a61f128d98c3c9",
+  "replay_loss_fraction": 0.25,
+  "replay_manifest_sha256": "dd6ad726cbd774970138ae9bc2d36b72bae87d7c605f19784fd7b32b81907be9",
+  "replay_validation": "post_selection_diagnostics_only",
+  "schema": 1,
+  "seed": 20261031,
+  "selection": "original_validation_only; macro loss <=0.02, false alert rise <=0.02, any positive recall loss <=0.10; maximize macro then minimize false alerts then earliest epoch; parent epoch0 participates",
+  "temperature": 2.0,
+  "threads": 4,
+  "weight_decay": 0.0001
+}

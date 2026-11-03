@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "seeds": [20261031, 20261101],
+  "data_seed": 20261031,
+  "augmentations": 3,
+  "min_relative_event_rms": 0.15,
+  "training": {"epochs": 45, "batch_size": 32, "per_class_epoch": 256, "learning_rate": 0.001, "weight_decay": 0.0001, "threads": 4},
+  "selection": "validation_macro_recall_only",
+  "validation_policy": "one_energy_center_window_per_recording; no augmentation",
+  "training_policy": "original-recording-balanced sampling; ESC excerpts and LibriSpeech chapter utterances share one sampling identity; adjacent windows are energy-gated",
+  "holdout_access": "forbidden"
+}

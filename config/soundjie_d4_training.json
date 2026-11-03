@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "seeds": [20261021, 20261022, 20261023],
+  "data_seed": 20261021,
+  "max_sources_per_class": 64,
+  "augmentations_per_train_source": 3,
+  "training": {
+    "epochs": 30,
+    "batch_size": 32,
+    "per_class_epoch": 128,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "threads": 4
+  },
+  "selection": "validation_macro_recall_only",
+  "calibration_status": "pending_labelled_real_replay_audit",
+  "d5_holdout_access": "forbidden"
+}

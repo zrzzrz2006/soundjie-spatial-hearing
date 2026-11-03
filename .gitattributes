@@ -1,0 +1,31 @@
+*.sh text eol=lf
+*.env text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.c text eol=lf
+*.h text eol=lf
+# Preserve the exact byte conventions used by the released model hash pins.
+config/soundjie_d3_classes.json text eol=lf
+config/soundjie_d4_bundle_sources.json text eol=lf
+config/soundjie_alert6_*.json text eol=lf
+config/soundjie_glass_ablation.json text eol=lf
+config/soundjie_siren*.json text eol=lf
+evidence/soundjie-d4/siren-*.json text eol=lf
+evidence/soundjie-d4/glass-*.json text eol=lf
+evidence/soundjie-d4/alert6-*.json text eol=lf
+evidence/soundjie-tv/tv1-boot-20261031.serial.log -text -diff
+evidence/soundjie-d4/siren5-board-20261031a.serial.log -text -diff
+evidence/soundjie-d4/siren5-*.json text eol=lf
+config/logmel_frontend_v1.json text eol=crlf
+*.ps1 text eol=crlf
+evidence/soundjie-d3/board-validation-*/recovered/** -text -diff
+# Preserve byte-for-byte serial evidence and its recorded SHA256.
+evidence/soundjie-d4/original-rescue-20261023.serial.txt -text
+evidence/soundjie-d4/post-repair-original-20261024.serial.log -text -diff
+evidence/soundjie-d4/post-repair-joint-20261024.serial.log -text -diff
+evidence/soundjie-d4/joint-cold-control-20261024.serial.log -text -diff
+evidence/soundjie-d4/display-consumer-isolation-20261024.serial.log -text -diff
+evidence/soundjie-d4/emmc-interface-probe-20261024-wrapper.v -text
+
+# Contest source snapshot: preserve exact released bytes across clone platforms.
+* -text

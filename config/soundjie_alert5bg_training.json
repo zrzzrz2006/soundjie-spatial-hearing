@@ -1,0 +1,36 @@
+{
+  "schema": 3,
+  "contract": "soundjie-alert5bg-v3",
+  "dataset_root": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_alert5bg_20261101",
+  "artifact_root": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_alert5bg/20261101a",
+  "existing_manifest": "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_alert4bg_20261031/manifest.jsonl",
+  "license_policy": "CC0 or CC-BY only for dataset sources, including reused sources; existing user-authorized recordings retained",
+  "seed": 20261101,
+  "data_seed": 20261101,
+  "augmentations": 3,
+  "min_relative_event_rms": 0.15,
+  "training": {
+    "epochs": 45,
+    "batch_size": 32,
+    "per_class_epoch": 320,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "threads": 4
+  },
+  "initialization": "random_all_layers_no_old_class_weights",
+  "selection": "validation_macro_recall_then_lower_background_false_alert_rate_then_earliest_epoch",
+  "thresholds": {
+    "grid_start": 0.4,
+    "grid_stop_exclusive": 1.0,
+    "grid_step": 0.025,
+    "per_class_background_fpr_limit": 0.02
+  },
+  "validation_policy": "one unaugmented energy-center window per source file; also report original-recording and uploader macro recall",
+  "training_policy": "uniform original-recording sampling within each class; augmentation uses train backgrounds only",
+  "split_policy": "Preserve all 1474 upstream sources, source identities, hashes, and purposes exactly",
+  "holdout_access": "metadata identities/hashes only; never D5 audio or features",
+  "live_replay": "No old or new video, live replay, D5 audio or D5 features consumed",
+  "upstream_manifest_sha256": "9a3b83d636e4a4fbb83ccbb2e3a5cc1496a7ad93f3c4abd97d95e5fde3874e5d",
+  "speech_mapping": "All upstream ordinary_speech subtype sources become speech; retain original weak labels and report explicit-speech subset separately",
+  "noise_bank": "Train background only, excluding ordinary_speech and crying_screaming; never any human voice as noise"
+}

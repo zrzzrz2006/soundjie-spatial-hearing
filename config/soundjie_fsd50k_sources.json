@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "dataset_root": "F:\\MLK\\DPU_ZYNQ7000\\datasets\\soundjie_fsd50k_20261025",
+  "frozen_manifest": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie_d4\\data-audit-20261021b\\manifest.jsonl",
+  "official_page": "https://zenodo.org/records/4060432",
+  "companion_page": "https://fsannotator.upf.edu/fsd/release/FSD50K/",
+  "dataset_license": "CC-BY-4.0",
+  "competition_use": "not_assessed; official release requests contacting the authors for ML competitions",
+  "metadata_md5": {
+    "FSD50K.ground_truth.zip": "ca27382c195e37d2269c4c866dd73485",
+    "FSD50K.metadata.zip": "b9ea0c829a411c1d42adb9da539ed237",
+    "FSD50K.doc.zip": "3516162b82dc2945d3e7feba0904e800"
+  },
+  "mirrors": ["Fhrozen/FSD50k", "sumin0223/FSD50k"],
+  "allowed_licenses": {
+    "https://creativecommons.org/publicdomain/zero/1.0/": "CC0-1.0",
+    "https://creativecommons.org/licenses/by/3.0/": "CC-BY-3.0",
+    "https://creativecommons.org/licenses/by/4.0/": "CC-BY-4.0"
+  },
+  "split_seed": "soundjie-fsd50k-20261025-uploader-v1",
+  "validation_fraction": 0.2,
+  "max_per_uploader_per_class": 4,
+  "classes": [
+    {"target_index": 3, "target_id": "glass_breaking", "required_all": ["Shatter", "Glass"], "required_any": [], "allowed_labels": ["Shatter", "Glass"], "limit": 80},
+    {"target_index": 5, "target_id": "distress_voice", "required_all": [], "required_any": ["Crying_and_sobbing", "Screaming"], "allowed_labels": ["Crying_and_sobbing", "Screaming", "Human_voice", "Shout", "Yell"], "limit": 80},
+    {"target_index": 1, "target_id": "emergency_siren", "required_all": ["Siren"], "required_any": [], "allowed_labels": ["Siren", "Alarm", "Motor_vehicle_(road)", "Vehicle"], "limit": 80},
+    {"target_index": 2, "target_id": "car_horn", "required_all": ["Vehicle_horn_and_car_horn_and_honking"], "required_any": [], "allowed_labels": ["Vehicle_horn_and_car_horn_and_honking", "Car", "Motor_vehicle_(road)", "Vehicle", "Alarm"], "limit": 80},
+    {"target_index": 4, "target_id": "door_knock_bell", "required_all": ["Knock", "Door"], "required_any": [], "allowed_labels": ["Knock", "Door", "Wood", "Domestic_sounds_and_home_sounds"], "limit": 40}
+  ]
+}

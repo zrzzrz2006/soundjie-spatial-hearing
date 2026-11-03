@@ -1,0 +1,251 @@
+{
+  "schema": 2,
+  "input_scale": 128.0,
+  "cases": [
+    "silence",
+    "impulse",
+    "sine_440",
+    "dual_tone",
+    "noise_seeded",
+    "clipping",
+    "stereo_antiphase",
+    "xvf3800-start-0000000000",
+    "xvf3800-start-0000072000",
+    "xvf3800-start-0000144000"
+  ],
+  "archive_members": [
+    {
+      "name": "runtime/logmel_cli",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie_d2\\arm-build-20261013-b\\logmel_cli",
+      "size": 1248108,
+      "sha256": "d882dacea89d5f4acca577839208e91a1df8e5f809703149a96980957886ec89",
+      "mode": "0755"
+    },
+    {
+      "name": "config/logmel_frontend_v1.json",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\usb_mic_bringup_v1\\.worktrees\\soundjie-d0\\config\\logmel_frontend_v1.json",
+      "size": 4099,
+      "sha256": "3382764e97cc05c0bc12a7ef8e669ba299bf283078f41abb6a06b25cda58375d",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/silence.wav",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie_d1\\task1-inputs-a-20261010-225834198\\synthetic\\silence.wav",
+      "size": 32044,
+      "sha256": "643f8a8dc8bd9c19225afffad2becfec5426180b3749cb208abdf1a6c8354efc",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/silence.f32le",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\silence.f32le",
+      "size": 24576,
+      "sha256": "86225807238ec4bfed83336534cb95e6a772dee8aa48e2ade62b41672003c8aa",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/silence.i8",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\silence.i8",
+      "size": 6144,
+      "sha256": "cb11e05cb5da949c0e0f5b5a7cb310df35a96a22c45d1ada70d950859fe697d1",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/impulse.wav",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie_d1\\task1-inputs-a-20261010-225834198\\synthetic\\impulse.wav",
+      "size": 32044,
+      "sha256": "ba1fea0c6dcce0a8028f6b1cf3783169277ff4335558d156a1c61496c9e25b29",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/impulse.f32le",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\impulse.f32le",
+      "size": 24576,
+      "sha256": "421a5aa2fdac73cc68be764925563790df142d5bb3493cf36445ca0dc54bd268",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/impulse.i8",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\impulse.i8",
+      "size": 6144,
+      "sha256": "0762fd38aab294969267dd5c041f07317d0d9b67ec593fa236c187b093a92af9",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/sine_440.wav",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie_d1\\task1-inputs-a-20261010-225834198\\synthetic\\sine_440.wav",
+      "size": 32044,
+      "sha256": "e7a99a4230789672defb45a442fe2b56ad504549d9400ce9173e77e225a052b2",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/sine_440.f32le",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\sine_440.f32le",
+      "size": 24576,
+      "sha256": "1819adbcd9a9200c6f990c67909f9ec5e678efebbf4184a3fcd716a3266420fa",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/sine_440.i8",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\sine_440.i8",
+      "size": 6144,
+      "sha256": "ed07ebf999a087d205f8a772fa23bb8d2fe926d5fb249e404eb7d2ed6a0a2616",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/dual_tone.wav",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie_d1\\task1-inputs-a-20261010-225834198\\synthetic\\dual_tone.wav",
+      "size": 32044,
+      "sha256": "19f5af4b3f3691fb2d1dc68a4028b61736741540bdcbe8b74ef245deaaf4d4ab",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/dual_tone.f32le",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\dual_tone.f32le",
+      "size": 24576,
+      "sha256": "e5743980c992e4a022e1062475839e09d51d93cc56b97ae30deb72a2b6cc2ba8",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/dual_tone.i8",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\dual_tone.i8",
+      "size": 6144,
+      "sha256": "77417cbbad4185ebc31311c7469241bb8f05799c55af078e46210636d0b1b8c9",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/noise_seeded.wav",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie_d1\\task1-inputs-a-20261010-225834198\\synthetic\\noise_seeded.wav",
+      "size": 32044,
+      "sha256": "83a4f1c6499fe9f1c427ff33b4d51eb4f51b71cc69813551caf8055195054fb0",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/noise_seeded.f32le",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\noise_seeded.f32le",
+      "size": 24576,
+      "sha256": "d1b089e535bf273217fa49d8c5b6be1367d6e4d6e1c4b177fa1f3f44b9fcdf00",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/noise_seeded.i8",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\noise_seeded.i8",
+      "size": 6144,
+      "sha256": "9ba077c7c46638865e05429f6b0b310567076c8961447228beacfed426dda16b",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/clipping.wav",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie_d1\\task1-inputs-a-20261010-225834198\\synthetic\\clipping.wav",
+      "size": 32044,
+      "sha256": "9d742cb765fd29e3b49190e420f6eb8648a4cadfc2c6af8ce4141da24ae7d6b4",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/clipping.f32le",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\clipping.f32le",
+      "size": 24576,
+      "sha256": "789bd18b06cbb3561aa1d3f2f20b05af91c6e99c9a0e06c29d388feea9158e5f",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/clipping.i8",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\clipping.i8",
+      "size": 6144,
+      "sha256": "9650bed4be4033b0630eca84d5180cae69c6303981852dd29c31d25e0da76c72",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/stereo_antiphase.wav",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie_d1\\task1-inputs-a-20261010-225834198\\synthetic\\stereo_antiphase.wav",
+      "size": 64044,
+      "sha256": "93b25c669773f8dcba27e7d1d9033a179c41279152bd64487659d481d6305647",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/stereo_antiphase.f32le",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\stereo_antiphase.f32le",
+      "size": 24576,
+      "sha256": "86225807238ec4bfed83336534cb95e6a772dee8aa48e2ade62b41672003c8aa",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/stereo_antiphase.i8",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\stereo_antiphase.i8",
+      "size": 6144,
+      "sha256": "cb11e05cb5da949c0e0f5b5a7cb310df35a96a22c45d1ada70d950859fe697d1",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/xvf3800-start-0000000000.wav",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie_d1\\task1-inputs-a-20261010-225834198\\real\\start-0000000000.wav",
+      "size": 64044,
+      "sha256": "6388a3bc8d2b7c391fe010f6db4433d4c51a3e407a6b7d50a63a3af6860b5a5f",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/xvf3800-start-0000000000.f32le",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\xvf3800-start-0000000000.f32le",
+      "size": 24576,
+      "sha256": "847a56268dcb877a780e876632d78e5bc577be4133962e267ffdd40c02f52837",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/xvf3800-start-0000000000.i8",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\xvf3800-start-0000000000.i8",
+      "size": 6144,
+      "sha256": "50afea3c483dc6996d34806468500d42f7a606daa06527ced25c99d582aca078",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/xvf3800-start-0000072000.wav",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie_d1\\task1-inputs-a-20261010-225834198\\real\\start-0000072000.wav",
+      "size": 64044,
+      "sha256": "85d0ad1d84f1e386cca52ba0e403e70782db73ab38692a26bfac43ebe9b1a6d5",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/xvf3800-start-0000072000.f32le",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\xvf3800-start-0000072000.f32le",
+      "size": 24576,
+      "sha256": "898920ebefc0d997d74fc28704ed57923f4874404a7e21395576b581568e7315",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/xvf3800-start-0000072000.i8",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\xvf3800-start-0000072000.i8",
+      "size": 6144,
+      "sha256": "70e5fe2a3a72a0db4a6859438009f0837b8aad3206a02221458ca5c0317337bb",
+      "mode": "0644"
+    },
+    {
+      "name": "inputs/xvf3800-start-0000144000.wav",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie_d1\\task1-inputs-a-20261010-225834198\\real\\start-0000144000.wav",
+      "size": 64044,
+      "sha256": "2cf1196f03e6171673b9299ca09784c1c17a17cb02558b7b4a34a54737413435",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/xvf3800-start-0000144000.f32le",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\xvf3800-start-0000144000.f32le",
+      "size": 24576,
+      "sha256": "5edc8de2183765e7c1f65a26939f4f1fcd5dcc587c799ada123b9692bd95ecea",
+      "mode": "0644"
+    },
+    {
+      "name": "golden/xvf3800-start-0000144000.i8",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie-d2-golden-run-a-20261012\\cases\\xvf3800-start-0000144000.i8",
+      "size": 6144,
+      "sha256": "7f6467fa943269d736b9c8d6864a51676e84944b010aa3971559a1afb8210d9b",
+      "mode": "0644"
+    },
+    {
+      "name": "probe/run_logmel_parity.sh",
+      "source": "F:\\MLK\\DPU_ZYNQ7000\\usb_mic_bringup_v1\\.worktrees\\soundjie-d0\\scripts\\board\\run_logmel_parity.sh",
+      "size": 6892,
+      "sha256": "d96b7f5556cd767f5e0560f118c1fa531a44406411f36abff18292d46150b145",
+      "mode": "0755"
+    }
+  ],
+  "normalization_profile": "bounded-log-power-64-v1",
+  "config_sha256": "3382764e97cc05c0bc12a7ef8e669ba299bf283078f41abb6a06b25cda58375d"
+}

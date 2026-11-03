@@ -1,0 +1,16 @@
+{
+  "schema": 2,
+  "contract": "soundjie-alert4bg-v2",
+  "labels": ["siren", "car_horn", "doorbell", "dog_bark", "background_unknown"],
+  "display_names": ["警笛", "车辆鸣笛", "门铃", "狗叫", "背景"],
+  "physical_output_count": 5,
+  "logical_output_count": 5,
+  "background_index": 4,
+  "alert_indices": [0, 1, 2, 3],
+  "siren_semantics": "Approved broad Alarm + Siren; no emergency-vehicle subclass claim",
+  "doorbell_semantics": "Explicit Doorbell only; Knock is background",
+  "dog_semantics": "Explicit Bark only; generic Dog and Growling excluded",
+  "background_semantics": "Includes traceable glass, knock, speech/crying and ambient negatives; no score or alert in main UI",
+  "legacy_index_mapping": "No index-only conversion is valid for the old door_knock_bell family; inspect source labels",
+  "compatible_old_contracts": []
+}

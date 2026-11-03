@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "state": "candidate_only",
+  "archive_basename": "xilinx_dnndk_v3.1_190809.tar.gz",
+  "approved_sha256": null,
+  "allowed_top_levels": [
+    "xilinx_dnndk_v3.1",
+    "xilinx_dnndk_v3.1_190809"
+  ],
+  "required_tools": [
+    "decent_q",
+    "dnnc",
+    "dlet",
+    "ddump"
+  ],
+  "host_subtree": "host_x86"
+}

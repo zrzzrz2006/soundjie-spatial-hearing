@@ -1,0 +1,37 @@
+# Agent-local Git and execution workspace
+.codex-gitconfig
+.codex-gitconfig-wsl
+.superpowers/
+.worktrees/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Generated/build trees and large external artifacts
+build/
+artifacts/
+recordings/
+logs/
+tmp/
+vivado/
+vm/
+installers/
+release/generated/
+models/soundjie_d3/generated/
+evidence/soundjie-d3/generated/
+*.partial
+
+# Common FPGA/Linux generated state
+.Xil/
+*.cache/
+*.runs/
+*.sim/
+*.hw/
+*.ip_user_files/
+
+# Editor and operating-system noise
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "board": "MZ7100FA",
+  "vivado_baseline": "2017.4",
+  "current_dpu_hdf": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\mz7100_dpu_2017_probe_v1\\mz7100_dpu_system_wrapper.hdf",
+  "original_dtb": "F:\\MLK\\DPU_ZYNQ7000\\backups\\sd_recovery_2026-10-03\\restored_original_boot\\devicetree.dtb",
+  "vendor_source_root": "F:\\MLK\\MZ7100FA",
+  "safe_copy_root": "F:\\MLK\\DPU_ZYNQ7000\\work\\soundjie_d0_hdmi",
+  "proposed_ports": {
+    "display_vdma": ["HP0"],
+    "dpu": ["HP1", "HP2", "HP3"]
+  },
+  "required_display_markers": ["axi_vdma", "vdma-fb"],
+  "notes": "The current DPU uses HP0/HP1/HP2 and must be remapped in a combined design; a DT node alone cannot add missing PL hardware."
+}

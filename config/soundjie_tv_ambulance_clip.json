@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "clip_id": "ambulance_escort_45_75",
+  "source_sha256": "c2233eee9d125339519c278425e240ed55ed6f7afb82292e6ddfafd2f5ba25bd",
+  "start_seconds": 45,
+  "end_seconds": 75,
+  "sample_rate": 16000,
+  "event_label_basis": "user_scene_weak_not_source_verified",
+  "siren_source_independently_verified": false,
+  "framewise_event_audition_performed": false,
+  "speaker_scope": "A is a clip-local voice label; no general speaker identity claim",
+  "transcript_scope": "first cue matches user anchor and unprompted small/medium ASR; later cues are context-assisted ASR draft, not human audition",
+  "cues": [
+    {"id": "open_map", "start": 12.9, "end": 15.0, "speaker": "A", "text": "打开百度地图", "status": "confirmed_anchor"},
+    {"id": "wake_assistant", "start": 21.4, "end": 26.5, "speaker": "A", "text": "小度，小度……", "status": "asr_context_consensus", "note": "Repeated wake word; ellipsis avoids asserting disputed repetition count."},
+    {"id": "navigate_hospital", "start": 27.6, "end": 29.5, "speaker": "A", "text": "导航去安定医院", "status": "asr_context_consensus", "note": "Filtered left/right ASR agree with vocabulary context; requires listening confirmation during physical replay."}
+  ]
+}

@@ -1,0 +1,11 @@
+# MZ7100 Bank35 VCC1V8. Clock and data pins cross-checked with vendor CH14.
+set_property PACKAGE_PIN A15 [get_ports emmc_clk]
+set_property PACKAGE_PIN A17 [get_ports emmc_cmd]
+set_property PACKAGE_PIN B12 [get_ports {emmc_data[0]}]
+set_property PACKAGE_PIN C12 [get_ports {emmc_data[1]}]
+set_property PACKAGE_PIN C11 [get_ports {emmc_data[2]}]
+set_property PACKAGE_PIN A14 [get_ports {emmc_data[3]}]
+set_property PACKAGE_PIN L14 [get_ports emmc_cd_n]
+set_property PACKAGE_PIN L15 [get_ports emmc_wp]
+set_property IOSTANDARD LVCMOS18 [get_ports {emmc_clk emmc_cmd emmc_data[*] emmc_cd_n emmc_wp}]
+set_property PULLUP true [get_ports {emmc_cmd emmc_data[*]}]

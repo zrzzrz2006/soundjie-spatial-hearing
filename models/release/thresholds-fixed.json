@@ -1,0 +1,197 @@
+{
+  "alert_indices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "alert_thresholds": [
+    0.525,
+    0.9,
+    0.575,
+    0.6,
+    0.675
+  ],
+  "alert_thresholds_field_is_legacy_cli_name": true,
+  "assessment_path": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie_alert5bg\\20261101a\\compile-20261101a\\assessment-recognition.json",
+  "assessment_sha256": "9827744aaee169c6801dda00fb2e7010a53bb1d1c7b68f5099b89c17c0d89593",
+  "background_index": 5,
+  "board_tested": false,
+  "checkpoint_sha256": "686824fbc017b0fb3b1d9b397e50e1d5d492048bf5850b6a600493470dcec6ca",
+  "contract": "soundjie-alert5bg-v3",
+  "decision": "double softmax argmax; reject below the winning foreground threshold to background; no runner-up promotion; speech is non-alert",
+  "elf_path": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie_alert5bg\\20261101a\\compile-20261101a\\container-output\\build\\compiled\\dpu_soundjie_alert5bg.elf",
+  "elf_sha256": "ecd4c9f4d65faf5c5083520b6a19623d1df01cd94dbe0d7e9a8324656ba917c7",
+  "foreground_thresholds": [
+    0.525,
+    0.9,
+    0.575,
+    0.6,
+    0.675
+  ],
+  "independent_acceptance": false,
+  "input_node": "conv1",
+  "kernel": "soundjie_alert5bg",
+  "labels": [
+    "siren",
+    "car_horn",
+    "doorbell",
+    "dog_bark",
+    "speech",
+    "background_unknown"
+  ],
+  "logical_output_count": 6,
+  "metrics": {
+    "accuracy": 0.7993630573248408,
+    "background_false_alert_count": 8,
+    "background_false_alert_rate": 0.06611570247933884,
+    "background_false_foreground_count": 18,
+    "background_false_foreground_rate": 0.1487603305785124,
+    "background_false_speech_count": 10,
+    "background_false_speech_rate": 0.08264462809917356,
+    "confusion_matrix": [
+      [
+        45,
+        0,
+        1,
+        0,
+        2,
+        14
+      ],
+      [
+        0,
+        6,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        4,
+        0,
+        7,
+        0,
+        0,
+        3
+      ],
+      [
+        1,
+        0,
+        0,
+        17,
+        2,
+        3
+      ],
+      [
+        2,
+        1,
+        0,
+        0,
+        73,
+        10
+      ],
+      [
+        7,
+        0,
+        1,
+        0,
+        10,
+        103
+      ]
+    ],
+    "dog_recall": 0.7391304347826086,
+    "legacy_negative_false_alert_rate_means_any_foreground": true,
+    "macro_recall": 0.7358356275198875,
+    "negative_false_alert_rate": 0.1487603305785124,
+    "negative_subtypes": {
+      "ambient": {
+        "false_alert_rate": 0.045454545454545456,
+        "false_alerts": 1,
+        "support": 22
+      },
+      "crying_screaming": {
+        "false_alert_rate": 0.46153846153846156,
+        "false_alerts": 12,
+        "support": 26
+      },
+      "glass": {
+        "false_alert_rate": 0.03333333333333333,
+        "false_alerts": 1,
+        "support": 30
+      },
+      "knock": {
+        "false_alert_rate": 0.043478260869565216,
+        "false_alerts": 1,
+        "support": 23
+      },
+      "road_background": {
+        "false_alert_rate": 0.15,
+        "false_alerts": 3,
+        "support": 20
+      }
+    },
+    "per_class": {
+      "background_unknown": {
+        "correct": 103,
+        "precision": 0.7686567164179104,
+        "recall": 0.8512396694214877,
+        "support": 121
+      },
+      "car_horn": {
+        "correct": 6,
+        "precision": 0.8571428571428571,
+        "recall": 0.75,
+        "support": 8
+      },
+      "dog_bark": {
+        "correct": 17,
+        "precision": 0.9444444444444444,
+        "recall": 0.7391304347826086,
+        "support": 23
+      },
+      "doorbell": {
+        "correct": 7,
+        "precision": 0.7777777777777778,
+        "recall": 0.5,
+        "support": 14
+      },
+      "siren": {
+        "correct": 45,
+        "precision": 0.7627118644067796,
+        "recall": 0.7258064516129032,
+        "support": 62
+      },
+      "speech": {
+        "correct": 73,
+        "precision": 0.8390804597701149,
+        "recall": 0.8488372093023255,
+        "support": 86
+      }
+    },
+    "sampling_identity_macro_recall": 0.7209967462309379,
+    "source_group_macro_recall": 0.6742412124195071,
+    "speech_is_non_alert": true,
+    "speech_subgroups": {
+      "explicit_speech": {
+        "correct": 54,
+        "recall": 0.9,
+        "support": 60
+      },
+      "inherited_vocal_weak_label": {
+        "correct": 19,
+        "recall": 0.7307692307692307,
+        "support": 26
+      }
+    }
+  },
+  "output_node": "fc8",
+  "physical_output_count": 6,
+  "preserve_all_six_raw_outputs": true,
+  "profile": "recognition_f1_recommended",
+  "runtime_argument": "--alert-thresholds 0.525,0.900,0.575,0.600,0.675",
+  "schema": 3,
+  "scores_path": "F:\\MLK\\DPU_ZYNQ7000\\artifacts\\soundjie_alert5bg\\20261101a\\compile-20261101a\\validation-scores-fixed.json",
+  "scores_sha256": "ce205598699e121d284c2d0f1b27e37834ee8773f0f26020c245635468a9fbf6",
+  "speech_index": 4,
+  "speech_is_non_alert": true
+}

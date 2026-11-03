@@ -1,0 +1,77 @@
+/*
+ * Soundjie D4 candidate PL include for the combined MZ7100FA bitstream.
+ * Generated from the audited CH24 device tree and combined 2017.4 HDF.
+ * This file is a candidate only; Task 6 never writes an SD card.
+ */
+/ {
+    /* Board USB contract recovered from the SHA-verified boot DTB.
+     * Use a symbolic phandle: generated PL/clock nodes may renumber handles.
+     */
+    soundjie_usb_phy: phy0@e0002000 {
+        compatible = "ulpi-phy";
+        #phy-cells = <0>;
+        reg = <0xe0002000 0x1000>;
+        view-port = <0x170>;
+        drv-vbus;
+    };
+    amba_pl: amba_pl {
+        #address-cells = <1>;
+        #size-cells = <1>;
+        compatible = "simple-bus";
+        ranges;
+
+        axi_vdma_0: dma@43000000 {
+            #dma-cells = <1>;
+            clock-names = "s_axi_lite_aclk", "m_axi_mm2s_aclk", "m_axis_mm2s_aclk";
+            clocks = <&clkc 15>, <&clkc 15>, <&clkc 15>;
+            compatible = "xlnx,axi-vdma-1.00.a";
+            interrupt-names = "mm2s_introut";
+            interrupt-parent = <&intc>;
+            interrupts = <0 30 4>;
+            reg = <0x43000000 0x10000>;
+            xlnx,addrwidth = <0x20>;
+            xlnx,flush-fsync = <0x1>;
+            xlnx,num-fstores = <0x3>;
+
+            dma-channel@43000000 {
+                compatible = "xlnx,axi-vdma-mm2s-channel";
+                interrupts = <0 30 4>;
+                xlnx,datawidth = <0x20>;
+                xlnx,device-id = <0x0>;
+            };
+        };
+
+        dpu_eu_0: dpu_eu@4f000000 {
+            clock-names = "s_axi_aclk", "dpu_2x_clk", "m_axi_dpu_aclk";
+            clocks = <&clkc 15>, <&soundjie_dpu_clk_300>, <&soundjie_dpu_clk_150>;
+            compatible = "deephi,dpu";
+            interrupt-names = "dpu_interrupt";
+            interrupt-parent = <&intc>;
+            interrupts = <0 31 4>;
+            reg = <0x4f000000 0x1000000>;
+        };
+
+        soundjie_dpu_clk_300: soundjie-dpu-clk-300 {
+            #clock-cells = <0>;
+            clock-frequency = <300000000>;
+            compatible = "fixed-clock";
+        };
+
+        soundjie_dpu_clk_150: soundjie-dpu-clk-150 {
+            #clock-cells = <0>;
+            clock-frequency = <150000000>;
+            compatible = "fixed-clock";
+        };
+    };
+
+    axi_vdma_lcd {
+        compatible = "topic,vdma-fb";
+        dmas = <&axi_vdma_0 0>;
+        dma-names = "axivdma";
+    };
+};
+
+&usb0 {
+    dr_mode = "host";
+    usb-phy = <&soundjie_usb_phy>;
+};

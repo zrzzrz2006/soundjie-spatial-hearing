@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-03",
+  "source_code_commit": "914d2457bbf838175346a2cbe578bcff3e467664",
+  "reference_report": "声界_作品技术报告_性能指标补充版_修订.pdf",
+  "reference_report_sha256": "ef573b67e5bd384d829f165d5800e0b43de32878574cb4db01870ef5986093c0",
+  "publication_scope": "Application, model and integration source snapshot; documentation follows the supplied technical report. Presentation-production tools and development diary are excluded.",
+  "runtime_code_modified": false,
+  "vendor_ip_included": false
+}

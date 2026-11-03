@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "seeds": [20261031, 20261101],
+  "epochs": 45,
+  "batch_size": 32,
+  "per_original_class_epoch": 256,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "threads": 4,
+  "features": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_alert6/20261031b/features",
+  "file_pins": {
+    "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_alert6/20261031b/features/features.npz": "91d0e2e30dfb264ca7018b863618ec710501c2ab475cce6e93113f5a29973585",
+    "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_alert6/20261031b/features/provenance.json": "ffadb4b179db7d6c78960a736a26e3245a7f2ff617c52722d3268ba520eccdcf",
+    "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_alert6/20261031b/features/audit.json": "cc0756a030a4532fd077f964f76dadd45ca26b7c2562ab726202ed444a75bfd4",
+    "F:/MLK/DPU_ZYNQ7000/datasets/soundjie_alert6_20261031/manifest.jsonl": "5cdad61c648fb027d0ea9882a19abc3523cc5af31dafc2b4ee0f14df01a8648b",
+    "E:/Soundjie_Work/d4/config/soundjie_alert6_classes.json": "544317f00f834626d7ae6b5a5850ce478a2657e1ba01d1a8891d661cd02f7bc3"
+  },
+  "replay_alignment": "F:/MLK/DPU_ZYNQ7000/artifacts/soundjie_alert6_replay/20261031a/capture-20261031b/alignment-report.json",
+  "replay_alignment_sha256": "cfec6c73f836c40d4335b83b02d4afaf56e8dcd9d9af2b7bb2e0d549afa9864a",
+  "selection": "original_non_glass_321_macro_recall_then_lower_background_fpr_then_earliest_epoch",
+  "promotion_guards": {
+    "mean_macro_gain": 0.02,
+    "each_seed_macro_gain_positive": true,
+    "max_background_fpr_increase": 0.02,
+    "max_positive_class_recall_decrease": 0.1,
+    "no_replay_validation_regression": true,
+    "at_least_one_seed_replay_gain": 1
+  },
+  "scope": "Host-only paired task consolidation. Glass training recordings become negatives; no audio is deleted; old board demo unchanged. Previously exposed development validation, not independent D5."
+}

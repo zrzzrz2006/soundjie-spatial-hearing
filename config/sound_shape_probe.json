@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "kernel": "sound_shape_probe",
+  "input": {
+    "name": "conv1",
+    "blob": "data",
+    "shape": [1, 1, 64, 96]
+  },
+  "output": {
+    "name": "logits",
+    "count": 8
+  },
+  "compiler": {
+    "dpu": "1152FA",
+    "cpu_arch": "arm32",
+    "abi": 1,
+    "dpu_target": "v1.4.0",
+    "accepted_dnnc_versions": [
+      "v2.04",
+      "v2.05"
+    ]
+  },
+  "calibration": {
+    "seed": 20261005,
+    "sample_count": 16,
+    "dtype": "float32-le"
+  },
+  "labels": [
+    "fire_smoke_alarm",
+    "emergency_siren",
+    "car_horn",
+    "glass_break",
+    "knock_doorbell",
+    "distress_scream",
+    "speech",
+    "background_unknown"
+  ]
+}

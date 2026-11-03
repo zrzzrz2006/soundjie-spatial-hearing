@@ -1,0 +1,202 @@
+{
+  "schema": 1,
+  "source_sha256": "06cc8d996283b739d445bfd29e7a0c18da9236d97f48d06080c94acfe46c52c4",
+  "source_pcm_sha256": "6c881a478db33ec8d9cbd240d4fb86c15227e893e07c1af864b9ed0c70a51f16",
+  "reference_scope": "two acoustically enrolled clips; no generic ASR",
+  "files": {
+    "ambulance/cues.tsv": "3641e18200dbfc7265050339c69b77db7537890ea2c8fecc3a79b6dd6645d407",
+    "ambulance/reference.features": "839537e996650ba41dce80f5229774e8978f45dac2aab6922acfbf383ad324b7",
+    "bank.tsv": "8cbc77ef739adb90f7c6e625a106e61d2957abde8b7e23eb8efa3ed698a5393f",
+    "dialogue/cues.tsv": "4b6439830650761c6892608091c1a8142601ab3d2267207c86515fa3cf73d563",
+    "dialogue/reference.features": "b4e7c7fc8283e0298695234c4a3fa431d38e09d5c66da4d379913d9e2c4093a7",
+    "dialogue-horn-end.txt": "c45744877c8109e042874b74072e19a36b5cfe74b89cbdf4e8ad78a1e1c22416",
+    "dialogue-horn-start.txt": "ee1b2c0c987dcbc13b336a6c671fbab3f6790925b8327cb7ae55bd8d065ad197",
+    "traffic.bin": "d153c13085569058067ccc33d45b6093daaaf4abf887fbd69691b6377ee5bff5"
+  },
+  "old_archive_sha256": "6ad340a970fef70bb718f2ea08523e7910956ef60164f0ec794a42cfe2301206",
+  "dialogue_config": {
+    "schema": 1,
+    "clip_id": "hearing_dialogue_20261101",
+    "profile": "dialogue",
+    "source_filename": "VID_20261101_141130.mp4",
+    "source_sha256": "06cc8d996283b739d445bfd29e7a0c18da9236d97f48d06080c94acfe46c52c4",
+    "pcm_sha256": "6c881a478db33ec8d9cbd240d4fb86c15227e893e07c1af864b9ed0c70a51f16",
+    "duration_seconds": 113.8474375,
+    "sample_rate": 16000,
+    "horn_start_seconds": 4.8,
+    "horn_end_seconds": 6.8,
+    "horn_basis": "user identified opening horn; timing estimated from audio windows and scene cuts; physical replay still required",
+    "speaker_scope": "Clip-local roles checked against video frames, not general speaker recognition",
+    "speakers": {
+      "A": "woman in red/dark jacket and white/pink mask",
+      "B": "man in red/dark jacket and blue mask",
+      "C": "driver in black jacket"
+    },
+    "transcript_basis": "small and medium offline ASR, corrected against visible source subtitles; timestamps estimated, not human-audition-certified",
+    "caption_scope": "Only acoustically enrolled clip; no generic ASR. No captions during the long gesture/action gap.",
+    "scene_heading_policy": "Opening horn interval: car_horn; otherwise ordinary_speech per requested clip presentation. This annotation never replaces classifier probabilities.",
+    "cues": [
+      {
+        "id": "d01",
+        "start": 0.0,
+        "end": 2.5,
+        "speaker": "A",
+        "text": "今天晚上做什么菜吃呀？"
+      },
+      {
+        "id": "d02",
+        "start": 3.16,
+        "end": 4.92,
+        "speaker": "B",
+        "text": "有几个人？我买菜。"
+      },
+      {
+        "id": "d03",
+        "start": 7.84,
+        "end": 9.65,
+        "speaker": "A",
+        "text": "我想吃蔬菜。"
+      },
+      {
+        "id": "d04",
+        "start": 10.82,
+        "end": 12.14,
+        "speaker": "C",
+        "text": "按半天没听见啊？"
+      },
+      {
+        "id": "d05",
+        "start": 12.14,
+        "end": 12.6,
+        "speaker": "C",
+        "text": "喂！"
+      },
+      {
+        "id": "d06",
+        "start": 13.62,
+        "end": 14.2,
+        "speaker": "C",
+        "text": "喂！"
+      },
+      {
+        "id": "d07",
+        "start": 18.38,
+        "end": 20.24,
+        "speaker": "C",
+        "text": "喂，你怎么回事？"
+      },
+      {
+        "id": "d08",
+        "start": 20.24,
+        "end": 22.1,
+        "speaker": "C",
+        "text": "我按了半天喇叭，你们听不到啊？"
+      },
+      {
+        "id": "d09",
+        "start": 24.04,
+        "end": 25.52,
+        "speaker": "C",
+        "text": "指耳朵什么意思？"
+      },
+      {
+        "id": "d10",
+        "start": 25.52,
+        "end": 27.1,
+        "speaker": "C",
+        "text": "没看到我车过来吗？"
+      },
+      {
+        "id": "d11",
+        "start": 28.1,
+        "end": 29.5,
+        "speaker": "B",
+        "text": "我们俩都听不见。"
+      },
+      {
+        "id": "d12",
+        "start": 31.26,
+        "end": 32.66,
+        "speaker": "C",
+        "text": "和你们说话呢。"
+      },
+      {
+        "id": "d13",
+        "start": 32.66,
+        "end": 34.3,
+        "speaker": "C",
+        "text": "为什么不说？听不见吗？"
+      },
+      {
+        "id": "d14",
+        "start": 38.32,
+        "end": 40.6,
+        "speaker": "C",
+        "text": "真的听不见？"
+      },
+      {
+        "id": "d15",
+        "start": 86.68,
+        "end": 89.98,
+        "speaker": "B",
+        "text": "我们以后在路上可得注意安全啊。"
+      },
+      {
+        "id": "d16",
+        "start": 90.56,
+        "end": 92.1,
+        "speaker": "B",
+        "text": "最好是走人行道。"
+      },
+      {
+        "id": "d17",
+        "start": 93.5,
+        "end": 95.2,
+        "speaker": "A",
+        "text": "是啊，可得小心。"
+      },
+      {
+        "id": "d18",
+        "start": 95.2,
+        "end": 96.96,
+        "speaker": "A",
+        "text": "出了事故更麻烦。"
+      },
+      {
+        "id": "d19",
+        "start": 96.96,
+        "end": 98.24,
+        "speaker": "A",
+        "text": "本来就听不见。"
+      },
+      {
+        "id": "d20",
+        "start": 98.24,
+        "end": 100.28,
+        "speaker": "A",
+        "text": "可不能再出身体上的问题。"
+      },
+      {
+        "id": "d21",
+        "start": 100.28,
+        "end": 102.44,
+        "speaker": "B",
+        "text": "如果我能听见就好了。"
+      },
+      {
+        "id": "d22",
+        "start": 102.44,
+        "end": 103.84,
+        "speaker": "A",
+        "text": "那能怎么办？"
+      },
+      {
+        "id": "d23",
+        "start": 103.84,
+        "end": 105.26,
+        "speaker": "A",
+        "text": "认命了，走吧。"
+      }
+    ]
+  }
+}
